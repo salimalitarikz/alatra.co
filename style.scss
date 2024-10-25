@@ -1,109 +1,174 @@
-@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap');
+// imports 
+@import url('https://fonts.cdnfonts.com/css/neue-plak');
 
 
-html{
-    font-family: "Oxanium", sans-serif;
-    font-size: 14px;
 
-}
+
+
+
+
+// variables
+
+$lightgray:#fcfcfc;
+$darkgray:#868686;
+$black:#0a0a0a;
+$orange:#ff3300;
+$gap:1rem;
+$halfgap:calc($gap/2);
+$borrad:.5rem;
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Neue Plak', sans-serif;
 }
 
 body{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 90vh;
-    overflow: hidden;
+    background-color: $lightgray;
+    background-image: url(/ui/grain.png);
+
+
+      
+
 }
 
+@media screen and (min-width: 0px) and (max-width: 600px)  {
 
-header{
-    margin-top: 4rem;
-    width: 10rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-    >img{
-        width: 100%;
-        aspect-ratio: 1/1;
+    main{
+        width: calc(100vw - $gap);
+        height: calc(100vh - $gap);
+        border: 1px solid $darkgray;
+        position: relative;
+        left: $halfgap;
+        top: $halfgap;
+        border-radius: $borrad;
+        overflow-y: scroll;
+
+        >nav{
+            position: sticky;
+            border-bottom: 1px solid $darkgray;
+            top: 0;
+            height: 3rem;
+            padding: calc($gap/3);
+            display: flex;
+            // background-color: $lightgray;
+            background-image: url(/ui/grain.png);
+            backdrop-filter: blur(10px);
+
+            >#nav_left{
+                display: flex;
+                height: 100%;
+                gap: $halfgap;
+
+                >#nav_logo_div{
+                    height: 100%;
+                    aspect-ratio: 1/1;
+
+                    >img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                >h1{
+                    font-size: 1rem;
+                    font-weight: 600;
+                    display: flex;
+                    flex-direction: column;
+
+                    >span:nth-last-child(1){
+                        color: $orange;
+                    }
+
+                }
+
+
+            }
+        }
+
+        >.main_part{
+            height: 200vh;
+        }
+
     }
-    >h1{
-        font-weight: 500;
-        text-align: center;
-    }
-}
 
-main{
-    margin: 5rem 0;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
 
-    *{
-        text-align: center;
-    }
 
-    >h1{
-        font-weight: 600;
-    }
+    // import
 
-    >h2{
-
-        font-weight: 500;
-        >span{
-            font-weight: 700;
+    
+    @keyframes jumbo {
+        from {
+            background-position: 50% 50%, 50% 50%;
+        }
+        to {
+            background-position: 350% 50%, 350% 50%;
         }
     }
 
-    >h3{
-        font-weight: 600;
-        >span{
-            color: #ff2600;
-        }
-        text-align: center;
+    .jumbo {
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        top: calc($halfgap * -1) ;
+        left: calc($halfgap * -1) ;
+        --stripes: repeating-linear-gradient(
+            100deg,
+            #fff 0%,
+            #fff 7%,
+            transparent 10%,
+            transparent 12%,
+            #fff 16%
+        );
+        --stripesDark: repeating-linear-gradient(
+            100deg,
+            #00000057 0%,
+            #0000002d 7%,
+            transparent 10%,
+            transparent 12%,
+            #0000002d 16%
+        );
+        --rainbow: repeating-linear-gradient(
+            100deg,
+            #7c7c7c9a 10%,
+            #aaaaaaa4 15%,
+            #949494a4 20%,
+            #b3b3b3a9 25%,
+            #44444488 30%
+        );
+        background-image: var(--stripes), var(--rainbow);
+        background-size: 1000%, 1000%;
+        background-position: 50% 50%, 50% 50%;
+
+        filter: invert(100%);
+
+        mask-image: radial-gradient(ellipse at 100% 0%, rgba(0, 0, 0, 0.425) 40%, transparent 70%);
+
+        pointer-events: none;
     }
 
-    >h4{
-        font-size: 1.4rem;
-        font-weight: 500;
+    .jumbo::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image: var(--stripes), var(--rainbow);
+        background-size: 200%, 100%;
+        animation: jumbo 120s linear infinite;
+        background-attachment: fixed;
+        mix-blend-mode: difference;
     }
-    >div{
-        background-color: #ff2600;
-        color:#fff;
-        padding: .2rem 2rem;
-        font-size: 1.4rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: .5rem;
-        line-height: 200%;
-    }
+
+    
+
 }
 
-footer{
-    width: 100%;
-    background-color: #ff2600;
-    height: 5rem;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    padding: 0 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 
-    >div{
-        font-weight: 500;
-        color: #fff;
-        font-size: 1.5rem;
-       
-    }
+
+@media screen and (min-width: 600px) and (max-width: 1024px)  {
+
+    
+    
+
 }

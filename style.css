@@ -1,96 +1,117 @@
-@import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap");
-html {
-  font-family: "Oxanium", sans-serif;
-  font-size: 14px;
-}
-
+@import url("https://fonts.cdnfonts.com/css/neue-plak");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Neue Plak", sans-serif;
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 90vh;
-  overflow: hidden;
+  background-color: #fcfcfc;
+  background-image: url(/ui/grain.png);
 }
 
-header {
-  margin-top: 4rem;
-  width: 10rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
-}
-header > img {
-  width: 100%;
-  aspect-ratio: 1/1;
-}
-header > h1 {
-  font-weight: 500;
-  text-align: center;
-}
-
-main {
-  margin: 5rem 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
-}
-main * {
-  text-align: center;
-}
-main > h1 {
-  font-weight: 600;
-}
-main > h2 {
-  font-weight: 500;
-}
-main > h2 > span {
-  font-weight: 700;
-}
-main > h3 {
-  font-weight: 600;
-  text-align: center;
-}
-main > h3 > span {
-  color: #ff2600;
-}
-main > h4 {
-  font-size: 1.4rem;
-  font-weight: 500;
-}
-main > div {
-  background-color: #ff2600;
-  color: #fff;
-  padding: 0.2rem 2rem;
-  font-size: 1.4rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 0.5rem;
-  line-height: 200%;
-}
-
-footer {
-  width: 100%;
-  background-color: #ff2600;
-  height: 5rem;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  padding: 0 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-footer > div {
-  font-weight: 500;
-  color: #fff;
-  font-size: 1.5rem;
+@media screen and (min-width: 0px) and (max-width: 600px) {
+  main {
+    width: calc(100vw - 1rem);
+    height: calc(100vh - 1rem);
+    border: 1px solid #868686;
+    position: relative;
+    left: 0.5rem;
+    top: 0.5rem;
+    border-radius: 0.5rem;
+    overflow-y: scroll;
+  }
+  main > nav {
+    position: sticky;
+    border-bottom: 1px solid #868686;
+    top: 0;
+    height: 3rem;
+    padding: 0.3333333333rem;
+    display: flex;
+    background-image: url(/ui/grain.png);
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+  }
+  main > nav > #nav_left {
+    display: flex;
+    height: 100%;
+    gap: 0.5rem;
+  }
+  main > nav > #nav_left > #nav_logo_div {
+    height: 100%;
+    aspect-ratio: 1/1;
+  }
+  main > nav > #nav_left > #nav_logo_div > img {
+    width: 100%;
+    height: 100%;
+  }
+  main > nav > #nav_left > h1 {
+    font-size: 1rem;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+  }
+  main > nav > #nav_left > h1 > span:nth-last-child(1) {
+    color: #ff3300;
+  }
+  main > .main_part {
+    height: 200vh;
+  }
+  @keyframes jumbo {
+    from {
+      background-position: 50% 50%, 50% 50%;
+    }
+    to {
+      background-position: 350% 50%, 350% 50%;
+    }
+  }
+  .jumbo {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: -0.5rem;
+    left: -0.5rem;
+    --stripes: repeating-linear-gradient(
+        100deg,
+        #fff 0%,
+        #fff 7%,
+        transparent 10%,
+        transparent 12%,
+        #fff 16%
+    );
+    --stripesDark: repeating-linear-gradient(
+        100deg,
+        #00000057 0%,
+        #0000002d 7%,
+        transparent 10%,
+        transparent 12%,
+        #0000002d 16%
+    );
+    --rainbow: repeating-linear-gradient(
+        100deg,
+        #7c7c7c9a 10%,
+        #aaaaaaa4 15%,
+        #949494a4 20%,
+        #b3b3b3a9 25%,
+        #44444488 30%
+    );
+    background-image: var(--stripes), var(--rainbow);
+    background-size: 1000%, 1000%;
+    background-position: 50% 50%, 50% 50%;
+    filter: invert(100%);
+    -webkit-mask-image: radial-gradient(ellipse at 100% 0%, rgba(0, 0, 0, 0.425) 40%, transparent 70%);
+            mask-image: radial-gradient(ellipse at 100% 0%, rgba(0, 0, 0, 0.425) 40%, transparent 70%);
+    pointer-events: none;
+  }
+  .jumbo::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: var(--stripes), var(--rainbow);
+    background-size: 200%, 100%;
+    animation: jumbo 120s linear infinite;
+    background-attachment: fixed;
+    mix-blend-mode: difference;
+  }
 }/*# sourceMappingURL=style.css.map */
