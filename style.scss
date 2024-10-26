@@ -68,6 +68,7 @@ body{
             // background-color: $lightgray;
             background-image: url(/ui/grain.png);
             // backdrop-filter: blur(10px);
+            z-index: 9;
 
             >#nav_left{
                 display: flex;
@@ -165,7 +166,8 @@ body{
 
 
                     >h1{
-                        font-size: 2.1rem;
+                        width: 100%;
+                        font-size: 8vw;
                         font-weight: 600;
                     }
                 }
