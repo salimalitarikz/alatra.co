@@ -57,6 +57,10 @@ body{
 @media screen and (min-width: 0px) and (max-width: 600px)  {
 
     main{
+
+        
+
+
         width: calc(100vw - $gap);
         height: calc(100vh - $gap);
         border: 1px solid $darkgray;
@@ -233,26 +237,38 @@ body{
 
     }
 
+
+
     .globe_wrapper{
-        width: 100vw;
-        height: 100vh;
+        width: calc(100vw - $gap);
+        height: calc(100vh - $gap);
         position: absolute;
         bottom: $halfgap;
         right: $halfgap;
         padding-left: 20rem;
         padding-top: 20rem;
         overflow: hidden;
+        border-radius: $borrad;
 
-        .globe{
+        #globe{
             width: 33rem;
             height: 33rem;
-           position: absolute;
-           bottom: -5rem;
-           right: -15rem;
+            position: absolute;
+            bottom: -5rem;
+            right: -15rem;
             background-color: $orange;
             z-index: -2;
             border-radius: 50%;
             box-shadow: 0 0 100px $orange;
+            transition: .5s;
+
+           &.globe_bigger{
+            transition: 1s;
+            width: 66rem;
+            height: 66rem;
+           }
+
+            
         
         }
     }

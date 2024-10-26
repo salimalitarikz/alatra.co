@@ -1,4 +1,7 @@
-
+function qs(query) {
+    return document.querySelector(query);
+    
+}
 
 let scrollMain = document.getElementById("main");
 
@@ -12,18 +15,23 @@ scrollMain.addEventListener("scroll", (el) => {
 
     let scrollVal = scrollMain.scrollTop;
 
-    
+    console.log("main scrltop -> " + scrollVal);
 
-    // console.log(scrollVal);
+
+    if (scrollVal > 230) {
+        qs("#globe").classList.add("globe_bigger");
+    }else{
+        qs("#globe").classList.remove("globe_bigger");
+    }
+
    
 
     allElements.forEach((el) => controlEl(el));
 
     function controlEl(el) {
         var elDistance = window.pageYOffset + el.getBoundingClientRect().top;
-        var threshold = 47; // Eşik değeri (değiştirebilirsiniz)
+        var threshold = 47; // Eşik değeri (değiştirebilirsiniz);
 
-        console.log(elDistance);
 
         // Elementin ilk yüklenme durumunu kontrol etmek için bir bayrak kullanıyoruz
         if (!el.dataset.initialized) {

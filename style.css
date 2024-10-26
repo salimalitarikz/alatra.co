@@ -164,16 +164,17 @@ body {
     font-weight: 600;
   }
   .globe_wrapper {
-    width: 100vw;
-    height: 100vh;
+    width: calc(100vw - 1rem);
+    height: calc(100vh - 1rem);
     position: absolute;
     bottom: 0.5rem;
     right: 0.5rem;
     padding-left: 20rem;
     padding-top: 20rem;
     overflow: hidden;
+    border-radius: 0.5rem;
   }
-  .globe_wrapper .globe {
+  .globe_wrapper #globe {
     width: 33rem;
     height: 33rem;
     position: absolute;
@@ -183,6 +184,12 @@ body {
     z-index: -2;
     border-radius: 50%;
     box-shadow: 0 0 100px #ff3e00;
+    transition: 0.5s;
+  }
+  .globe_wrapper #globe.globe_bigger {
+    transition: 1s;
+    width: 66rem;
+    height: 66rem;
   }
   menu {
     padding: 0.5rem;
