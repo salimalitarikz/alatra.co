@@ -15,6 +15,17 @@ $gap:1rem;
 $halfgap:calc($gap/2);
 $borrad:.5rem;
 
+// general
+
+button{
+    background: none;
+    outline: none;
+    border: none;
+
+}
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -55,6 +66,13 @@ body{
         overflow-y: scroll;
         background-image: url(/ui/grain.png);
         scrollbar-width: none;
+        transition: .6s;
+
+        &.main_disabled{
+            transition: .4s;
+            
+            left: -100%;
+        }
 
         >nav{
             position: sticky;
@@ -125,6 +143,8 @@ body{
                         display: flex;
                         align-items: center;
                         line-height: 100%;
+                        box-shadow: 0 0 7px $orange;
+                        background-image: url(/ui/grain.png);
                     }
             
 
@@ -238,6 +258,60 @@ body{
 
     
 
+    menu{
+        padding: $halfgap;
+        width: calc(100vw - $gap);
+        height: calc(100vh - $gap);
+        position: fixed;
+        left: 105%;
+        top: $halfgap;
+        background-color: #00000068;
+        color:$lightgray;
+        border: .5rem;
+        border: 1px solid $lightgray;
+        transition: .5s;
+        
+
+        &.menu_open{
+             left: $halfgap !important;
+             transition: .6s;
+        }
+
+
+        >.menu_bar{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 3.5rem;
+
+
+            >.menu_bar_right{
+                height: 80%;
+                aspect-ratio: 1/1;
+
+                >button{
+                    width: 100%;
+                    height: 100%;
+                    background-color: $black;
+                    padding: .7rem;
+                    border-radius: 5px;
+
+                    >svg{
+                        .cls-1 {
+                            fill: none;
+                            stroke: $orange;
+                            stroke-miterlimit: 10;
+                            stroke-width: 5px;
+                        }
+
+
+                    }
+                }
+            }
+        }
+
+    }
 
     
 

@@ -38,3 +38,16 @@ scrollMain.addEventListener("scroll", (el) => {
         }
     }
 });
+
+
+
+
+// menu toggle function
+
+function menuToggle() {
+    let menuElement = document.getElementById("menu");
+    let main = document.getElementById("main");
+
+    menuElement.classList.toggle("menu_open");
+    main.classList.toggle("main_disabled");
+}
