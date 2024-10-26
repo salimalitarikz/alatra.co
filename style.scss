@@ -1,8 +1,7 @@
 // imports 
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-
-
+@import url('https://fonts.cdnfonts.com/css/neue-plak');
 
 
 
@@ -11,7 +10,7 @@
 $lightgray:#fcfcfc;
 $darkgray:#868686;
 $black:#0a0a0a;
-$orange:#ff3300;
+$orange:#ff3e00;
 $gap:1rem;
 $halfgap:calc($gap/2);
 $borrad:.5rem;
@@ -20,13 +19,22 @@ $borrad:.5rem;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Raleway", sans-serif;
+    // font-family: "Roboto", sans-serif;
+    font-family: "Neue Plak", sans-serif;
+
     transition: .2s;
+}
+
+html{
+    overflow: hidden;
 }
 
 body{
     background-color: $lightgray;
-    background-image: url(/ui/grain.png);
+    // background-image: url(/ui/grain.png);
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
 
 
       
@@ -44,6 +52,8 @@ body{
         top: $halfgap;
         border-radius: $borrad;
         overflow-y: scroll;
+        background-image: url(/ui/grain.png);
+        scrollbar-width: none;
 
         >nav{
             position: sticky;
@@ -72,14 +82,31 @@ body{
                 }
 
                 >h1{
-                    font-size: 1rem;
+                    font-size: 1.3rem;
                     font-weight: 600;
                     display: flex;
-                    flex-direction: column;
+                    align-items: center;
+                    justify-content: flex-start;
+                    position: relative;
 
-                    >span:nth-last-child(1){
-                        color: $orange;
+                    &::after{
+                        content: "studio";
+                        font-size: .9rem;
+                        position: absolute;
+                        right: -3.3rem;
+                        bottom: .5rem;
+                        padding: 0 .4rem;
+                        padding-bottom: .1rem;
+                        border-radius: .2rem;
+                        background-color: $orange;
+                        display: flex;
+                        align-items: center;
+                        line-height: 100%;
                     }
+            
+
+
+
 
                 }
 
@@ -89,12 +116,52 @@ body{
 
         >.main_part{
             height: 200vh;
-            padding: 2rem 1rem;
+            padding: 1rem 1rem;
+
+
+            &#main_part_1{
+                
+
+                >.banner{
+
+
+                    >h1{
+                        font-size: 2.5rem;
+                    }
+                }
+            }
         }
 
     }
 
+    .globe_wrapper{
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        bottom: $halfgap;
+        right: $halfgap;
+        padding-left: 20rem;
+        padding-top: 20rem;
+        overflow: hidden;
 
+        .globe{
+            width: 30rem;
+            height: 30rem;
+           position: absolute;
+           bottom: 0rem;
+           right: -15rem;
+            background-color: $orange;
+            z-index: -2;
+            border-radius: 50%;
+            box-shadow: 0 0 100px $orange;
+        
+        }
+    }
+
+    
+
+
+    
 
 
     // import
@@ -125,7 +192,7 @@ body{
         mask-image: radial-gradient(ellipse at 100% 0%, black 30%, transparent 70%);
         pointer-events: none;
         opacity: .3;
-        z-index: -2;
+        z-index: -1;
     }
 
     .godrays::after {
@@ -138,6 +205,8 @@ body{
     background-attachment: fixed;
     mix-blend-mode: difference;
     }
+
+    
 
     
 

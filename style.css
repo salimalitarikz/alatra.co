@@ -1,15 +1,22 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.cdnfonts.com/css/neue-plak");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Raleway", sans-serif;
+  font-family: "Neue Plak", sans-serif;
   transition: 0.2s;
+}
+
+html {
+  overflow: hidden;
 }
 
 body {
   background-color: #fcfcfc;
-  background-image: url(/ui/grain.png);
+  overflow: hidden;
+  position: relative;
+  height: 100vh;
 }
 
 @media screen and (min-width: 0px) and (max-width: 600px) {
@@ -22,6 +29,8 @@ body {
     top: 0.5rem;
     border-radius: 0.5rem;
     overflow-y: scroll;
+    background-image: url(/ui/grain.png);
+    scrollbar-width: none;
   }
   main > nav {
     position: sticky;
@@ -46,17 +55,54 @@ body {
     height: 100%;
   }
   main > nav > #nav_left > h1 {
-    font-size: 1rem;
+    font-size: 1.3rem;
     font-weight: 600;
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
   }
-  main > nav > #nav_left > h1 > span:nth-last-child(1) {
-    color: #ff3300;
+  main > nav > #nav_left > h1::after {
+    content: "studio";
+    font-size: 0.9rem;
+    position: absolute;
+    right: -3.3rem;
+    bottom: 0.5rem;
+    padding: 0 0.4rem;
+    padding-bottom: 0.1rem;
+    border-radius: 0.2rem;
+    background-color: #ff3e00;
+    display: flex;
+    align-items: center;
+    line-height: 100%;
   }
   main > .main_part {
     height: 200vh;
-    padding: 2rem 1rem;
+    padding: 1rem 1rem;
+  }
+  main > .main_part#main_part_1 > .banner > h1 {
+    font-size: 2.5rem;
+  }
+  .globe_wrapper {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    bottom: 0.5rem;
+    right: 0.5rem;
+    padding-left: 20rem;
+    padding-top: 20rem;
+    overflow: hidden;
+  }
+  .globe_wrapper .globe {
+    width: 30rem;
+    height: 30rem;
+    position: absolute;
+    bottom: 0rem;
+    right: -15rem;
+    background-color: #ff3e00;
+    z-index: -2;
+    border-radius: 50%;
+    box-shadow: 0 0 100px #ff3e00;
   }
   @keyframes godrays {
     from {
@@ -81,7 +127,7 @@ body {
             mask-image: radial-gradient(ellipse at 100% 0%, black 30%, transparent 70%);
     pointer-events: none;
     opacity: 0.3;
-    z-index: -2;
+    z-index: -1;
   }
   .godrays::after {
     content: "";
