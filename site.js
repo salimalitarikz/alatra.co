@@ -20,8 +20,10 @@ scrollMain.addEventListener("scroll", (el) => {
 
     if (scrollVal > 230) {
         qs("#globe").classList.add("globe_bigger");
+        qs("nav").classList.add("nav_black");
     }else{
         qs("#globe").classList.remove("globe_bigger");
+        qs("nav").classList.remove("nav_black");
     }
 
    

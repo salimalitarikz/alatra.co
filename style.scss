@@ -79,6 +79,10 @@ body{
             left: -100%;
         }
 
+        &:has(.nav_black){
+            border: 1px solid $black;
+        }
+
         >nav{
             position: sticky;
             border-bottom: 1px solid $darkgray;
@@ -143,6 +147,7 @@ body{
                         transform: translateY(-40%);
                         padding: .1rem .4rem;
                         // padding-bottom: .1rem;
+                        padding-top: .05rem;
                         border-radius: .2rem;
                         background-color: $orange;
                         display: flex;
@@ -191,6 +196,16 @@ body{
 
                 }
             }
+
+            &.nav_black{
+                background-color: transparent;
+                color: $lightgray;
+                border-bottom: 1px solid $black;
+                
+                .cls1{
+                    stroke: $lightgray !important;
+                }
+            }
         }
 
         >.main_part{
@@ -228,7 +243,7 @@ body{
 
                     >h1{
                         width: 100%;
-                        font-size: 8.4vw;
+                        font-size: 7.7vw;
                         font-weight: 600;
                     }
                 }

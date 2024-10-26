@@ -44,6 +44,9 @@ body {
     transition: 0.4s;
     left: -100%;
   }
+  main:has(.nav_black) {
+    border: 1px solid #0a0a0a;
+  }
   main > nav {
     position: sticky;
     border-bottom: 1px solid #868686;
@@ -102,6 +105,7 @@ body {
     top: 50%;
     transform: translateY(-40%);
     padding: 0.1rem 0.4rem;
+    padding-top: 0.05rem;
     border-radius: 0.2rem;
     background-color: #ff3e00;
     display: flex;
@@ -133,6 +137,14 @@ body {
   main > nav > #nav_right > #menu_open_button > span:nth-last-child(1) {
     width: 70%;
   }
+  main > nav.nav_black {
+    background-color: transparent;
+    color: #fcfcfc;
+    border-bottom: 1px solid #0a0a0a;
+  }
+  main > nav.nav_black .cls1 {
+    stroke: #fcfcfc !important;
+  }
   main > .main_part {
     height: 200vh;
     padding: 1rem 1rem;
@@ -160,7 +172,7 @@ body {
   }
   main > .main_part#main_part_1 > .banner > h1 {
     width: 100%;
-    font-size: 8.4vw;
+    font-size: 7.7vw;
     font-weight: 600;
   }
   .globe_wrapper {
