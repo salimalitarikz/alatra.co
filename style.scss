@@ -8,6 +8,7 @@
 
 $lightgray:#fcfcfc;
 $darkgray:#868686;
+$darkestgray:#2e2e2e;
 $black:#0a0a0a;
 $orange:#ff3e00;
 $gap:1rem;
@@ -59,20 +60,25 @@ body{
             position: sticky;
             border-bottom: 1px solid $darkgray;
             top: 0;
-            height: 3rem;
+            height: 3.5rem;
             padding: calc($gap/3);
             display: flex;
+            align-items: center;
+            justify-content: space-between;
             // background-color: $lightgray;
             background-image: url(/ui/grain.png);
             // backdrop-filter: blur(10px);
 
             >#nav_left{
                 display: flex;
+                align-items: center;
                 height: 100%;
                 gap: $halfgap;
+                padding-left: .3rem;
+                
 
                 >#nav_logo_div{
-                    height: 100%;
+                    height: 90%;
                     aspect-ratio: 1/1;
 
                     >img{
@@ -93,10 +99,11 @@ body{
                         content: "studio";
                         font-size: .9rem;
                         position: absolute;
-                        right: -3.3rem;
-                        bottom: .5rem;
-                        padding: 0 .4rem;
-                        padding-bottom: .1rem;
+                        right: -100%;
+                        top: 50%;
+                        transform: translateY(-40%);
+                        padding: .1rem .4rem;
+                        // padding-bottom: .1rem;
                         border-radius: .2rem;
                         background-color: $orange;
                         display: flex;
@@ -112,6 +119,37 @@ body{
 
 
             }
+
+            >#nav_right{
+                height: 100%;
+
+                >#menu_open_button{
+
+                    // border-left: 1px solid $darkgray;
+
+                    height: 100%;
+                    aspect-ratio: 1.3/1;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                    justify-content: center;
+                    gap: .5rem;
+                    padding: .5rem;
+                    >span{
+                        display: inline-block;
+                        height: 3px;
+                        width: 100%;
+                        background-color: $darkestgray;
+                        border-radius: 5px;
+
+                        &:nth-last-child(1){
+                            width: 70%;
+                        }
+
+                    }
+
+                }
+            }
         }
 
         >.main_part{
@@ -121,13 +159,13 @@ body{
 
             &#main_part_1{
                 
-                padding-top: 10rem;
+                padding-top: 15rem;
 
                 >.banner{
 
 
                     >h1{
-                        font-size: 2.2rem;
+                        font-size: 2.1rem;
                         font-weight: 600;
                     }
                 }
@@ -147,10 +185,10 @@ body{
         overflow: hidden;
 
         .globe{
-            width: 30rem;
-            height: 30rem;
+            width: 33rem;
+            height: 33rem;
            position: absolute;
-           bottom: 0rem;
+           bottom: -5rem;
            right: -15rem;
             background-color: $orange;
             z-index: -2;
