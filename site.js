@@ -39,7 +39,7 @@ scrollMain.addEventListener("scroll", (el) => {
         qs("#part_2_c_1").classList.remove("activated");
     }
 
-    if (scrollVal > 600) {
+    if (scrollVal > 800) {
         qs("#part_2_c_1").classList.add("passivated");
         qs("#part_2_c_2").classList.add("activated");
         
@@ -48,7 +48,7 @@ scrollMain.addEventListener("scroll", (el) => {
         qs("#part_2_c_2").classList.remove("activated");
     }
 
-    if (scrollVal > 800) {
+    if (scrollVal > 1200) {
         qs("#part_2_c_2").classList.add("passivated");
         qs("#part_2_c_3").classList.add("activated");
         
@@ -56,7 +56,7 @@ scrollMain.addEventListener("scroll", (el) => {
         qs("#part_2_c_2").classList.remove("passivated");
         qs("#part_2_c_3").classList.remove("activated");
     }
-    if (scrollVal > 1000) {
+    if (scrollVal > 1600) {
         qs("#part_2_c_3").classList.add("passivated");
         qs("#part_2_c_4").classList.add("activated");
         
@@ -64,7 +64,7 @@ scrollMain.addEventListener("scroll", (el) => {
         qs("#part_2_c_3").classList.remove("passivated");
         qs("#part_2_c_4").classList.remove("activated");
     }
-    if (scrollVal > 1200) {
+    if (scrollVal > 2000) {
         qs("#part_2_c_4").classList.add("passivated");
         
     }else{
