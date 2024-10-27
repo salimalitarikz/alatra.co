@@ -182,11 +182,11 @@ body {
     font-weight: 600;
   }
   main > .main_part#main_part_2 {
-    height: 300vh;
+    height: 320vh;
   }
   main > .main_part#main_part_2 > .banner {
     position: sticky;
-    top: 7rem;
+    top: 6rem;
   }
   main > .main_part#main_part_2 > .banner > h1 {
     font-size: 7.7vw;
@@ -205,11 +205,11 @@ body {
     top: 10rem;
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 1rem;
   }
   main > .main_part#main_part_2 #part_2_content > div {
     width: 100%;
-    height: 67vh;
+    height: 65vh;
     background-color: #fcfcfc;
     border-radius: 0.5rem;
     opacity: 0;
@@ -218,36 +218,38 @@ body {
     display: flex;
     flex-direction: column;
     gap: 0.9rem;
-    transition: 0.4s;
+    transition: 1s;
     position: relative;
   }
   main > .main_part#main_part_2 #part_2_content > div > div {
-    width: calc(100% - 2rem);
-    aspect-ratio: 1/1;
+    height: 82vw;
+    width: 82vw;
     background-color: #868686;
     border-radius: 0.5rem;
     position: absolute;
     bottom: 1rem;
-    right: 1rem;
+    right: 50%;
+    transform: translateX(50%);
+    transition: 1s;
   }
   main > .main_part#main_part_2 #part_2_content > div > h2 {
     position: absolute;
     height: 4rem;
-    top: 1rem;
+    top: 2rem;
     left: 1rem;
+    width: 30%;
   }
   main > .main_part#main_part_2 #part_2_content > div > p {
+    width: 70%;
     position: absolute;
-    top: 4rem;
-    left: 1rem;
-    padding-right: 1rem;
+    top: 1rem;
+    right: 0.2rem;
   }
   main > .main_part#main_part_2 #part_2_content > div.activated {
     opacity: 1;
     transform: scale(1);
   }
   main > .main_part#main_part_2 #part_2_content > div.activated.passivated {
-    transition-delay: 2s;
     transition: 1s;
     height: 4rem;
     flex-direction: row;
@@ -257,21 +259,25 @@ body {
   }
   main > .main_part#main_part_2 #part_2_content > div.activated.passivated > div {
     transition: 1s;
-    height: 100%;
     left: unset;
-    right: 1rem;
+    right: 0;
     bottom: 0;
-    width: unset;
+    transform: translateX(0%);
+    height: 4rem;
+    width: 4rem;
     aspect-ratio: 1/1;
   }
+  main > .main_part#main_part_2 #part_2_content > div.activated.passivated > h2 {
+    top: 1rem;
+  }
   main > .main_part#main_part_2 #part_2_content > div.activated.passivated > p {
-    animation: part_2_passive_par_an 0.5s linear forwards;
+    animation: part_2_passive_par_an 0.3s linear forwards;
   }
   @keyframes part_2_passive_par_an {
     0% {
       opacity: 1;
     }
-    50% {
+    70% {
       opacity: 0;
     }
     100% {

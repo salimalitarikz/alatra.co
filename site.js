@@ -48,6 +48,31 @@ scrollMain.addEventListener("scroll", (el) => {
         qs("#part_2_c_2").classList.remove("activated");
     }
 
+    if (scrollVal > 800) {
+        qs("#part_2_c_2").classList.add("passivated");
+        qs("#part_2_c_3").classList.add("activated");
+        
+    }else{
+        qs("#part_2_c_2").classList.remove("passivated");
+        qs("#part_2_c_3").classList.remove("activated");
+    }
+    if (scrollVal > 1000) {
+        qs("#part_2_c_3").classList.add("passivated");
+        qs("#part_2_c_4").classList.add("activated");
+        
+    }else{
+        qs("#part_2_c_3").classList.remove("passivated");
+        qs("#part_2_c_4").classList.remove("activated");
+    }
+    if (scrollVal > 1200) {
+        qs("#part_2_c_4").classList.add("passivated");
+        
+    }else{
+        qs("#part_2_c_4").classList.remove("passivated");
+    }
+
+
+
     // question appears then becomes white colored
     if (scrollVal > 200) {
         qs("#part_2_banner").classList.add("activated");
