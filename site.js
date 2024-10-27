@@ -19,8 +19,8 @@ scrollMain.addEventListener("scroll", (el) => {
 
 
 
-    //globe get bigger and becomes background
-    if (scrollVal > 230) {
+    // globe get bigger and becomes background
+    if (scrollVal > 360) {
         qs("#globe").classList.add("globe_bigger");
         qs("nav").classList.add("nav_black");
         qs("#part_2_banner").classList.add("activated_2");
@@ -28,10 +28,28 @@ scrollMain.addEventListener("scroll", (el) => {
         qs("#globe").classList.remove("globe_bigger");
         qs("nav").classList.remove("nav_black");
         qs("#part_2_banner").classList.remove("activated_2");
+        qs("#part_2_c_1").classList.remove("activated");
     }
 
-    //question appears then becomes white colored
-    if (scrollVal > 160) {
+    // part 2 animations
+
+    if (scrollVal > 400) {
+        qs("#part_2_c_1").classList.add("activated");
+    }else{
+        qs("#part_2_c_1").classList.remove("activated");
+    }
+
+    if (scrollVal > 600) {
+        qs("#part_2_c_1").classList.add("passivated");
+        qs("#part_2_c_2").classList.add("activated");
+        
+    }else{
+        qs("#part_2_c_1").classList.remove("passivated");
+        qs("#part_2_c_2").classList.remove("activated");
+    }
+
+    // question appears then becomes white colored
+    if (scrollVal > 200) {
         qs("#part_2_banner").classList.add("activated");
     }else{
         qs("#part_2_banner").classList.remove("activated");        

@@ -262,7 +262,7 @@ body{
 
                 >.banner{
                     position: sticky;
-                    top: 5rem;
+                    top: 7rem;
 
                     >h1{
                         font-size: 7.7vw;
@@ -281,6 +281,88 @@ body{
 
                     &.activated_2{
                         color: $white;
+                    }
+                }
+
+                #part_2_content{
+                    position: sticky;
+                    top: 10rem;
+                    display: flex;
+                    flex-direction: column;
+                    gap: $halfgap;
+
+                    >div{
+                        width: 100%;
+                        height: 67vh;
+                        background-color: $lightgray;
+                        border-radius: $borrad;
+                        opacity: 0;
+                        transform: scale(.4);
+                        padding: 1rem;
+                        display: flex;
+                        flex-direction: column;
+                        gap: .9rem;
+                        transition: .4s;
+                        position: relative;
+
+                        >div{
+                            width: calc(100% - 2rem);
+                            aspect-ratio: 1/1;
+                            background-color: $darkgray;
+                            border-radius: $borrad;
+                            position: absolute;
+                            bottom: 1rem;
+                            right: 1rem;
+                        }
+
+                        >h2{
+                            position: absolute;
+                            height: 4rem;
+                            top: 1rem;
+                            left: 1rem;
+                        }
+
+                        >p{
+                            position: absolute;
+                            top: 4rem;
+                            left: 1rem;
+                            padding-right: 1rem;
+                        }
+
+
+                        &.activated{
+                            opacity: 1;
+                            transform: scale(1);
+
+                            &.passivated{
+                                transition-delay: 2s;
+                                transition: 1s;
+                                height: 4rem;
+                                flex-direction: row;
+                                align-items: center;
+                                justify-content: space-between;
+                                padding: .5rem;
+
+                                >div{           
+                                    transition: 1s;                        
+                                    height: 100%;
+                                    left: unset;
+                                     right: 1rem;
+                                     bottom: 0;
+                                    width: unset;
+                                    aspect-ratio: 1/1
+                                }
+                                >p{
+                                    animation: part_2_passive_par_an .5s linear forwards;
+                                    @keyframes part_2_passive_par_an {
+                                        0%{opacity: 1;}
+                                        50%{opacity: 0;}
+                                        100%{opacity: 0; display: none;}
+                                    }
+                                }
+                            }
+                        }
+                        
                     }
                 }
             }
