@@ -8,7 +8,7 @@ let scrollMain = document.getElementById("main");
 let allElements = document.querySelectorAll("#main>section *");
 
 
-const snapValues = [350, 400, 500, 600, 700,800]; // Birden fazla snap noktası
+const snapValues = [320, 400, 500, 600, 700,800]; // Birden fazla snap noktası
 const scrollPause = 500; // Duraklama süresi (ms)
 let isPaused = false; // Duraklama kontrolü
 let hasSnapped = Array(snapValues.length).fill(false); // Her snap için kontrol dizisi   
