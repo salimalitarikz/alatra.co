@@ -258,11 +258,14 @@ body{
             }
 
             &#main_part_2{
-                height: 320vh;
-
+                height: 100vh;
+                position: sticky;
+                top: 0;
+                margin-bottom: 20rem;
                 >.banner{
                     position: sticky;
                     top: 6rem;
+                    
 
                     >h1{
                         font-size: 7.7vw;
@@ -285,8 +288,8 @@ body{
                 }
 
                 #part_2_content{
-                    position: sticky;
-                    top: 10rem;
+                    position: relative;
+                    top: 6rem;
                     display: flex;
                     flex-direction: column;
                     gap: $gap;
@@ -304,6 +307,10 @@ body{
                         gap: .9rem;
                         transition: 1s;
                         position: relative;
+
+                        background-image: radial-gradient(#d0d0d0 2px, transparent 2px);
+                        background-size: 55px 55px;
+                        background-color: $lightgray;
 
                         >div{
                             height: 82vw;
@@ -381,7 +388,7 @@ body{
             }
 
             &#main_part_3{
-                height: 300vh;
+                height: 120vh;
             }
         }
 
