@@ -15,6 +15,7 @@
 $white:#ffffff;
 $lightgray:#fcfcfc;
 $darkgray:#868686;
+$gray:#cccccc;
 $darkestgray:#2e2e2e;
 $black:#0a0a0a;
 $orange:#ff3e00;
@@ -259,9 +260,9 @@ body{
 
             &#main_part_2{
                 height: 100vh;
+                width: 100%;
                 position: sticky;
                 top: 0;
-                margin-bottom: 20rem;
                 >.banner{
                     position: sticky;
                     top: 6rem;
@@ -290,13 +291,12 @@ body{
                 #part_2_content{
                     position: relative;
                     top: 6rem;
-                    display: flex;
-                    flex-direction: column;
-                    gap: $gap;
+                    height: calc(60vh + 2rem);
+                    width: 100%;
 
                     >div{
                         width: 100%;
-                        height: 50vh;
+                        height: calc(60vh + 2rem);
                         background-color: $lightgray;
                         border-radius: $borrad;
                         opacity: 0;
@@ -304,18 +304,25 @@ body{
                         padding: 1rem;
                         display: flex;
                         flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
                         gap: .9rem;
                         transition: 1s;
                         position: relative;
 
-                        background-image: radial-gradient(#d0d0d0 2px, transparent 2px);
-                        background-size: 55px 55px;
-                        background-color: $lightgray;
+                        background:
+                        conic-gradient(from 75deg,rgba(204,204,204,0.1)   15deg ,rgba(255, 255, 255, 0.1) 0 30deg ,#0000 0 180deg, rgba(255, 255, 255, 0.1) 0 195deg,rgba(204,204,204,0.1) 0 210deg,#0000 0) calc(0.5*30px) calc(0.5*30px/0.577),
+                        conic-gradient(rgba(204,204,204,0.1)   30deg ,rgba(153,153,153,0.1) 0 75deg, rgba(204,204,204,0.1) 0 90deg, rgba(255, 255, 255, 0.1) 0 105deg, rgba(153,153,153,0.1) 0 150deg, rgba(255, 255, 255, 0.1) 0 180deg,rgba(153,153,153,0.1) 0 210deg, rgba(204,204,204,0.1) 0 256deg, rgba(255, 255, 255, 0.1) 0 270deg,rgba(204,204,204,0.1) 0 286deg, rgba(255, 255, 255, 0.1) 0 331deg,rgba(153,153,153,0.1) 0);
+                        background-size: 30px calc(30px/0.577);
+
+
+
+                        background-color: $lightgray;    
 
                         >div{
                             height: 82vw;
                             width: 82vw;
-                            background-color: $darkgray;
+                            background-color: transparent;
                             border-radius: $borrad;
                             position: absolute;
                             bottom: 1rem;
@@ -328,8 +335,9 @@ body{
                             position: absolute;
                             height: 4rem;
                             top: 1rem;
-                            left: 1rem;
-                            width: 30%;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            text-align: center;
                         }
 
                         >p{
@@ -342,28 +350,50 @@ body{
 
 
                         &.activated{
+                            transition: .3s;
                             opacity: 1;
                             transform: scale(1);
+                            width: 100%;
+
+                            &:nth-child(1){
+                                position: absolute;
+                                left: 0;
+                                top: 0;
+                            }
+                            &:nth-child(2){
+                                position: absolute;
+                                right: 0;
+                                top: 0;
+                            }
+                            &:nth-child(3){
+                                position: absolute;
+                                left: 0;
+                                bottom: 0;
+                            }
+                            &:nth-child(4){
+                                position: absolute;
+                                right: 0;
+                                bottom: 0;
+                            }
+                           
 
                             &.passivated{
                                 transition: 1s;
-                                height: 4rem;
+                                height: calc(30vh + $halfgap);
+                                width: calc(45.5% + $halfgap);
                                 flex-direction: row;
                                 align-items: center;
-                                justify-content: space-between;
+                                justify-content: center;
                                 padding: .5rem;
 
-                                >div{           
-                                    transition: 1s;                        
-                                   
-                                    left: unset;
-                                    right: 0;
-                                    bottom: 0;
-                                    transform: translateX(0%);
-                                    height: 4rem;
-                                    width: 4rem;
                                 
-                                    aspect-ratio: 1/1;
+
+                                >div{           
+                                    transition: .5s;                        
+                                    height: unset;
+                                    width: 100%;       
+                                    bottom: 0;                             
+                                    aspect-ratio: 1/1.2;
 
                                     
 
@@ -385,10 +415,19 @@ body{
                         
                     }
                 }
+
+                #part_2_banner_2{
+                    position: absolute;
+                    bottom: 3%;
+                    font-size: 1.2rem;
+                    font-weight: 500;
+                    color: $lightgray;
+                }
             }
 
             &#main_part_3{
-                height: 120vh;
+                margin-top: 30rem;
+                min-height: 100vh;
             }
         }
 
