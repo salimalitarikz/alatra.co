@@ -8,7 +8,7 @@ let scrollMain = document.getElementById("main");
 let allElements = document.querySelectorAll("#main>section *");
 
 
-const snapValues = [400, 500, 600, 700,800]; // Birden fazla snap noktası
+const snapValues = [350, 400, 500, 600, 700,800]; // Birden fazla snap noktası
 const scrollPause = 500; // Duraklama süresi (ms)
 let isPaused = false; // Duraklama kontrolü
 let hasSnapped = Array(snapValues.length).fill(false); // Her snap için kontrol dizisi   
@@ -20,20 +20,16 @@ function snapScroll(snapValue, index) {
         isPaused = true; // Duraklamayı başlat
         hasSnapped[index] = true; // Snap durumunu kaydet
 
-        console.log("sval: " + snapValue + " sindex: " + index + " hassnap: " +  hasSnapped[index]);
-
         // Kaydırmayı geçici olarak durdur
         const currentScrollPosition = scrollMain.scrollTop;
         scrollMain.style.overflowY = 'hidden'; // Kaydırmayı geçici olarak kapat
         scrollMain.scrollTop = currentScrollPosition; // Sabit konumda tut
 
-        console.log("Snap gerçekleşti: ", snapValue);
 
         // Belirli bir süre sonra kaydırmayı yeniden aç
         setTimeout(() => {
         scrollMain.style.overflowY = 'auto'; // Kaydırmayı yeniden aç
         isPaused = false; // Duraklamayı kapat
-        console.log("Snap sona erdi: ", snapValue);
         // hasSnapped[index] = true; // Böylece kullanıcı geriye kaydırırsa tekrar çalışır
         }, scrollPause);
     }
@@ -53,7 +49,7 @@ scrollMain.addEventListener("scroll", (el) => {
 
     let scrollVal = scrollMain.scrollTop;
 
-    console.log("main scrltop -> " + scrollVal);
+    console.log("---> " + scrollVal);
 
 
 
@@ -143,7 +139,6 @@ scrollMain.addEventListener("scroll", (el) => {
     // snapScroll(400);
 
     
-    console.log(hasSnapped[1]);
     
 
    
@@ -151,40 +146,7 @@ scrollMain.addEventListener("scroll", (el) => {
         snapValues.forEach((snapValue, index) => {
         snapScroll(snapValue, index);
         });
-        console.log("dayum");
     }
-
-
-
-    // function snapScroll(snapValue) {
-    //      // snap things
-
-    //     if (!hasSnapped && scrollVal >= snapValue && !isPaused) {
-    //         isPaused = true; // Duraklamayı başlat
-    //         hasSnapped = true; // Snap durumunu kaydet
-
-    //         // Kaydırmayı geçici olarak durdur
-    //         const currentScrollPosition = scrollVal;
-    //         scrollMain.style.overflowY = 'hidden'; // Kaydırmayı geçici olarak kapat
-    //         scrollMain.scrollTop = currentScrollPosition; // Sabit konumda tut
-
-    //         console.log("done");
-        
-    //         // Belirli bir süre sonra kaydırmayı yeniden aç
-    //         setTimeout(() => {
-    //             scrollMain.style.overflowY = 'auto'; // Kaydırmayı yeniden aç
-    //             isPaused = false; // Duraklamayı kapat
-    //         }, scrollPause);
-    //     }
-
-    //     // Eğer pozisyon snap konumunu geçmişse hasSnapped'i sıfırla
-    //     if (scrollMain.scrollTop < snapValue) {
-    //         hasSnapped = false; // Böylece kullanıcı geriye kaydırırsa tekrar çalışır
-    //     }
-    // }
-    
-
-   
 
 
 });
