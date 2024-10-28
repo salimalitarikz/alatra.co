@@ -258,7 +258,7 @@ body{
             }
 
             &#main_part_2{
-                height: 420vh;
+                height: 320vh;
 
                 >.banner{
                     position: sticky;
@@ -293,7 +293,7 @@ body{
 
                     >div{
                         width: 100%;
-                        height: 55vh;
+                        height: 50vh;
                         background-color: $lightgray;
                         border-radius: $borrad;
                         opacity: 0;
@@ -320,7 +320,7 @@ body{
                         >h2{
                             position: absolute;
                             height: 4rem;
-                            top: 2rem;
+                            top: 1rem;
                             left: 1rem;
                             width: 30%;
                         }
@@ -378,6 +378,10 @@ body{
                         
                     }
                 }
+            }
+
+            &#main_part_3{
+                height: 300vh;
             }
         }
 

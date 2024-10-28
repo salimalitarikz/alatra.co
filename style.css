@@ -182,7 +182,7 @@ body {
     font-weight: 600;
   }
   main > .main_part#main_part_2 {
-    height: 420vh;
+    height: 320vh;
   }
   main > .main_part#main_part_2 > .banner {
     position: sticky;
@@ -209,7 +209,7 @@ body {
   }
   main > .main_part#main_part_2 #part_2_content > div {
     width: 100%;
-    height: 55vh;
+    height: 50vh;
     background-color: #fcfcfc;
     border-radius: 0.5rem;
     opacity: 0;
@@ -235,7 +235,7 @@ body {
   main > .main_part#main_part_2 #part_2_content > div > h2 {
     position: absolute;
     height: 4rem;
-    top: 2rem;
+    top: 1rem;
     left: 1rem;
     width: 30%;
   }
@@ -284,6 +284,9 @@ body {
       opacity: 0;
       display: none;
     }
+  }
+  main > .main_part#main_part_3 {
+    height: 300vh;
   }
   .globe_wrapper {
     width: calc(100vw - 1rem);
