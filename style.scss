@@ -357,6 +357,7 @@ body{
                     display: flex;
                     flex-wrap: wrap;
                     align-content: flex-start;
+                    justify-content: center;
                     gap: $gap;
 
                     >div{
@@ -398,10 +399,9 @@ body{
                         //     bottom: 0;
                         // }
 
-                        background:
-                        conic-gradient(from 75deg,rgba(204,204,204,0.1)   15deg ,rgba(255, 255, 255, 0.1) 0 30deg ,#0000 0 180deg, rgba(255, 255, 255, 0.1) 0 195deg,rgba(204,204,204,0.1) 0 210deg,#0000 0) calc(0.5*30px) calc(0.5*30px/0.577),
-                        conic-gradient(rgba(204,204,204,0.1)   30deg ,rgba(153,153,153,0.1) 0 75deg, rgba(204,204,204,0.1) 0 90deg, rgba(255, 255, 255, 0.1) 0 105deg, rgba(153,153,153,0.1) 0 150deg, rgba(255, 255, 255, 0.1) 0 180deg,rgba(153,153,153,0.1) 0 210deg, rgba(204,204,204,0.1) 0 256deg, rgba(255, 255, 255, 0.1) 0 270deg,rgba(204,204,204,0.1) 0 286deg, rgba(255, 255, 255, 0.1) 0 331deg,rgba(153,153,153,0.1) 0);
-                        background-size: 30px calc(30px/0.577);
+                        background: radial-gradient(circle, transparent 20%, #f9f9f9 20%, #f9f9f9 80%, transparent 80%, transparent) 0% 0% / 40px 40px, radial-gradient(circle, transparent 20%, #f9f9f9 20%, #f9f9f9 80%, transparent 80%, transparent) 20px 20px / 40px 40px, linear-gradient(#e2e2e2 1.5px, transparent 1.5px) 0px -0.75px / 20px 20px, linear-gradient(90deg, #e2e2e2 1.5px, #f9f9f9 1.5px) -0.75px 0px / 20px 20px #f9f9f9;
+background-size: 40px 40px, 40px 40px, 20px 20px, 20px 20px;
+                        background-color: $lightgray;
 
 
 
@@ -416,11 +416,12 @@ body{
                             right: 50%;
                             transform: translateX(50%);
                             transition: 1s;
+                            flex-grow: 1;
                         }
 
                         >h2{
                             position: absolute;
-                            height: 4rem;
+                            // height: 4rem;
                             top: 1rem;
                             left: 50%;
                             transform: translateX(-50%);
@@ -530,7 +531,7 @@ body{
                                     top: 0;
                                     border-left: 3px solid $orange;
                                     border-right: 3px solid $orange;
-                                    border-radius: 5px;
+                                    border-radius: 2px;
                                 }
 
 
@@ -553,7 +554,7 @@ body{
                                     display: inline-flex;
                                     align-items: center;
                                     justify-content: center;
-                                    border-radius: 5px;
+                                    border-radius: 2px;
                                     width: 3rem;
                                     height: 2rem;
                                     background-color: $black;
@@ -716,29 +717,159 @@ body{
                     #part_2_c_3{
 
                         >div{
-                            filter: drop-shadow(0px 0px 15px #ff3e00) drop-shadow(0px 0px 15px #ff3e00) drop-shadow(0px 0px 15px #ff3e00);
+                            // filter: drop-shadow(0px 0px 15px #ff3e00);
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            padding-bottom: 1rem;
 
-                            animation: part_3_div_an 4s linear infinite;
                             >svg{
+                                width: 70%;
 
-                                .bulb_head_1{fill: #474747 !important;}
-                                .bulb_head_2{fill: #000000 !important;}
-                                .bulb_head_3{fill: #9e9e9e !important;}
+                                    #bulb_lights{
+                                        path{
+                                            animation: bulb_animation 3s linear infinite;
+
+                                            @keyframes bulb_animation {
+                                                0%{opacity: 0;}
+                                                20%{opacity: 1;}
+                                                98%{opacity: 1;}
+                                                100%{opacity: 0;}
+                                            }
+
+                                            &:nth-child(1){animation-delay: .1s;}
+                                            &:nth-child(2){animation-delay: .2s;}
+                                            &:nth-child(3){animation-delay: .3s;}
+                                            &:nth-child(4){animation-delay: .4s;}
+                                            &:nth-child(5){animation-delay: .5s;}
+                                            &:nth-child(6){animation-delay: .6s;}
+                                            &:nth-child(7){animation-delay: .7s;}
+                                            &:nth-child(8){animation-delay: .8s;}
+                                            &:nth-child(9){animation-delay: .9s;}
+                                            &:nth-child(10){animation-delay: 1s;}
+                                            &:nth-child(11){animation-delay: 1.1s;}
+                                            &:nth-child(12){animation-delay: 1.2s;}
+                                            &:nth-child(13){animation-delay: 1.3s;}
+                                            &:nth-child(14){animation-delay: 1.4s;}
+                                            &:nth-child(15){animation-delay: 1.5s;}
+                                            &:nth-child(16){animation-delay: 1.6s;}
+                                            &:nth-child(17){animation-delay: 1.7s;}
+                                            &:nth-child(18){animation-delay: 1.8s;}
+                                            &:nth-child(19){animation-delay: 1.9s;}
+                                            &:nth-child(20){animation-delay: 2s;}
+
+                                        }
+                                    }
+                                
+                                        
+                                
+                                $g_1:#2d2d2d;
+                                $g_2:#1e1e1e;
+                                $g_3:#424242;
+                                $g_4:#262626;
+                                $g_5:#4c4c4c;
+                                $g_6:#282828;
+                                $g_7:#3a3a3a;
+                                $g_8:#2b2b2b;
+                                $g_9:#333;
+                                $g_10:#474747;
+                                $g_11:#3d3d3d;
+
+                                $percent: 1%;
+                                    @for $i from 1 through 1000 {
+                                    polygon:nth-of-type(#{$i}) {
+                                        animation-delay: random() + s;
+                                    }
+                                    }    
+                                
+                                .cls-1,
+                                .cls-2,
+                                .cls-3,
+                                .cls-4,
+                                .cls-5,
+                                .cls-6,
+                                .cls-7,
+                                .cls-8,
+                                .cls-9,
+                                .cls-10,
+                                .cls-11{
+                                    animation: bulb_head_an 5s linear infinite;
+
+                                    
+                                    
+
+                                    @keyframes bulb_head_an {
+                                        0%{fill: $g_1;}
+                                        10%{fill: $g_2;}
+                                        20%{fill: $g_3;}
+                                        30%{fill: $g_4;}
+                                        40%{fill: $g_5;}
+                                        50%{fill: $g_6;}
+                                        60%{fill: $g_7;}
+                                        70%{fill: $g_8;}
+                                        80%{fill: $g_9;}
+                                        90%{fill: $g_10;}
+                                        100%{fill: $g_11;}
+                                    }
+                                }
+
+                                
+
+                                .cls-1 {
+                                    fill: #2d2d2d;
+                                  }
+                            
+                                  .cls-2 {
+                                    fill: #1e1e1e;
+                                  }
+                            
+                                  .cls-3 {
+                                    fill: #424242;
+                                  }
+                            
+                                  .cls-4 {
+                                    fill: #262626;
+                                  }
+                            
+                                  .cls-5 {
+                                    fill: #4c4c4c;
+                                  }
+                            
+                                  .cls-6 {
+                                    fill: #282828;
+                                  }
+                            
+                                  .cls-7 {
+                                    fill: #3a3a3a;
+                                  }
+                            
+                                  .cls-8 {
+                                    fill: #2b2b2b;
+                                  }
+                            
+                                  .cls-9 {
+                                    fill: #333;
+                                  }
+                            
+                                  .cls-10 {
+                                    fill: #474747;
+                                  }
+                            
+                                  .cls-11 {
+                                    fill: #3d3d3d;
+                                  }
+                            
+                                  .cls-12 {
+                                    fill: #ff3000;
+                                  }
+                            
+                                  .cls-13 {
+                                    fill: #ed481b;
+                                  }
 
                             }
 
-                            @keyframes part_3_div_an {
-                                0%{
-                                    filter: drop-shadow(0px 0px 20px #ff3e00) drop-shadow(0px 0px 20px #ff3e00) drop-shadow(0px 0px 20px #ff3e00);
-                                }
-
-                                50%{
-                                    filter: unset;
-                                }
-                                100%{
-                                    filter: drop-shadow(0px 0px 20px #ff3e00) drop-shadow(0px 0px 20px #ff3e00) drop-shadow(0px 0px 20px #ff3e00);
-                                }
-                            }
+                           
                         }
 
 
