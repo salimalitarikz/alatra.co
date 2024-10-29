@@ -368,7 +368,7 @@ body{
                         padding: .5rem;
                         border-radius: $borrad;
                         padding: 1rem;
-                        display: flex;
+                        // display: flex;
                         flex-direction: column;
                         align-items: center;
                         justify-content: center;
@@ -495,8 +495,9 @@ body{
                     // part 2 inside div animations
 
                     #part_2_c_1{
+                        overflow: hidden;
                         .an_box{
-                            // overflow: hidden;
+                            
                             display: flex;
                             justify-content: space-around;
                             align-items: center;
@@ -519,6 +520,7 @@ body{
                                 position: relative;
                                 
                                 >div{
+                                    transition-delay: 1s !important;
                                     transition: 2s;
                                     position: absolute;
                                     width: calc(100% + .5rem);
@@ -569,6 +571,7 @@ body{
                                     
                                 
                                     >div{
+                                        transition-delay: 0s !important;
                                         transition:opacity .2s, height 1s;
                                         opacity: 0;
                                         height: 0%;
@@ -598,6 +601,102 @@ body{
                                     
                                 }
                             }
+                        }
+
+                    }
+
+                    #part_2_c_2{
+                        position: relative;
+
+                        $borderWidth:20px;
+
+                        .an_box{
+                           position: relative;
+                           top: 50%;
+                           left: 50%;
+                           width: $borderWidth * 4;
+                           height: $borderWidth * 4;
+                           transform: translate(-50%,-50%) rotate(45deg);
+
+                           >span{
+                            box-shadow: 0 0 20px $orange;
+
+                            &:nth-child(1)
+                            {
+                                box-shadow: unset !important;
+                            }
+                           }
+
+                           >span:nth-child(1){
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 0;
+                            height: 0;
+                            border-width: $borderWidth;
+                            border-style: solid;
+                            border-color: transparent #d73d09 #ff490c transparent ;
+                           }
+
+                           >span:nth-child(2){
+                            position: absolute;
+                            top: 0;
+                            left: $borderWidth * 2;
+                            width: 0;
+                            height: 0;
+                            border-width: $borderWidth;
+                            border-style: solid;
+                            border-color: #ff490c #d73d09 #ff490c #ff6531 ;
+                            animation: animateDiamond 2s linear infinite;
+                           }
+
+                           >span:nth-child(3){
+                            position: absolute;
+                            top: $borderWidth * 2;
+                            left: 0;
+                            width: 0;
+                            height: 0;
+                            border-width: $borderWidth;
+                            border-style: solid;
+                            border-color: #ff490c #d73d09 #ff490c #ff6531 ;
+                            animation: animateDiamond 2s linear infinite;
+                           }
+
+                           >span:nth-child(4){
+                            position: absolute;
+                            top: $borderWidth * 2;
+                            left: $borderWidth * 2;
+                            width: 0;
+                            height: 0;
+                            border-width: $borderWidth;
+                            border-style: solid;
+                            border-color: #ff490c #d73d09 #ff490c #ff6531 ;
+                            animation: animateDiamond 2s linear infinite;
+                           }
+                           
+                           @keyframes animateDiamond {
+                            
+                            0%{
+                                border-color: #ff490c #d73d09 #ff490c #ff6531 ;
+                            }
+                            25%{
+                                border-color: #ff6531 #ff490c #d73d09 #ff490c  ;
+                            }
+                            50%{
+                                border-color: #ff6531 #ff490c #d73d09 #ff490c   ;
+                            }
+                            75%{
+                                border-color: #ff490c #d73d09 #ff490c #ff6531 ;
+                            }
+                            100%{
+                                border-color: #ff490c #d73d09 #ff490c #ff6531 ;
+                            }
+                            
+                           }
+
+
+
+
                         }
 
                     }
