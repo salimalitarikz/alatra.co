@@ -581,9 +581,13 @@ background-size: 40px 40px, 40px 40px, 20px 20px, 20px 20px;
                                         transition:opacity .2s, height 1s;
                                         opacity: 0;
                                         height: 0%;
+
+
                                     }
                                    
-                                       
+                                       >span{
+                                        transition: .5s;
+                                       }
                                     
 
                                     &:nth-child(1){
@@ -722,6 +726,7 @@ background-size: 40px 40px, 40px 40px, 20px 20px, 20px 20px;
                             align-items: center;
                             justify-content: center;
                             padding-bottom: 1rem;
+                            filter: drop-shadow(3px 3px 5px $orange);
 
                             >svg{
                                 width: 70%;
@@ -776,7 +781,7 @@ background-size: 40px 40px, 40px 40px, 20px 20px, 20px 20px;
                                 $g_11:#3d3d3d;
 
                                 $percent: 1%;
-                                    @for $i from 1 through 1000 {
+                                    @for $i from 1 through 10000 {
                                     polygon:nth-of-type(#{$i}) {
                                         animation-delay: random() + s;
                                     }
@@ -793,7 +798,7 @@ background-size: 40px 40px, 40px 40px, 20px 20px, 20px 20px;
                                 .cls-9,
                                 .cls-10,
                                 .cls-11{
-                                    animation: bulb_head_an 5s linear infinite;
+                                    animation: bulb_head_an 10s linear infinite;
 
                                     
                                     
