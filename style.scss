@@ -71,32 +71,37 @@ body{
         position: relative;
         left: -1rem;
         opacity: 0;
+        transition: .2s;
+        transition-delay: 0;
 
-        &:nth-child(1){transition-delay: .15s !important;}
-        &:nth-child(2){transition-delay: .3s !important;;}
-        &:nth-child(3){transition-delay: .45s !important;;}
-        &:nth-child(4){transition-delay: .6s !important;;}
-        &:nth-child(5){transition-delay: .75s !important;;}
-        &:nth-child(6){transition-delay: .9s !important;;}
-        &:nth-child(7){transition-delay: 1.05s !important;;}
-        &:nth-child(8){transition-delay: 1.20s !important;;}
-        &:nth-child(9){transition-delay: 1.35s !important;;}
-        &:nth-child(10){transition-delay: 1.50s !important;;}
-        &:nth-child(11){transition-delay: 1.65s !important;;}
-        &:nth-child(12){transition-delay: 1.80s !important;;}
-        &:nth-child(13){transition-delay: 1.95s !important;;}
-        &:nth-child(14){transition-delay: 2.10s !important;;}
-        &:nth-child(15){transition-delay: 2.25s !important;;}
-        &:nth-child(16){transition-delay: 2.40s !important;;}
-        &:nth-child(17){transition-delay: 2.55s !important;;}
-        &:nth-child(18){transition-delay: 2.70s !important;;}
-        &:nth-child(19){transition-delay: 2.85s !important;;}
-        &:nth-child(20){transition-delay: 3s !important;;}
+       
     }
 
     &.an1_activated{
 
         >span{
+            &:nth-child(1){transition-delay: .15s !important;}
+            &:nth-child(2){transition-delay: .3s !important;;}
+            &:nth-child(3){transition-delay: .45s !important;;}
+            &:nth-child(4){transition-delay: .6s !important;;}
+            &:nth-child(5){transition-delay: .75s !important;;}
+            &:nth-child(6){transition-delay: .9s !important;;}
+            &:nth-child(7){transition-delay: 1.05s !important;;}
+            &:nth-child(8){transition-delay: 1.20s !important;;}
+            &:nth-child(9){transition-delay: 1.35s !important;;}
+            &:nth-child(10){transition-delay: 1.50s !important;;}
+            &:nth-child(11){transition-delay: 1.65s !important;;}
+            &:nth-child(12){transition-delay: 1.80s !important;;}
+            &:nth-child(13){transition-delay: 1.95s !important;;}
+            &:nth-child(14){transition-delay: 2.10s !important;;}
+            &:nth-child(15){transition-delay: 2.25s !important;;}
+            &:nth-child(16){transition-delay: 2.40s !important;;}
+            &:nth-child(17){transition-delay: 2.55s !important;;}
+            &:nth-child(18){transition-delay: 2.70s !important;;}
+            &:nth-child(19){transition-delay: 2.85s !important;;}
+            &:nth-child(20){transition-delay: 3s !important;;}
+
+
             transition: 1.5s;
             left: unset;
             opacity: 1;
@@ -110,10 +115,6 @@ body{
 @media screen and (min-width: 0px) and (max-width: 600px)  {
 
     main{
-
-        
-
-
         width: calc(100vw - $gap);
         height: calc(100vh - $gap);
         border: 1px solid $darkgray;
@@ -308,7 +309,7 @@ body{
                 height: 100vh;
                 width: 100%;
                 position: sticky;
-                top: 4rem;
+                top: 0;
                 display: flex;
                 flex-direction: column;
                 gap: 1rem;
@@ -339,6 +340,7 @@ body{
                 }
 
                 #part_2_banner_2{
+                    margin-top: 20%;
                     height: 15%;
                     position: relative;
                     // margin-top: 4.5rem;
@@ -488,6 +490,118 @@ body{
                             }
                         }
                     }
+
+
+                    // part 2 inside div animations
+
+                    #part_2_c_1{
+                        .an_box{
+                            // overflow: hidden;
+                            display: flex;
+                            justify-content: space-around;
+                            align-items: center;
+                            padding-bottom: 2rem;
+
+                                $percent: 1%;
+                                @for $i from 1 through 1000 {
+                                   span:nth-of-type(#{$i}) {
+                                     transition-delay: random() + s;
+                                   }
+                                }
+
+
+                            >div{
+                                display: inline-block;
+                                height: 100%;
+                                display: flex;
+                                flex-direction: column;
+                                gap:.5rem;
+                                position: relative;
+                                
+                                >div{
+                                    transition: 2s;
+                                    position: absolute;
+                                    width: calc(100% + .5rem);
+                                    height: 100%;
+                                    left: 50%;
+                                    transform: translateX(-50%);
+                                    top: 0;
+                                    border-left: 3px solid $orange;
+                                    border-right: 3px solid $orange;
+                                    border-radius: 5px;
+                                }
+
+
+                                // ::before{
+                                //     content: "";
+                                //     width: 3px;
+                                //     height: 100%;
+                                //     background-color: $orange;
+                                //     position: absolute;
+                                //     top: 0;
+                                //     left: 0;
+                                //     transition-delay: 2s;
+                                //     transition: 1s;
+                                // }
+                                
+                                
+
+
+                                >span{
+                                    display: inline-block;
+                                    border-radius: 5px;
+                                    width: 3rem;
+                                    height: 2rem;
+                                    background-color: $black;
+                                    // opacity: .7;
+                                    transition: 1s;
+                                    box-shadow: 0 0 20px $black;
+                                    
+                                }
+                            }
+                        }
+
+
+                        &.activated_an{
+                            >.an_box{
+
+                                >div{
+                                    
+                                
+                                    >div{
+                                        transition:opacity .2s, height 1s;
+                                        opacity: 0;
+                                        height: 0%;
+                                    }
+                                   
+                                       
+                                    
+
+                                    &:nth-child(1){
+                                        >span{
+                                            &:nth-child(1){transform: translateX(-45%) translateY(24%);rotate: 10deg;}
+                                            &:nth-child(2){transform: translateX(15%) translateY(-120%);rotate: 50deg;}
+                                            &:nth-child(3){transform: translateX(25%) translateY(-27%);rotate: 90deg;}
+                                            &:nth-child(4){transform: translateX(79%) translateY(-90%);rotate: 30deg;}
+                                        }
+                                    }
+
+                                    &:nth-last-child(1){
+                                        >span{
+                                            &:nth-child(1){transform: translateX(45%) translateY(24%);rotate: 30deg;}
+                                            &:nth-child(2){transform: translateX(-15%) translateY(120%);rotate: 10deg;}
+                                            &:nth-child(3){transform: translateX(-25%) translateY(27%);rotate: 120deg;}
+                                            &:nth-child(4){transform: translateX(-79%) translateY(90%);rotate: 80deg;}
+                                        }
+                                    }
+
+                                    
+                                }
+                            }
+                        }
+
+                    }
+
                 }
 
                

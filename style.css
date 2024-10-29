@@ -34,71 +34,73 @@ body {
   position: relative;
   left: -1rem;
   opacity: 0;
-}
-.text_animation_1 > span:nth-child(1) {
-  transition-delay: 0.15s !important;
-}
-.text_animation_1 > span:nth-child(2) {
-  transition-delay: 0.3s !important;
-}
-.text_animation_1 > span:nth-child(3) {
-  transition-delay: 0.45s !important;
-}
-.text_animation_1 > span:nth-child(4) {
-  transition-delay: 0.6s !important;
-}
-.text_animation_1 > span:nth-child(5) {
-  transition-delay: 0.75s !important;
-}
-.text_animation_1 > span:nth-child(6) {
-  transition-delay: 0.9s !important;
-}
-.text_animation_1 > span:nth-child(7) {
-  transition-delay: 1.05s !important;
-}
-.text_animation_1 > span:nth-child(8) {
-  transition-delay: 1.2s !important;
-}
-.text_animation_1 > span:nth-child(9) {
-  transition-delay: 1.35s !important;
-}
-.text_animation_1 > span:nth-child(10) {
-  transition-delay: 1.5s !important;
-}
-.text_animation_1 > span:nth-child(11) {
-  transition-delay: 1.65s !important;
-}
-.text_animation_1 > span:nth-child(12) {
-  transition-delay: 1.8s !important;
-}
-.text_animation_1 > span:nth-child(13) {
-  transition-delay: 1.95s !important;
-}
-.text_animation_1 > span:nth-child(14) {
-  transition-delay: 2.1s !important;
-}
-.text_animation_1 > span:nth-child(15) {
-  transition-delay: 2.25s !important;
-}
-.text_animation_1 > span:nth-child(16) {
-  transition-delay: 2.4s !important;
-}
-.text_animation_1 > span:nth-child(17) {
-  transition-delay: 2.55s !important;
-}
-.text_animation_1 > span:nth-child(18) {
-  transition-delay: 2.7s !important;
-}
-.text_animation_1 > span:nth-child(19) {
-  transition-delay: 2.85s !important;
-}
-.text_animation_1 > span:nth-child(20) {
-  transition-delay: 3s !important;
+  transition: 0.2s;
+  transition-delay: 0;
 }
 .text_animation_1.an1_activated > span {
   transition: 1.5s;
   left: unset;
   opacity: 1;
+}
+.text_animation_1.an1_activated > span:nth-child(1) {
+  transition-delay: 0.15s !important;
+}
+.text_animation_1.an1_activated > span:nth-child(2) {
+  transition-delay: 0.3s !important;
+}
+.text_animation_1.an1_activated > span:nth-child(3) {
+  transition-delay: 0.45s !important;
+}
+.text_animation_1.an1_activated > span:nth-child(4) {
+  transition-delay: 0.6s !important;
+}
+.text_animation_1.an1_activated > span:nth-child(5) {
+  transition-delay: 0.75s !important;
+}
+.text_animation_1.an1_activated > span:nth-child(6) {
+  transition-delay: 0.9s !important;
+}
+.text_animation_1.an1_activated > span:nth-child(7) {
+  transition-delay: 1.05s !important;
+}
+.text_animation_1.an1_activated > span:nth-child(8) {
+  transition-delay: 1.2s !important;
+}
+.text_animation_1.an1_activated > span:nth-child(9) {
+  transition-delay: 1.35s !important;
+}
+.text_animation_1.an1_activated > span:nth-child(10) {
+  transition-delay: 1.5s !important;
+}
+.text_animation_1.an1_activated > span:nth-child(11) {
+  transition-delay: 1.65s !important;
+}
+.text_animation_1.an1_activated > span:nth-child(12) {
+  transition-delay: 1.8s !important;
+}
+.text_animation_1.an1_activated > span:nth-child(13) {
+  transition-delay: 1.95s !important;
+}
+.text_animation_1.an1_activated > span:nth-child(14) {
+  transition-delay: 2.1s !important;
+}
+.text_animation_1.an1_activated > span:nth-child(15) {
+  transition-delay: 2.25s !important;
+}
+.text_animation_1.an1_activated > span:nth-child(16) {
+  transition-delay: 2.4s !important;
+}
+.text_animation_1.an1_activated > span:nth-child(17) {
+  transition-delay: 2.55s !important;
+}
+.text_animation_1.an1_activated > span:nth-child(18) {
+  transition-delay: 2.7s !important;
+}
+.text_animation_1.an1_activated > span:nth-child(19) {
+  transition-delay: 2.85s !important;
+}
+.text_animation_1.an1_activated > span:nth-child(20) {
+  transition-delay: 3s !important;
 }
 
 @media screen and (min-width: 0px) and (max-width: 600px) {
@@ -256,7 +258,7 @@ body {
     height: 100vh;
     width: 100%;
     position: sticky;
-    top: 4rem;
+    top: 0;
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -279,6 +281,7 @@ body {
     color: #ffffff;
   }
   main > .main_part#main_part_2 #part_2_banner_2 {
+    margin-top: 20%;
     height: 15%;
     position: relative;
     font-size: 1rem;
@@ -386,6 +389,3078 @@ body {
     to {
       opacity: 1;
     }
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 2rem;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(1) {
+    transition-delay: 0.3165608598s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(2) {
+    transition-delay: 0.3672047971s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(3) {
+    transition-delay: 0.9147910104s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(4) {
+    transition-delay: 0.8924648646s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(5) {
+    transition-delay: 0.3287062862s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(6) {
+    transition-delay: 0.0761521951s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(7) {
+    transition-delay: 0.7566034608s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(8) {
+    transition-delay: 0.6006899131s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(9) {
+    transition-delay: 0.0314811159s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(10) {
+    transition-delay: 0.4038518358s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(11) {
+    transition-delay: 0.767032766s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(12) {
+    transition-delay: 0.9506320422s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(13) {
+    transition-delay: 0.0374642968s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(14) {
+    transition-delay: 0.3764503587s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(15) {
+    transition-delay: 0.1955788528s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(16) {
+    transition-delay: 0.2204504119s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(17) {
+    transition-delay: 0.2181080607s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(18) {
+    transition-delay: 0.3337742998s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(19) {
+    transition-delay: 0.0677348862s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(20) {
+    transition-delay: 0.9681702906s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(21) {
+    transition-delay: 0.8198866628s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(22) {
+    transition-delay: 0.6759488274s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(23) {
+    transition-delay: 0.1835483236s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(24) {
+    transition-delay: 0.2473080821s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(25) {
+    transition-delay: 0.3060077417s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(26) {
+    transition-delay: 0.5406080997s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(27) {
+    transition-delay: 0.2760568518s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(28) {
+    transition-delay: 0.8911935155s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(29) {
+    transition-delay: 0.9766693017s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(30) {
+    transition-delay: 0.9210821752s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(31) {
+    transition-delay: 0.4688315529s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(32) {
+    transition-delay: 0.1741560013s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(33) {
+    transition-delay: 0.4719743649s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(34) {
+    transition-delay: 0.7272984494s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(35) {
+    transition-delay: 0.2358624402s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(36) {
+    transition-delay: 0.8525791163s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(37) {
+    transition-delay: 0.5004199568s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(38) {
+    transition-delay: 0.9187214042s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(39) {
+    transition-delay: 0.4894004133s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(40) {
+    transition-delay: 0.8485515848s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(41) {
+    transition-delay: 0.4665671239s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(42) {
+    transition-delay: 0.6262436s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(43) {
+    transition-delay: 0.5789768375s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(44) {
+    transition-delay: 0.1005785866s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(45) {
+    transition-delay: 0.0312627276s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(46) {
+    transition-delay: 0.3564669773s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(47) {
+    transition-delay: 0.076790937s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(48) {
+    transition-delay: 0.2482903671s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(49) {
+    transition-delay: 0.8397512057s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(50) {
+    transition-delay: 0.2694092546s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(51) {
+    transition-delay: 0.2850598098s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(52) {
+    transition-delay: 0.8279612659s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(53) {
+    transition-delay: 0.4986136516s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(54) {
+    transition-delay: 0.5394340235s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(55) {
+    transition-delay: 0.1627803986s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(56) {
+    transition-delay: 0.9127280582s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(57) {
+    transition-delay: 0.7290226169s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(58) {
+    transition-delay: 0.4990287693s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(59) {
+    transition-delay: 0.2347032742s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(60) {
+    transition-delay: 0.386314904s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(61) {
+    transition-delay: 0.3645567277s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(62) {
+    transition-delay: 0.171228149s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(63) {
+    transition-delay: 0.8994373727s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(64) {
+    transition-delay: 0.046195823s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(65) {
+    transition-delay: 0.6705806693s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(66) {
+    transition-delay: 0.6686045217s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(67) {
+    transition-delay: 0.1743468032s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(68) {
+    transition-delay: 0.4088212678s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(69) {
+    transition-delay: 0.4722930331s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(70) {
+    transition-delay: 0.9752044012s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(71) {
+    transition-delay: 0.207089192s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(72) {
+    transition-delay: 0.6927785194s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(73) {
+    transition-delay: 0.2196294899s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(74) {
+    transition-delay: 0.920433641s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(75) {
+    transition-delay: 0.7431360506s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(76) {
+    transition-delay: 0.9480759313s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(77) {
+    transition-delay: 0.1977289872s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(78) {
+    transition-delay: 0.9708242009s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(79) {
+    transition-delay: 0.6519310531s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(80) {
+    transition-delay: 0.659246684s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(81) {
+    transition-delay: 0.7058164421s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(82) {
+    transition-delay: 0.1838369043s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(83) {
+    transition-delay: 0.9997222004s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(84) {
+    transition-delay: 0.1313428956s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(85) {
+    transition-delay: 0.1027576844s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(86) {
+    transition-delay: 0.1779365066s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(87) {
+    transition-delay: 0.1515033863s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(88) {
+    transition-delay: 0.051140195s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(89) {
+    transition-delay: 0.6554930465s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(90) {
+    transition-delay: 0.3099884999s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(91) {
+    transition-delay: 0.5365221584s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(92) {
+    transition-delay: 0.7742254143s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(93) {
+    transition-delay: 0.1817470221s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(94) {
+    transition-delay: 0.3570566087s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(95) {
+    transition-delay: 0.8807081741s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(96) {
+    transition-delay: 0.9177883146s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(97) {
+    transition-delay: 0.4184302282s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(98) {
+    transition-delay: 0.5291410326s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(99) {
+    transition-delay: 0.7250176625s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(100) {
+    transition-delay: 0.1563526216s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(101) {
+    transition-delay: 0.1000941885s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(102) {
+    transition-delay: 0.9872937103s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(103) {
+    transition-delay: 0.3133846956s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(104) {
+    transition-delay: 0.6116326272s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(105) {
+    transition-delay: 0.6482118906s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(106) {
+    transition-delay: 0.0042536584s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(107) {
+    transition-delay: 0.7861623106s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(108) {
+    transition-delay: 0.714295398s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(109) {
+    transition-delay: 0.237924391s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(110) {
+    transition-delay: 0.2362259847s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(111) {
+    transition-delay: 0.1390396551s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(112) {
+    transition-delay: 0.1617797889s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(113) {
+    transition-delay: 0.7506124624s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(114) {
+    transition-delay: 0.2078772937s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(115) {
+    transition-delay: 0.3463604107s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(116) {
+    transition-delay: 0.2729705709s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(117) {
+    transition-delay: 0.917205496s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(118) {
+    transition-delay: 0.4459332834s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(119) {
+    transition-delay: 0.8507370456s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(120) {
+    transition-delay: 0.1385359469s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(121) {
+    transition-delay: 0.7177963811s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(122) {
+    transition-delay: 0.8673688683s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(123) {
+    transition-delay: 0.6200221573s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(124) {
+    transition-delay: 0.5555356878s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(125) {
+    transition-delay: 0.9111695445s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(126) {
+    transition-delay: 0.4609175974s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(127) {
+    transition-delay: 0.1309612413s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(128) {
+    transition-delay: 0.6853788733s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(129) {
+    transition-delay: 0.4815676108s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(130) {
+    transition-delay: 0.6351564155s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(131) {
+    transition-delay: 0.546036722s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(132) {
+    transition-delay: 0.6091300401s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(133) {
+    transition-delay: 0.6615158012s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(134) {
+    transition-delay: 0.3928861744s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(135) {
+    transition-delay: 0.1652697687s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(136) {
+    transition-delay: 0.439584293s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(137) {
+    transition-delay: 0.5455732737s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(138) {
+    transition-delay: 0.2424387639s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(139) {
+    transition-delay: 0.2426557635s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(140) {
+    transition-delay: 0.2224243509s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(141) {
+    transition-delay: 0.3729032461s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(142) {
+    transition-delay: 0.9917705823s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(143) {
+    transition-delay: 0.2662873855s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(144) {
+    transition-delay: 0.2325348989s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(145) {
+    transition-delay: 0.6854515742s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(146) {
+    transition-delay: 0.4791792455s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(147) {
+    transition-delay: 0.6757386113s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(148) {
+    transition-delay: 0.5311529814s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(149) {
+    transition-delay: 0.4732061305s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(150) {
+    transition-delay: 0.9683330877s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(151) {
+    transition-delay: 0.4564685742s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(152) {
+    transition-delay: 0.3344836991s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(153) {
+    transition-delay: 0.011614388s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(154) {
+    transition-delay: 0.8869411613s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(155) {
+    transition-delay: 0.2612715043s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(156) {
+    transition-delay: 0.5464099872s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(157) {
+    transition-delay: 0.5654839511s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(158) {
+    transition-delay: 0.3983152956s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(159) {
+    transition-delay: 0.5715184516s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(160) {
+    transition-delay: 0.2049672434s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(161) {
+    transition-delay: 0.5312380217s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(162) {
+    transition-delay: 0.3588092409s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(163) {
+    transition-delay: 0.0062676786s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(164) {
+    transition-delay: 0.2244801672s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(165) {
+    transition-delay: 0.5117711739s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(166) {
+    transition-delay: 0.7427944935s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(167) {
+    transition-delay: 0.9029272415s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(168) {
+    transition-delay: 0.4975745709s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(169) {
+    transition-delay: 0.5471800906s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(170) {
+    transition-delay: 0.9404625363s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(171) {
+    transition-delay: 0.6723655138s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(172) {
+    transition-delay: 0.9245732541s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(173) {
+    transition-delay: 0.4495327823s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(174) {
+    transition-delay: 0.0810760424s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(175) {
+    transition-delay: 0.8767010167s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(176) {
+    transition-delay: 0.9847758951s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(177) {
+    transition-delay: 0.9523575341s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(178) {
+    transition-delay: 0.6076805922s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(179) {
+    transition-delay: 0.1107886075s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(180) {
+    transition-delay: 0.5025689947s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(181) {
+    transition-delay: 0.792813634s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(182) {
+    transition-delay: 0.340681499s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(183) {
+    transition-delay: 0.4891475669s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(184) {
+    transition-delay: 0.4964785306s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(185) {
+    transition-delay: 0.149678414s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(186) {
+    transition-delay: 0.8823463906s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(187) {
+    transition-delay: 0.0513221569s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(188) {
+    transition-delay: 0.3465765126s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(189) {
+    transition-delay: 0.3039281855s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(190) {
+    transition-delay: 0.3751615798s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(191) {
+    transition-delay: 0.0873609024s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(192) {
+    transition-delay: 0.2436713344s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(193) {
+    transition-delay: 0.6851405726s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(194) {
+    transition-delay: 0.8376004101s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(195) {
+    transition-delay: 0.8089125298s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(196) {
+    transition-delay: 0.8438832405s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(197) {
+    transition-delay: 0.451772068s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(198) {
+    transition-delay: 0.8848381163s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(199) {
+    transition-delay: 0.409553886s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(200) {
+    transition-delay: 0.7158276729s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(201) {
+    transition-delay: 0.6090276687s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(202) {
+    transition-delay: 0.4928469676s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(203) {
+    transition-delay: 0.6956730389s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(204) {
+    transition-delay: 0.481184566s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(205) {
+    transition-delay: 0.0699709717s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(206) {
+    transition-delay: 0.0895760815s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(207) {
+    transition-delay: 0.8925419135s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(208) {
+    transition-delay: 0.2139754984s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(209) {
+    transition-delay: 0.6761421337s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(210) {
+    transition-delay: 0.322248331s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(211) {
+    transition-delay: 0.7946154571s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(212) {
+    transition-delay: 0.5529960054s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(213) {
+    transition-delay: 0.2187384308s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(214) {
+    transition-delay: 0.8892670292s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(215) {
+    transition-delay: 0.647661696s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(216) {
+    transition-delay: 0.7344636649s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(217) {
+    transition-delay: 0.6003373802s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(218) {
+    transition-delay: 0.3251090343s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(219) {
+    transition-delay: 0.4700854746s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(220) {
+    transition-delay: 0.2002737655s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(221) {
+    transition-delay: 0.0804199337s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(222) {
+    transition-delay: 0.496796945s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(223) {
+    transition-delay: 0.6776382165s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(224) {
+    transition-delay: 0.0079371734s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(225) {
+    transition-delay: 0.7481989487s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(226) {
+    transition-delay: 0.397985746s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(227) {
+    transition-delay: 0.5422096149s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(228) {
+    transition-delay: 0.2770639371s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(229) {
+    transition-delay: 0.4965934393s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(230) {
+    transition-delay: 0.7945715512s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(231) {
+    transition-delay: 0.3599344224s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(232) {
+    transition-delay: 0.7162783068s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(233) {
+    transition-delay: 0.8135893832s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(234) {
+    transition-delay: 0.8171872023s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(235) {
+    transition-delay: 0.458803806s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(236) {
+    transition-delay: 0.9846412632s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(237) {
+    transition-delay: 0.5945173183s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(238) {
+    transition-delay: 0.5492681675s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(239) {
+    transition-delay: 0.670848832s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(240) {
+    transition-delay: 0.0553170209s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(241) {
+    transition-delay: 0.3372236502s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(242) {
+    transition-delay: 0.8525127606s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(243) {
+    transition-delay: 0.3106520724s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(244) {
+    transition-delay: 0.2822415519s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(245) {
+    transition-delay: 0.9159055765s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(246) {
+    transition-delay: 0.5818722142s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(247) {
+    transition-delay: 0.7615433401s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(248) {
+    transition-delay: 0.5389214334s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(249) {
+    transition-delay: 0.695970814s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(250) {
+    transition-delay: 0.7525649341s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(251) {
+    transition-delay: 0.1126043021s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(252) {
+    transition-delay: 0.1788411829s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(253) {
+    transition-delay: 0.5917880787s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(254) {
+    transition-delay: 0.8939366046s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(255) {
+    transition-delay: 0.1530731191s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(256) {
+    transition-delay: 0.8800448062s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(257) {
+    transition-delay: 0.3199023229s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(258) {
+    transition-delay: 0.6709986956s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(259) {
+    transition-delay: 0.6540063016s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(260) {
+    transition-delay: 0.9289670822s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(261) {
+    transition-delay: 0.1855103123s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(262) {
+    transition-delay: 0.2560634557s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(263) {
+    transition-delay: 0.9785726815s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(264) {
+    transition-delay: 0.451915454s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(265) {
+    transition-delay: 0.6832200668s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(266) {
+    transition-delay: 0.0032315221s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(267) {
+    transition-delay: 0.7019966569s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(268) {
+    transition-delay: 0.5006412534s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(269) {
+    transition-delay: 0.3285508391s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(270) {
+    transition-delay: 0.7269650082s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(271) {
+    transition-delay: 0.0755677183s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(272) {
+    transition-delay: 0.8201694206s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(273) {
+    transition-delay: 0.0481374031s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(274) {
+    transition-delay: 0.8463965551s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(275) {
+    transition-delay: 0.8801919095s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(276) {
+    transition-delay: 0.3668811468s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(277) {
+    transition-delay: 0.8187890823s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(278) {
+    transition-delay: 0.3183807606s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(279) {
+    transition-delay: 0.2727382201s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(280) {
+    transition-delay: 0.9768177893s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(281) {
+    transition-delay: 0.62942355s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(282) {
+    transition-delay: 0.8153812642s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(283) {
+    transition-delay: 0.5999750556s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(284) {
+    transition-delay: 0.7087966296s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(285) {
+    transition-delay: 0.464851512s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(286) {
+    transition-delay: 0.4131556776s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(287) {
+    transition-delay: 0.7728569491s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(288) {
+    transition-delay: 0.6783966294s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(289) {
+    transition-delay: 0.6879632606s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(290) {
+    transition-delay: 0.8380137635s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(291) {
+    transition-delay: 0.4678502455s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(292) {
+    transition-delay: 0.4511189601s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(293) {
+    transition-delay: 0.5022841497s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(294) {
+    transition-delay: 0.4735760234s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(295) {
+    transition-delay: 0.3104774195s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(296) {
+    transition-delay: 0.5701378379s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(297) {
+    transition-delay: 0.340149833s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(298) {
+    transition-delay: 0.019534605s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(299) {
+    transition-delay: 0.6419349447s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(300) {
+    transition-delay: 0.4893020007s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(301) {
+    transition-delay: 0.764946094s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(302) {
+    transition-delay: 0.5784322905s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(303) {
+    transition-delay: 0.5803883685s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(304) {
+    transition-delay: 0.265675388s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(305) {
+    transition-delay: 0.4535404084s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(306) {
+    transition-delay: 0.7744467944s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(307) {
+    transition-delay: 0.1612929017s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(308) {
+    transition-delay: 0.8799630451s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(309) {
+    transition-delay: 0.0405149501s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(310) {
+    transition-delay: 0.3038218114s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(311) {
+    transition-delay: 0.5675643655s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(312) {
+    transition-delay: 0.269546066s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(313) {
+    transition-delay: 0.8699291486s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(314) {
+    transition-delay: 0.9875690972s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(315) {
+    transition-delay: 0.7921412477s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(316) {
+    transition-delay: 0.9671520869s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(317) {
+    transition-delay: 0.053495462s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(318) {
+    transition-delay: 0.8364602627s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(319) {
+    transition-delay: 0.7526763747s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(320) {
+    transition-delay: 0.9462496732s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(321) {
+    transition-delay: 0.9925502063s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(322) {
+    transition-delay: 0.1860266446s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(323) {
+    transition-delay: 0.0823744531s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(324) {
+    transition-delay: 0.981606776s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(325) {
+    transition-delay: 0.6129971346s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(326) {
+    transition-delay: 0.2807303887s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(327) {
+    transition-delay: 0.5982467647s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(328) {
+    transition-delay: 0.9817217155s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(329) {
+    transition-delay: 0.6421007363s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(330) {
+    transition-delay: 0.144846195s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(331) {
+    transition-delay: 0.0047822495s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(332) {
+    transition-delay: 0.9990305233s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(333) {
+    transition-delay: 0.3195290906s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(334) {
+    transition-delay: 0.599053575s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(335) {
+    transition-delay: 0.9240469926s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(336) {
+    transition-delay: 0.9792458007s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(337) {
+    transition-delay: 0.0971065903s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(338) {
+    transition-delay: 0.344281624s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(339) {
+    transition-delay: 0.1202486918s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(340) {
+    transition-delay: 0.4108352213s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(341) {
+    transition-delay: 0.9033621793s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(342) {
+    transition-delay: 0.9777596671s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(343) {
+    transition-delay: 0.0672408161s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(344) {
+    transition-delay: 0.9100567296s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(345) {
+    transition-delay: 0.4684826118s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(346) {
+    transition-delay: 0.3635764398s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(347) {
+    transition-delay: 0.0184379838s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(348) {
+    transition-delay: 0.5112030732s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(349) {
+    transition-delay: 0.0355321178s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(350) {
+    transition-delay: 0.7277083503s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(351) {
+    transition-delay: 0.1421888423s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(352) {
+    transition-delay: 0.6936777405s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(353) {
+    transition-delay: 0.9808831914s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(354) {
+    transition-delay: 0.5728183986s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(355) {
+    transition-delay: 0.950236317s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(356) {
+    transition-delay: 0.5635309173s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(357) {
+    transition-delay: 0.274576955s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(358) {
+    transition-delay: 0.8844872424s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(359) {
+    transition-delay: 0.0877460336s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(360) {
+    transition-delay: 0.9073164118s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(361) {
+    transition-delay: 0.3913458267s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(362) {
+    transition-delay: 0.3280294056s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(363) {
+    transition-delay: 0.4750015378s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(364) {
+    transition-delay: 0.8151905096s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(365) {
+    transition-delay: 0.8670623295s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(366) {
+    transition-delay: 0.4722021159s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(367) {
+    transition-delay: 0.1376506643s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(368) {
+    transition-delay: 0.6153279838s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(369) {
+    transition-delay: 0.1863772062s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(370) {
+    transition-delay: 0.0581949889s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(371) {
+    transition-delay: 0.2265002789s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(372) {
+    transition-delay: 0.2692711566s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(373) {
+    transition-delay: 0.278802578s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(374) {
+    transition-delay: 0.9201300621s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(375) {
+    transition-delay: 0.7302923683s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(376) {
+    transition-delay: 0.179300301s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(377) {
+    transition-delay: 0.1826634731s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(378) {
+    transition-delay: 0.5447645579s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(379) {
+    transition-delay: 0.2140896787s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(380) {
+    transition-delay: 0.8070661787s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(381) {
+    transition-delay: 0.3005466579s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(382) {
+    transition-delay: 0.2504168076s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(383) {
+    transition-delay: 0.0566775133s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(384) {
+    transition-delay: 0.8462907147s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(385) {
+    transition-delay: 0.5372369979s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(386) {
+    transition-delay: 0.5574579811s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(387) {
+    transition-delay: 0.1564251226s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(388) {
+    transition-delay: 0.8901317248s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(389) {
+    transition-delay: 0.0166807923s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(390) {
+    transition-delay: 0.2408553572s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(391) {
+    transition-delay: 0.4256517365s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(392) {
+    transition-delay: 0.7614363109s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(393) {
+    transition-delay: 0.3150067755s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(394) {
+    transition-delay: 0.4794513193s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(395) {
+    transition-delay: 0.935683435s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(396) {
+    transition-delay: 0.1886536959s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(397) {
+    transition-delay: 0.2777248421s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(398) {
+    transition-delay: 0.5581966926s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(399) {
+    transition-delay: 0.3626803339s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(400) {
+    transition-delay: 0.650604072s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(401) {
+    transition-delay: 0.6304303818s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(402) {
+    transition-delay: 0.9771163699s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(403) {
+    transition-delay: 0.8801767864s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(404) {
+    transition-delay: 0.4921264045s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(405) {
+    transition-delay: 0.6239831972s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(406) {
+    transition-delay: 0.9606751624s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(407) {
+    transition-delay: 0.4909700162s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(408) {
+    transition-delay: 0.2088193027s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(409) {
+    transition-delay: 0.1909996606s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(410) {
+    transition-delay: 0.0991634472s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(411) {
+    transition-delay: 0.2731196619s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(412) {
+    transition-delay: 0.8209055712s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(413) {
+    transition-delay: 0.1153046962s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(414) {
+    transition-delay: 0.8215375838s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(415) {
+    transition-delay: 0.4787747329s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(416) {
+    transition-delay: 0.1243579783s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(417) {
+    transition-delay: 0.0213800073s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(418) {
+    transition-delay: 0.3974276191s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(419) {
+    transition-delay: 0.8975867821s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(420) {
+    transition-delay: 0.3917117994s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(421) {
+    transition-delay: 0.3450344758s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(422) {
+    transition-delay: 0.1105619822s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(423) {
+    transition-delay: 0.1408782153s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(424) {
+    transition-delay: 0.1009803122s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(425) {
+    transition-delay: 0.2548289836s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(426) {
+    transition-delay: 0.4312642612s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(427) {
+    transition-delay: 0.7170871398s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(428) {
+    transition-delay: 0.5363434748s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(429) {
+    transition-delay: 0.5282541581s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(430) {
+    transition-delay: 0.5653236088s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(431) {
+    transition-delay: 0.5321594632s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(432) {
+    transition-delay: 0.8825018065s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(433) {
+    transition-delay: 0.8899631585s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(434) {
+    transition-delay: 0.8473207685s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(435) {
+    transition-delay: 0.9577507583s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(436) {
+    transition-delay: 0.3290930498s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(437) {
+    transition-delay: 0.5936482234s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(438) {
+    transition-delay: 0.0871258154s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(439) {
+    transition-delay: 0.4032812268s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(440) {
+    transition-delay: 0.8035405952s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(441) {
+    transition-delay: 0.0333892079s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(442) {
+    transition-delay: 0.9686770467s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(443) {
+    transition-delay: 0.7722666457s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(444) {
+    transition-delay: 0.7169815069s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(445) {
+    transition-delay: 0.5238185466s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(446) {
+    transition-delay: 0.9706840308s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(447) {
+    transition-delay: 0.4316657958s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(448) {
+    transition-delay: 0.9514715137s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(449) {
+    transition-delay: 0.6914237828s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(450) {
+    transition-delay: 0.455359456s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(451) {
+    transition-delay: 0.6588044944s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(452) {
+    transition-delay: 0.6340744381s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(453) {
+    transition-delay: 0.1892022062s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(454) {
+    transition-delay: 0.2623270059s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(455) {
+    transition-delay: 0.7332100633s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(456) {
+    transition-delay: 0.1619488056s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(457) {
+    transition-delay: 0.0423069533s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(458) {
+    transition-delay: 0.7888549429s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(459) {
+    transition-delay: 0.0360951984s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(460) {
+    transition-delay: 0.2488623419s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(461) {
+    transition-delay: 0.0258542328s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(462) {
+    transition-delay: 0.4377075174s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(463) {
+    transition-delay: 0.0593656047s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(464) {
+    transition-delay: 0.9079285763s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(465) {
+    transition-delay: 0.8447629244s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(466) {
+    transition-delay: 0.421714894s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(467) {
+    transition-delay: 0.8878507626s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(468) {
+    transition-delay: 0.0801732168s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(469) {
+    transition-delay: 0.1795463039s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(470) {
+    transition-delay: 0.5172265327s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(471) {
+    transition-delay: 0.4152756031s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(472) {
+    transition-delay: 0.2084155188s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(473) {
+    transition-delay: 0.9453969956s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(474) {
+    transition-delay: 0.461111231s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(475) {
+    transition-delay: 0.7046393675s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(476) {
+    transition-delay: 0.2887787202s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(477) {
+    transition-delay: 0.3500404692s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(478) {
+    transition-delay: 0.9660365655s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(479) {
+    transition-delay: 0.7168538006s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(480) {
+    transition-delay: 0.5601060676s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(481) {
+    transition-delay: 0.5018413862s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(482) {
+    transition-delay: 0.8533193417s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(483) {
+    transition-delay: 0.6897054255s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(484) {
+    transition-delay: 0.7253785259s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(485) {
+    transition-delay: 0.112498526s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(486) {
+    transition-delay: 0.6884264441s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(487) {
+    transition-delay: 0.8777492548s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(488) {
+    transition-delay: 0.7062188637s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(489) {
+    transition-delay: 0.8033883735s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(490) {
+    transition-delay: 0.4456022038s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(491) {
+    transition-delay: 0.2220631921s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(492) {
+    transition-delay: 0.228201597s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(493) {
+    transition-delay: 0.8207382s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(494) {
+    transition-delay: 0.1219881054s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(495) {
+    transition-delay: 0.9541340138s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(496) {
+    transition-delay: 0.4625488614s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(497) {
+    transition-delay: 0.5347161553s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(498) {
+    transition-delay: 0.47991516s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(499) {
+    transition-delay: 0.8932239758s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(500) {
+    transition-delay: 0.3020836509s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(501) {
+    transition-delay: 0.8125886336s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(502) {
+    transition-delay: 0.8966627659s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(503) {
+    transition-delay: 0.4814968185s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(504) {
+    transition-delay: 0.6457214227s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(505) {
+    transition-delay: 0.6444308741s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(506) {
+    transition-delay: 0.5296231058s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(507) {
+    transition-delay: 0.050557166s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(508) {
+    transition-delay: 0.4461339463s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(509) {
+    transition-delay: 0.2255321206s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(510) {
+    transition-delay: 0.2291218478s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(511) {
+    transition-delay: 0.8099539322s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(512) {
+    transition-delay: 0.4490700431s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(513) {
+    transition-delay: 0.3482438416s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(514) {
+    transition-delay: 0.8122461075s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(515) {
+    transition-delay: 0.8234338567s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(516) {
+    transition-delay: 0.3358488983s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(517) {
+    transition-delay: 0.4841122082s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(518) {
+    transition-delay: 0.4285354352s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(519) {
+    transition-delay: 0.8241728861s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(520) {
+    transition-delay: 0.2377368697s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(521) {
+    transition-delay: 0.9965641312s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(522) {
+    transition-delay: 0.5269616346s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(523) {
+    transition-delay: 0.9924045063s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(524) {
+    transition-delay: 0.6457994811s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(525) {
+    transition-delay: 0.7778591021s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(526) {
+    transition-delay: 0.8356122881s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(527) {
+    transition-delay: 0.9906944444s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(528) {
+    transition-delay: 0.2535906829s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(529) {
+    transition-delay: 0.3219987807s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(530) {
+    transition-delay: 0.659899671s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(531) {
+    transition-delay: 0.2506854458s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(532) {
+    transition-delay: 0.6621771608s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(533) {
+    transition-delay: 0.3058283158s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(534) {
+    transition-delay: 0.7861672829s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(535) {
+    transition-delay: 0.2531243319s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(536) {
+    transition-delay: 0.6842353502s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(537) {
+    transition-delay: 0.6105165774s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(538) {
+    transition-delay: 0.3073158037s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(539) {
+    transition-delay: 0.0795851593s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(540) {
+    transition-delay: 0.0511287337s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(541) {
+    transition-delay: 0.4703184195s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(542) {
+    transition-delay: 0.9206722211s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(543) {
+    transition-delay: 0.7485904397s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(544) {
+    transition-delay: 0.1624118564s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(545) {
+    transition-delay: 0.8197909768s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(546) {
+    transition-delay: 0.9464442253s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(547) {
+    transition-delay: 0.9420598297s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(548) {
+    transition-delay: 0.046245456s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(549) {
+    transition-delay: 0.7034634698s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(550) {
+    transition-delay: 0.2199951883s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(551) {
+    transition-delay: 0.596083433s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(552) {
+    transition-delay: 0.8740983831s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(553) {
+    transition-delay: 0.0183532993s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(554) {
+    transition-delay: 0.5843800343s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(555) {
+    transition-delay: 0.6807400144s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(556) {
+    transition-delay: 0.1730871768s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(557) {
+    transition-delay: 0.9979054678s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(558) {
+    transition-delay: 0.255361662s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(559) {
+    transition-delay: 0.1490465166s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(560) {
+    transition-delay: 0.4292779076s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(561) {
+    transition-delay: 0.0207867257s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(562) {
+    transition-delay: 0.0220783971s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(563) {
+    transition-delay: 0.7180448049s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(564) {
+    transition-delay: 0.5635281789s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(565) {
+    transition-delay: 0.0405105179s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(566) {
+    transition-delay: 0.7563832972s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(567) {
+    transition-delay: 0.5756966149s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(568) {
+    transition-delay: 0.4864901695s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(569) {
+    transition-delay: 0.3556409856s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(570) {
+    transition-delay: 0.9923685599s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(571) {
+    transition-delay: 0.1283435543s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(572) {
+    transition-delay: 0.2861445736s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(573) {
+    transition-delay: 0.9868614268s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(574) {
+    transition-delay: 0.2100919066s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(575) {
+    transition-delay: 0.0384045784s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(576) {
+    transition-delay: 0.9520789002s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(577) {
+    transition-delay: 0.6386255753s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(578) {
+    transition-delay: 0.0800098804s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(579) {
+    transition-delay: 0.1911936174s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(580) {
+    transition-delay: 0.6983579114s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(581) {
+    transition-delay: 0.5243194425s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(582) {
+    transition-delay: 0.8625548496s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(583) {
+    transition-delay: 0.893805495s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(584) {
+    transition-delay: 0.2509824651s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(585) {
+    transition-delay: 0.9248415655s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(586) {
+    transition-delay: 0.7330694325s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(587) {
+    transition-delay: 0.9257203681s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(588) {
+    transition-delay: 0.0271106289s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(589) {
+    transition-delay: 0.5879209415s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(590) {
+    transition-delay: 0.0528321651s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(591) {
+    transition-delay: 0.2642800617s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(592) {
+    transition-delay: 0.5065071426s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(593) {
+    transition-delay: 0.8090213378s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(594) {
+    transition-delay: 0.3938237941s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(595) {
+    transition-delay: 0.6577463s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(596) {
+    transition-delay: 0.3167873971s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(597) {
+    transition-delay: 0.2672828184s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(598) {
+    transition-delay: 0.4344015263s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(599) {
+    transition-delay: 0.2047773671s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(600) {
+    transition-delay: 0.0454469436s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(601) {
+    transition-delay: 0.9121137888s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(602) {
+    transition-delay: 0.339786948s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(603) {
+    transition-delay: 0.3442807967s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(604) {
+    transition-delay: 0.1503271769s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(605) {
+    transition-delay: 0.4833911133s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(606) {
+    transition-delay: 0.2007110601s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(607) {
+    transition-delay: 0.5399764859s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(608) {
+    transition-delay: 0.4968376207s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(609) {
+    transition-delay: 0.6950193884s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(610) {
+    transition-delay: 0.8845481477s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(611) {
+    transition-delay: 0.1200051187s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(612) {
+    transition-delay: 0.5014657574s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(613) {
+    transition-delay: 0.0344677265s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(614) {
+    transition-delay: 0.1801184935s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(615) {
+    transition-delay: 0.3491702722s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(616) {
+    transition-delay: 0.0190767023s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(617) {
+    transition-delay: 0.4791554878s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(618) {
+    transition-delay: 0.7870592694s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(619) {
+    transition-delay: 0.5872809764s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(620) {
+    transition-delay: 0.3098621354s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(621) {
+    transition-delay: 0.801485209s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(622) {
+    transition-delay: 0.6103845841s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(623) {
+    transition-delay: 0.6561130978s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(624) {
+    transition-delay: 0.7994023164s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(625) {
+    transition-delay: 0.4969175776s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(626) {
+    transition-delay: 0.6152084433s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(627) {
+    transition-delay: 0.3767674518s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(628) {
+    transition-delay: 0.3254189105s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(629) {
+    transition-delay: 0.137639668s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(630) {
+    transition-delay: 0.1934985864s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(631) {
+    transition-delay: 0.4502584736s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(632) {
+    transition-delay: 0.5213517696s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(633) {
+    transition-delay: 0.5355508286s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(634) {
+    transition-delay: 0.802412965s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(635) {
+    transition-delay: 0.4061736487s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(636) {
+    transition-delay: 0.5182510101s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(637) {
+    transition-delay: 0.7099042236s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(638) {
+    transition-delay: 0.2249685364s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(639) {
+    transition-delay: 0.9970770594s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(640) {
+    transition-delay: 0.4014300548s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(641) {
+    transition-delay: 0.9290731015s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(642) {
+    transition-delay: 0.152031625s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(643) {
+    transition-delay: 0.1832784909s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(644) {
+    transition-delay: 0.0718313172s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(645) {
+    transition-delay: 0.941992817s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(646) {
+    transition-delay: 0.9511268098s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(647) {
+    transition-delay: 0.1233787881s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(648) {
+    transition-delay: 0.2731841378s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(649) {
+    transition-delay: 0.6950765389s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(650) {
+    transition-delay: 0.0690354481s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(651) {
+    transition-delay: 0.3110043014s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(652) {
+    transition-delay: 0.297282014s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(653) {
+    transition-delay: 0.7449088487s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(654) {
+    transition-delay: 0.2551009071s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(655) {
+    transition-delay: 0.2711916359s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(656) {
+    transition-delay: 0.060824543s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(657) {
+    transition-delay: 0.1630726035s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(658) {
+    transition-delay: 0.0197296102s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(659) {
+    transition-delay: 0.6539838008s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(660) {
+    transition-delay: 0.9518977062s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(661) {
+    transition-delay: 0.3460967737s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(662) {
+    transition-delay: 0.6779696998s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(663) {
+    transition-delay: 0.8466969424s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(664) {
+    transition-delay: 0.2779018117s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(665) {
+    transition-delay: 0.7754513733s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(666) {
+    transition-delay: 0.8407352213s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(667) {
+    transition-delay: 0.1238181351s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(668) {
+    transition-delay: 0.8556579012s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(669) {
+    transition-delay: 0.2002884775s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(670) {
+    transition-delay: 0.340861306s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(671) {
+    transition-delay: 0.7432898284s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(672) {
+    transition-delay: 0.8731529673s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(673) {
+    transition-delay: 0.1983131513s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(674) {
+    transition-delay: 0.8706206033s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(675) {
+    transition-delay: 0.116160322s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(676) {
+    transition-delay: 0.8829388024s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(677) {
+    transition-delay: 0.7272596405s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(678) {
+    transition-delay: 0.6453332096s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(679) {
+    transition-delay: 0.8321311689s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(680) {
+    transition-delay: 0.1082536527s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(681) {
+    transition-delay: 0.3430196953s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(682) {
+    transition-delay: 0.3819269179s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(683) {
+    transition-delay: 0.7725963147s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(684) {
+    transition-delay: 0.9535355129s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(685) {
+    transition-delay: 0.369094308s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(686) {
+    transition-delay: 0.9185762269s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(687) {
+    transition-delay: 0.3770237796s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(688) {
+    transition-delay: 0.9189608749s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(689) {
+    transition-delay: 0.3444181854s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(690) {
+    transition-delay: 0.0986401416s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(691) {
+    transition-delay: 0.4903688926s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(692) {
+    transition-delay: 0.3959442644s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(693) {
+    transition-delay: 0.6280023847s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(694) {
+    transition-delay: 0.39784014s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(695) {
+    transition-delay: 0.1935095883s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(696) {
+    transition-delay: 0.0877406117s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(697) {
+    transition-delay: 0.5413909585s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(698) {
+    transition-delay: 0.2342647323s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(699) {
+    transition-delay: 0.6733426944s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(700) {
+    transition-delay: 0.9226900466s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(701) {
+    transition-delay: 0.3416196417s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(702) {
+    transition-delay: 0.8387748737s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(703) {
+    transition-delay: 0.9143811833s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(704) {
+    transition-delay: 0.1230181898s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(705) {
+    transition-delay: 0.8719991603s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(706) {
+    transition-delay: 0.2925860527s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(707) {
+    transition-delay: 0.2706843615s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(708) {
+    transition-delay: 0.7353370565s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(709) {
+    transition-delay: 0.4651291993s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(710) {
+    transition-delay: 0.7701378842s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(711) {
+    transition-delay: 0.3886456677s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(712) {
+    transition-delay: 0.0642275657s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(713) {
+    transition-delay: 0.3748720127s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(714) {
+    transition-delay: 0.101798543s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(715) {
+    transition-delay: 0.8554823245s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(716) {
+    transition-delay: 0.8003671152s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(717) {
+    transition-delay: 0.7054532975s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(718) {
+    transition-delay: 0.1235536179s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(719) {
+    transition-delay: 0.0115469618s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(720) {
+    transition-delay: 0.7578263054s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(721) {
+    transition-delay: 0.6204463056s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(722) {
+    transition-delay: 0.9293828007s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(723) {
+    transition-delay: 0.8429112428s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(724) {
+    transition-delay: 0.4414272642s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(725) {
+    transition-delay: 0.42382312s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(726) {
+    transition-delay: 0.8593178858s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(727) {
+    transition-delay: 0.8591663321s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(728) {
+    transition-delay: 0.0674593606s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(729) {
+    transition-delay: 0.3217586572s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(730) {
+    transition-delay: 0.6245777831s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(731) {
+    transition-delay: 0.9992780406s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(732) {
+    transition-delay: 0.5946718492s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(733) {
+    transition-delay: 0.8618017973s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(734) {
+    transition-delay: 0.0867196733s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(735) {
+    transition-delay: 0.2920356269s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(736) {
+    transition-delay: 0.0658414708s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(737) {
+    transition-delay: 0.8441888797s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(738) {
+    transition-delay: 0.2375692609s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(739) {
+    transition-delay: 0.1788512171s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(740) {
+    transition-delay: 0.7926488414s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(741) {
+    transition-delay: 0.1079411744s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(742) {
+    transition-delay: 0.9552657575s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(743) {
+    transition-delay: 0.9842833256s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(744) {
+    transition-delay: 0.4251920366s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(745) {
+    transition-delay: 0.6673673465s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(746) {
+    transition-delay: 0.2802759842s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(747) {
+    transition-delay: 0.9656136706s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(748) {
+    transition-delay: 0.7041678084s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(749) {
+    transition-delay: 0.834902529s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(750) {
+    transition-delay: 0.1469755932s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(751) {
+    transition-delay: 0.3112815056s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(752) {
+    transition-delay: 0.3959611975s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(753) {
+    transition-delay: 0.8263155064s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(754) {
+    transition-delay: 0.3368085923s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(755) {
+    transition-delay: 0.4416990482s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(756) {
+    transition-delay: 0.6508156067s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(757) {
+    transition-delay: 0.4941985716s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(758) {
+    transition-delay: 0.8147310276s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(759) {
+    transition-delay: 0.2371448633s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(760) {
+    transition-delay: 0.5526843234s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(761) {
+    transition-delay: 0.8757811396s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(762) {
+    transition-delay: 0.9352965558s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(763) {
+    transition-delay: 0.0514834864s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(764) {
+    transition-delay: 0.2393505193s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(765) {
+    transition-delay: 0.247002609s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(766) {
+    transition-delay: 0.1757168465s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(767) {
+    transition-delay: 0.2438307038s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(768) {
+    transition-delay: 0.6289784434s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(769) {
+    transition-delay: 0.1545978529s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(770) {
+    transition-delay: 0.1955233832s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(771) {
+    transition-delay: 0.4836535109s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(772) {
+    transition-delay: 0.8201958949s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(773) {
+    transition-delay: 0.083390083s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(774) {
+    transition-delay: 0.9145704972s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(775) {
+    transition-delay: 0.2598197063s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(776) {
+    transition-delay: 0.5766155807s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(777) {
+    transition-delay: 0.2662350711s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(778) {
+    transition-delay: 0.7181763773s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(779) {
+    transition-delay: 0.7047455614s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(780) {
+    transition-delay: 0.7197428034s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(781) {
+    transition-delay: 0.0571366614s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(782) {
+    transition-delay: 0.0450061279s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(783) {
+    transition-delay: 0.3544038413s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(784) {
+    transition-delay: 0.1451251564s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(785) {
+    transition-delay: 0.3651320806s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(786) {
+    transition-delay: 0.0080495761s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(787) {
+    transition-delay: 0.1579692505s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(788) {
+    transition-delay: 0.5283236658s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(789) {
+    transition-delay: 0.1847317317s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(790) {
+    transition-delay: 0.8871339662s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(791) {
+    transition-delay: 0.9241879644s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(792) {
+    transition-delay: 0.5782119022s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(793) {
+    transition-delay: 0.5180796703s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(794) {
+    transition-delay: 0.1270861228s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(795) {
+    transition-delay: 0.3647950581s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(796) {
+    transition-delay: 0.1154123633s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(797) {
+    transition-delay: 0.3073987s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(798) {
+    transition-delay: 0.0711179371s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(799) {
+    transition-delay: 0.6162916378s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(800) {
+    transition-delay: 0.8275685776s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(801) {
+    transition-delay: 0.7149273416s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(802) {
+    transition-delay: 0.2912988175s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(803) {
+    transition-delay: 0.6158936636s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(804) {
+    transition-delay: 0.2162641951s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(805) {
+    transition-delay: 0.5181761401s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(806) {
+    transition-delay: 0.9517199742s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(807) {
+    transition-delay: 0.0525095685s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(808) {
+    transition-delay: 0.802237801s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(809) {
+    transition-delay: 0.8459035367s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(810) {
+    transition-delay: 0.9335485946s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(811) {
+    transition-delay: 0.3926703836s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(812) {
+    transition-delay: 0.5738163024s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(813) {
+    transition-delay: 0.6565088398s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(814) {
+    transition-delay: 0.3378956476s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(815) {
+    transition-delay: 0.7836835303s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(816) {
+    transition-delay: 0.6827726755s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(817) {
+    transition-delay: 0.0713949228s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(818) {
+    transition-delay: 0.8381340173s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(819) {
+    transition-delay: 0.3385523542s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(820) {
+    transition-delay: 0.5160332897s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(821) {
+    transition-delay: 0.2685411096s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(822) {
+    transition-delay: 0.8951463666s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(823) {
+    transition-delay: 0.9348093653s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(824) {
+    transition-delay: 0.4296557079s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(825) {
+    transition-delay: 0.7170053575s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(826) {
+    transition-delay: 0.4831544222s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(827) {
+    transition-delay: 0.5696905345s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(828) {
+    transition-delay: 0.5045130363s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(829) {
+    transition-delay: 0.2042481717s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(830) {
+    transition-delay: 0.9746450044s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(831) {
+    transition-delay: 0.8161556526s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(832) {
+    transition-delay: 0.5299554476s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(833) {
+    transition-delay: 0.7839931711s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(834) {
+    transition-delay: 0.1657838242s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(835) {
+    transition-delay: 0.041461213s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(836) {
+    transition-delay: 0.202453339s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(837) {
+    transition-delay: 0.3174690153s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(838) {
+    transition-delay: 0.6220026519s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(839) {
+    transition-delay: 0.5016269894s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(840) {
+    transition-delay: 0.9628339551s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(841) {
+    transition-delay: 0.0857632819s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(842) {
+    transition-delay: 0.7871911833s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(843) {
+    transition-delay: 0.6783908782s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(844) {
+    transition-delay: 0.4765355538s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(845) {
+    transition-delay: 0.2549954285s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(846) {
+    transition-delay: 0.3580665218s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(847) {
+    transition-delay: 0.4787966246s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(848) {
+    transition-delay: 0.4850758914s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(849) {
+    transition-delay: 0.282102131s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(850) {
+    transition-delay: 0.4615668515s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(851) {
+    transition-delay: 0.1094579712s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(852) {
+    transition-delay: 0.5546226594s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(853) {
+    transition-delay: 0.9526385088s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(854) {
+    transition-delay: 0.7299159065s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(855) {
+    transition-delay: 0.370016073s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(856) {
+    transition-delay: 0.0702684222s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(857) {
+    transition-delay: 0.4795831834s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(858) {
+    transition-delay: 0.3769861812s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(859) {
+    transition-delay: 0.0339202788s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(860) {
+    transition-delay: 0.1235174019s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(861) {
+    transition-delay: 0.9931402519s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(862) {
+    transition-delay: 0.1663259075s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(863) {
+    transition-delay: 0.2970824525s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(864) {
+    transition-delay: 0.2643508805s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(865) {
+    transition-delay: 0.9253880196s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(866) {
+    transition-delay: 0.2005914192s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(867) {
+    transition-delay: 0.1184081327s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(868) {
+    transition-delay: 0.6439576544s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(869) {
+    transition-delay: 0.3110381366s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(870) {
+    transition-delay: 0.4616264485s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(871) {
+    transition-delay: 0.8057649629s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(872) {
+    transition-delay: 0.2802167004s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(873) {
+    transition-delay: 0.1478050807s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(874) {
+    transition-delay: 0.9100388074s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(875) {
+    transition-delay: 0.0999590878s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(876) {
+    transition-delay: 0.3749850527s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(877) {
+    transition-delay: 0.4434533086s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(878) {
+    transition-delay: 0.6095268504s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(879) {
+    transition-delay: 0.0767625152s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(880) {
+    transition-delay: 0.1642138831s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(881) {
+    transition-delay: 0.2434460097s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(882) {
+    transition-delay: 0.4545596742s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(883) {
+    transition-delay: 0.7846943173s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(884) {
+    transition-delay: 0.7029195122s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(885) {
+    transition-delay: 0.2702772933s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(886) {
+    transition-delay: 0.5167157907s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(887) {
+    transition-delay: 0.5790181157s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(888) {
+    transition-delay: 0.1748876788s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(889) {
+    transition-delay: 0.7310133185s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(890) {
+    transition-delay: 0.7275788828s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(891) {
+    transition-delay: 0.6691639799s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(892) {
+    transition-delay: 0.797294848s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(893) {
+    transition-delay: 0.1952911482s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(894) {
+    transition-delay: 0.0331283399s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(895) {
+    transition-delay: 0.7725346421s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(896) {
+    transition-delay: 0.5003050658s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(897) {
+    transition-delay: 0.9753209714s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(898) {
+    transition-delay: 0.232783473s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(899) {
+    transition-delay: 0.6325539086s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(900) {
+    transition-delay: 0.4110451897s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(901) {
+    transition-delay: 0.2374694569s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(902) {
+    transition-delay: 0.9855046807s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(903) {
+    transition-delay: 0.4931864989s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(904) {
+    transition-delay: 0.4111442336s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(905) {
+    transition-delay: 0.4548956722s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(906) {
+    transition-delay: 0.9537743056s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(907) {
+    transition-delay: 0.3807449184s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(908) {
+    transition-delay: 0.9755006265s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(909) {
+    transition-delay: 0.1776812816s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(910) {
+    transition-delay: 0.6962597054s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(911) {
+    transition-delay: 0.7360010451s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(912) {
+    transition-delay: 0.5527171778s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(913) {
+    transition-delay: 0.7220425619s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(914) {
+    transition-delay: 0.0902865042s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(915) {
+    transition-delay: 0.1031457846s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(916) {
+    transition-delay: 0.3439049606s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(917) {
+    transition-delay: 0.3145255954s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(918) {
+    transition-delay: 0.6002868408s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(919) {
+    transition-delay: 0.1246886103s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(920) {
+    transition-delay: 0.4490250851s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(921) {
+    transition-delay: 0.9456570685s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(922) {
+    transition-delay: 0.4288487498s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(923) {
+    transition-delay: 0.0978566259s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(924) {
+    transition-delay: 0.1982610152s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(925) {
+    transition-delay: 0.7657365973s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(926) {
+    transition-delay: 0.4977867848s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(927) {
+    transition-delay: 0.4921011133s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(928) {
+    transition-delay: 0.0176338578s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(929) {
+    transition-delay: 0.0844107247s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(930) {
+    transition-delay: 0.1967236306s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(931) {
+    transition-delay: 0.3640060901s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(932) {
+    transition-delay: 0.1313510315s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(933) {
+    transition-delay: 0.1440886771s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(934) {
+    transition-delay: 0.2895596637s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(935) {
+    transition-delay: 0.1866983625s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(936) {
+    transition-delay: 0.9955476228s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(937) {
+    transition-delay: 0.9708555024s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(938) {
+    transition-delay: 0.9878166449s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(939) {
+    transition-delay: 0.1334604493s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(940) {
+    transition-delay: 0.3776078747s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(941) {
+    transition-delay: 0.0601777264s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(942) {
+    transition-delay: 0.686393434s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(943) {
+    transition-delay: 0.4236262412s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(944) {
+    transition-delay: 0.2986586636s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(945) {
+    transition-delay: 0.2405569521s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(946) {
+    transition-delay: 0.4742111429s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(947) {
+    transition-delay: 0.3720242089s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(948) {
+    transition-delay: 0.8155703603s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(949) {
+    transition-delay: 0.2110316626s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(950) {
+    transition-delay: 0.7357889415s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(951) {
+    transition-delay: 0.9113065856s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(952) {
+    transition-delay: 0.9061906721s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(953) {
+    transition-delay: 0.1151963358s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(954) {
+    transition-delay: 0.138570282s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(955) {
+    transition-delay: 0.2837678119s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(956) {
+    transition-delay: 0.3661965534s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(957) {
+    transition-delay: 0.7575697079s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(958) {
+    transition-delay: 0.1812428626s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(959) {
+    transition-delay: 0.8322382061s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(960) {
+    transition-delay: 0.4933972937s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(961) {
+    transition-delay: 0.4288447923s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(962) {
+    transition-delay: 0.1410040759s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(963) {
+    transition-delay: 0.3412376063s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(964) {
+    transition-delay: 0.2255194418s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(965) {
+    transition-delay: 0.989671852s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(966) {
+    transition-delay: 0.4392913522s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(967) {
+    transition-delay: 0.2260326441s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(968) {
+    transition-delay: 0.3902504419s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(969) {
+    transition-delay: 0.3421223958s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(970) {
+    transition-delay: 0.1742433452s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(971) {
+    transition-delay: 0.594206303s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(972) {
+    transition-delay: 0.7217577144s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(973) {
+    transition-delay: 0.6125511542s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(974) {
+    transition-delay: 0.3990066745s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(975) {
+    transition-delay: 0.2854915609s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(976) {
+    transition-delay: 0.1694285754s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(977) {
+    transition-delay: 0.7511784095s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(978) {
+    transition-delay: 0.9533863225s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(979) {
+    transition-delay: 0.6007178965s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(980) {
+    transition-delay: 0.854757316s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(981) {
+    transition-delay: 0.2728937946s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(982) {
+    transition-delay: 0.1476814396s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(983) {
+    transition-delay: 0.8534771411s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(984) {
+    transition-delay: 0.2517207661s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(985) {
+    transition-delay: 0.8211589401s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(986) {
+    transition-delay: 0.0202114799s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(987) {
+    transition-delay: 0.8781390891s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(988) {
+    transition-delay: 0.7278472636s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(989) {
+    transition-delay: 0.6498631395s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(990) {
+    transition-delay: 0.2005401386s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(991) {
+    transition-delay: 0.9360671603s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(992) {
+    transition-delay: 0.885078841s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(993) {
+    transition-delay: 0.2801851129s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(994) {
+    transition-delay: 0.8204436066s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(995) {
+    transition-delay: 0.3980706724s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(996) {
+    transition-delay: 0.2420461667s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(997) {
+    transition-delay: 0.4536593395s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(998) {
+    transition-delay: 0.3552316774s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(999) {
+    transition-delay: 0.7292708479s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(1000) {
+    transition-delay: 0.2173407587s;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box > div {
+    display: inline-block;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    position: relative;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box > div > div {
+    transition: 2s;
+    position: absolute;
+    width: calc(100% + 0.5rem);
+    height: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    border-left: 3px solid #ff3e00;
+    border-right: 3px solid #ff3e00;
+    border-radius: 5px;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box > div > span {
+    display: inline-block;
+    border-radius: 5px;
+    width: 3rem;
+    height: 2rem;
+    background-color: #0a0a0a;
+    transition: 1s;
+    box-shadow: 0 0 20px #0a0a0a;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1.activated_an > .an_box > div > div {
+    transition: opacity 0.2s, height 1s;
+    opacity: 0;
+    height: 0%;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1.activated_an > .an_box > div:nth-child(1) > span:nth-child(1) {
+    transform: translateX(-45%) translateY(24%);
+    rotate: 10deg;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1.activated_an > .an_box > div:nth-child(1) > span:nth-child(2) {
+    transform: translateX(15%) translateY(-120%);
+    rotate: 50deg;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1.activated_an > .an_box > div:nth-child(1) > span:nth-child(3) {
+    transform: translateX(25%) translateY(-27%);
+    rotate: 90deg;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1.activated_an > .an_box > div:nth-child(1) > span:nth-child(4) {
+    transform: translateX(79%) translateY(-90%);
+    rotate: 30deg;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1.activated_an > .an_box > div:nth-last-child(1) > span:nth-child(1) {
+    transform: translateX(45%) translateY(24%);
+    rotate: 30deg;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1.activated_an > .an_box > div:nth-last-child(1) > span:nth-child(2) {
+    transform: translateX(-15%) translateY(120%);
+    rotate: 10deg;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1.activated_an > .an_box > div:nth-last-child(1) > span:nth-child(3) {
+    transform: translateX(-25%) translateY(27%);
+    rotate: 120deg;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1.activated_an > .an_box > div:nth-last-child(1) > span:nth-child(4) {
+    transform: translateX(-79%) translateY(90%);
+    rotate: 80deg;
   }
   main > .main_part#main_part_3 {
     margin-top: 30rem;
