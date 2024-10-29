@@ -350,17 +350,20 @@ body{
                 #part_2_content{
                     position: relative;
                     // height: calc(60vh + 2rem);
-                    height: 67%;
+                    height: 73%;
                     width: 100%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-content: flex-start;
+                    gap: $gap;
 
                     >div{
-                        height: calc(30vh + $halfgap);
-                        width: calc(45.5% + $halfgap);
+                        height: 40%;
+                        width: calc(45.5%);
                         flex-direction: row;
                         align-items: center;
                         justify-content: center;
                         padding: .5rem;
-                        background-color: $lightgray;
                         border-radius: $borrad;
                         padding: 1rem;
                         display: flex;
@@ -372,26 +375,26 @@ body{
                         position: relative;
                         opacity: 0;
                         
-                        &:nth-child(1){
-                            position: absolute;
-                            left: 0;
-                            top: 0;
-                        }
-                        &:nth-child(2){
-                            position: absolute;
-                            right: 0;
-                            top: 0;
-                        }
-                        &:nth-child(3){
-                            position: absolute;
-                            left: 0;
-                            bottom: 0;
-                        }
-                        &:nth-child(4){
-                            position: absolute;
-                            right: 0;
-                            bottom: 0;
-                        }
+                        // &:nth-child(1){
+                        //     position: absolute;
+                        //     left: 0;
+                        //     top: 0;
+                        // }
+                        // &:nth-child(2){
+                        //     position: absolute;
+                        //     right: 0;
+                        //     top: 0;
+                        // }
+                        // &:nth-child(3){
+                        //     position: absolute;
+                        //     left: 0;
+                        //     bottom: 0;
+                        // }
+                        // &:nth-child(4){
+                        //     position: absolute;
+                        //     right: 0;
+                        //     bottom: 0;
+                        // }
 
                         background:
                         conic-gradient(from 75deg,rgba(204,204,204,0.1)   15deg ,rgba(255, 255, 255, 0.1) 0 30deg ,#0000 0 180deg, rgba(255, 255, 255, 0.1) 0 195deg,rgba(204,204,204,0.1) 0 210deg,#0000 0) calc(0.5*30px) calc(0.5*30px/0.577),
@@ -405,7 +408,6 @@ body{
                         >div{
                             width: 100%;
                             aspect-ratio: 1/1;
-                            background-color: gray;
                             border-radius: $borrad;
                             position: absolute;
                             bottom: 0;

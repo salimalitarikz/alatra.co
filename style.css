@@ -287,17 +287,20 @@ body {
   }
   main > .main_part#main_part_2 #part_2_content {
     position: relative;
-    height: 67%;
+    height: 73%;
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 1rem;
   }
   main > .main_part#main_part_2 #part_2_content > div {
-    height: calc(30vh + 0.5rem);
-    width: calc(45.5% + 0.5rem);
+    height: 40%;
+    width: 45.5%;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     padding: 0.5rem;
-    background-color: #fcfcfc;
     border-radius: 0.5rem;
     padding: 1rem;
     display: flex;
@@ -312,30 +315,9 @@ body {
     background-size: 30px 51.993067591px;
     background-color: #fcfcfc;
   }
-  main > .main_part#main_part_2 #part_2_content > div:nth-child(1) {
-    position: absolute;
-    left: 0;
-    top: 0;
-  }
-  main > .main_part#main_part_2 #part_2_content > div:nth-child(2) {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  main > .main_part#main_part_2 #part_2_content > div:nth-child(3) {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-  }
-  main > .main_part#main_part_2 #part_2_content > div:nth-child(4) {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-  }
   main > .main_part#main_part_2 #part_2_content > div > div {
     width: 100%;
     aspect-ratio: 1/1;
-    background-color: gray;
     border-radius: 0.5rem;
     position: absolute;
     bottom: 0;
