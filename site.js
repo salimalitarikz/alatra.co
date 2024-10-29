@@ -8,7 +8,7 @@ let scrollMain = document.getElementById("main");
 let allElements = document.querySelectorAll("#main>section *");
 
 
-const snapValues = [320, 400, 500, 600, 700,800]; // Birden fazla snap noktası
+const snapValues = [320,400]; // Birden fazla snap noktası
 const scrollPause = 500; // Duraklama süresi (ms)
 let isPaused = false; // Duraklama kontrolü
 let hasSnapped = Array(snapValues.length).fill(false); // Her snap için kontrol dizisi   
@@ -56,54 +56,59 @@ scrollMain.addEventListener("scroll", (el) => {
     // globe get bigger and becomes background
     if (scrollVal > 360) {
         qs("#globe").classList.add("globe_bigger");
-        qs("nav").classList.add("nav_black");
+        qs("#part_2_content").classList.add("activated");
         qs("#part_2_banner").classList.add("activated_2");
+        qs("#part_2_banner_2").classList.add("activated");
+        qs("#part_2_banner_2>h3").classList.add("an1_activated");
+        qs("nav").classList.add("nav_black");
     }else{
         qs("#globe").classList.remove("globe_bigger");
-        qs("nav").classList.remove("nav_black");
         qs("#part_2_banner").classList.remove("activated_2");
-        qs("#part_2_c_1").classList.remove("activated");
+        qs("#part_2_banner_2").classList.remove("activated");
+        qs("#part_2_content").classList.remove("activated");
+        qs("#part_2_banner_2>h3").classList.remove("an1_activated");
+        qs("nav").classList.remove("nav_black");
     }
 
-    // part 2 animations
+    // // part 2 animations
 
-    if (scrollVal > 400) {
-        qs("#part_2_c_1").classList.add("activated");
-    }else{
-        qs("#part_2_c_1").classList.remove("activated");
-    }
+    // if (scrollVal > 400) {
+    //     qs("#part_2_c_1").classList.add("activated");
+    // }else{
+    //     qs("#part_2_c_1").classList.remove("activated");
+    // }
 
-    if (scrollVal > 500) {
-        qs("#part_2_c_1").classList.add("passivated");
-        qs("#part_2_c_2").classList.add("activated");
+    // if (scrollVal > 500) {
+    //     qs("#part_2_c_1").classList.add("passivated");
+    //     qs("#part_2_c_2").classList.add("activated");
         
-    }else{
-        qs("#part_2_c_1").classList.remove("passivated");
-        qs("#part_2_c_2").classList.remove("activated");
-    }
+    // }else{
+    //     qs("#part_2_c_1").classList.remove("passivated");
+    //     qs("#part_2_c_2").classList.remove("activated");
+    // }
 
-    if (scrollVal > 600) {
-        qs("#part_2_c_2").classList.add("passivated");
-        qs("#part_2_c_3").classList.add("activated");
+    // if (scrollVal > 600) {
+    //     qs("#part_2_c_2").classList.add("passivated");
+    //     qs("#part_2_c_3").classList.add("activated");
         
-    }else{
-        qs("#part_2_c_2").classList.remove("passivated");
-        qs("#part_2_c_3").classList.remove("activated");
-    }
-    if (scrollVal > 700) {
-        qs("#part_2_c_3").classList.add("passivated");
-        qs("#part_2_c_4").classList.add("activated");
+    // }else{
+    //     qs("#part_2_c_2").classList.remove("passivated");
+    //     qs("#part_2_c_3").classList.remove("activated");
+    // }
+    // if (scrollVal > 700) {
+    //     qs("#part_2_c_3").classList.add("passivated");
+    //     qs("#part_2_c_4").classList.add("activated");
         
-    }else{
-        qs("#part_2_c_3").classList.remove("passivated");
-        qs("#part_2_c_4").classList.remove("activated");
-    }
-    if (scrollVal > 800) {
-        qs("#part_2_c_4").classList.add("passivated");
+    // }else{
+    //     qs("#part_2_c_3").classList.remove("passivated");
+    //     qs("#part_2_c_4").classList.remove("activated");
+    // }
+    // if (scrollVal > 800) {
+    //     qs("#part_2_c_4").classList.add("passivated");
         
-    }else{
-        qs("#part_2_c_4").classList.remove("passivated");
-    }
+    // }else{
+    //     qs("#part_2_c_4").classList.remove("passivated");
+    // }
 
 
 
