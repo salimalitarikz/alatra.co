@@ -740,7 +740,6 @@ body {
   main > .main_part#main_part_2 #part_2_content #part_2_c_4 > div > span:nth-child(5) {
     scale: 1;
     opacity: 1;
-    box-shadow: 0 0 10px #ff3e00;
   }
   main > .main_part#main_part_2 #part_2_content #part_2_c_4 > div > span:nth-child(2), main > .main_part#main_part_2 #part_2_content #part_2_c_4 > div > span:nth-child(4), main > .main_part#main_part_2 #part_2_content #part_2_c_4 > div > span:nth-child(6), main > .main_part#main_part_2 #part_2_content #part_2_c_4 > div > span:nth-child(8) {
     animation: p2_c4_a2 4s linear infinite;
@@ -749,7 +748,6 @@ body {
     0% {
       scale: 0;
       opacity: 0;
-      box-shadow: 0 0 20px #0a0a0a;
     }
     20% {
       scale: 0;
@@ -758,7 +756,6 @@ body {
     25% {
       scale: 1;
       opacity: 1;
-      box-shadow: 0 0 20px #0a0a0a;
     }
     95% {
       scale: 1;
@@ -777,7 +774,6 @@ body {
     0% {
       scale: 0;
       opacity: 0;
-      box-shadow: 0 0 20px #0a0a0a;
     }
     40% {
       scale: 0;
@@ -786,12 +782,10 @@ body {
     45% {
       scale: 1;
       opacity: 1;
-      box-shadow: 0 0 20px #0a0a0a;
     }
     95% {
       scale: 1;
       opacity: 1;
-      box-shadow: 0 0 10px #ff3e00;
     }
     100% {
       scale: 1;
