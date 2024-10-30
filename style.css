@@ -314,9 +314,8 @@ body {
     transition: 1s;
     position: relative;
     opacity: 0;
-    background: radial-gradient(circle, transparent 20%, #f9f9f9 20%, #f9f9f9 80%, transparent 80%, transparent) 0% 0%/40px 40px, radial-gradient(circle, transparent 20%, #f9f9f9 20%, #f9f9f9 80%, transparent 80%, transparent) 20px 20px/40px 40px, linear-gradient(#e2e2e2 1.5px, transparent 1.5px) 0px -0.75px/20px 20px, linear-gradient(90deg, #e2e2e2 1.5px, #f9f9f9 1.5px) -0.75px 0px/20px 20px #f9f9f9;
-    background-size: 40px 40px, 40px 40px, 20px 20px, 20px 20px;
     background-color: #fcfcfc;
+    background-image: url(/ui/grain.png);
     background-color: #fcfcfc;
   }
   main > .main_part#main_part_2 #part_2_content > div > div {
@@ -399,19 +398,35 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     gap: 20%;
+    z-index: -1;
   }
   main > .main_part#main_part_2 #part_2_content #part_2_c_1 > div > div {
     background-color: #ff3e00;
     position: absolute;
+    border-radius: 2px;
   }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 > div > div:nth-child(1) {
+  @keyframes p2_c1_a5 {
+    0% {
+      box-shadow: 0 0 15px #ff3e00;
+    }
+    10% {
+      box-shadow: 0 0 0px #ff3e00;
+    }
+    90% {
+      box-shadow: 0 0 0px #ff3e00;
+    }
+    100% {
+      box-shadow: 0 0 15px #ff3e00;
+    }
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 > div > div:nth-last-child(1) {
     height: 80%;
     width: 3px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 > div > div:nth-child(2) {
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 > div > div:nth-last-child(2) {
     width: 80%;
     height: 3px;
     top: 50%;
@@ -423,3191 +438,364 @@ body {
     width: 35%;
     aspect-ratio: 1/1;
     background-color: #0a0a0a;
-    box-shadow: 0 0 10px #ff3e00;
+    box-shadow: 0 0 20px #0a0a0a;
     border-radius: 5px;
+    z-index: 2;
   }
   main > .main_part#main_part_2 #part_2_content #part_2_c_1 > div > span:nth-child(1) {
-    animation: p2_c1_a1 2s linear infinite;
+    animation: p2_c1_a1 3s linear infinite;
   }
   @keyframes p2_c1_a1 {
-    100% {
-      transform: translateX(100%);
-    }
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 {
-    overflow: hidden;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding-bottom: 2rem;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(1) {
-    transition-delay: 0.6002788743s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(2) {
-    transition-delay: 0.222049834s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(3) {
-    transition-delay: 0.057183597s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(4) {
-    transition-delay: 0.068821324s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(5) {
-    transition-delay: 0.867346548s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(6) {
-    transition-delay: 0.9380311698s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(7) {
-    transition-delay: 0.239806031s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(8) {
-    transition-delay: 0.2953146402s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(9) {
-    transition-delay: 0.0917255098s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(10) {
-    transition-delay: 0.318504621s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(11) {
-    transition-delay: 0.7699175618s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(12) {
-    transition-delay: 0.5329284792s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(13) {
-    transition-delay: 0.5741924704s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(14) {
-    transition-delay: 0.5500336552s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(15) {
-    transition-delay: 0.4717833382s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(16) {
-    transition-delay: 0.2588329725s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(17) {
-    transition-delay: 0.890546613s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(18) {
-    transition-delay: 0.2910311377s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(19) {
-    transition-delay: 0.233172371s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(20) {
-    transition-delay: 0.8577081342s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(21) {
-    transition-delay: 0.156356553s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(22) {
-    transition-delay: 0.8044650326s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(23) {
-    transition-delay: 0.2767414353s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(24) {
-    transition-delay: 0.493374003s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(25) {
-    transition-delay: 0.3204430801s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(26) {
-    transition-delay: 0.7150497217s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(27) {
-    transition-delay: 0.2198464766s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(28) {
-    transition-delay: 0.3637742188s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(29) {
-    transition-delay: 0.0913196924s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(30) {
-    transition-delay: 0.0131446289s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(31) {
-    transition-delay: 0.7095087327s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(32) {
-    transition-delay: 0.3617043795s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(33) {
-    transition-delay: 0.0440572975s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(34) {
-    transition-delay: 0.1630411812s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(35) {
-    transition-delay: 0.4800254172s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(36) {
-    transition-delay: 0.7207656779s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(37) {
-    transition-delay: 0.8485589884s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(38) {
-    transition-delay: 0.615143138s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(39) {
-    transition-delay: 0.181082481s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(40) {
-    transition-delay: 0.0979908425s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(41) {
-    transition-delay: 0.8388310999s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(42) {
-    transition-delay: 0.090467076s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(43) {
-    transition-delay: 0.2645799033s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(44) {
-    transition-delay: 0.2439249871s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(45) {
-    transition-delay: 0.6648750024s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(46) {
-    transition-delay: 0.646491806s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(47) {
-    transition-delay: 0.5199555592s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(48) {
-    transition-delay: 0.7806502773s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(49) {
-    transition-delay: 0.8895826221s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(50) {
-    transition-delay: 0.0945586418s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(51) {
-    transition-delay: 0.6489864497s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(52) {
-    transition-delay: 0.4001666339s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(53) {
-    transition-delay: 0.0710435918s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(54) {
-    transition-delay: 0.8612203287s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(55) {
-    transition-delay: 0.2996185082s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(56) {
-    transition-delay: 0.2622333822s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(57) {
-    transition-delay: 0.7331084863s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(58) {
-    transition-delay: 0.3936233674s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(59) {
-    transition-delay: 0.8492681668s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(60) {
-    transition-delay: 0.1877880749s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(61) {
-    transition-delay: 0.9390663576s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(62) {
-    transition-delay: 0.7986237717s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(63) {
-    transition-delay: 0.4505672972s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(64) {
-    transition-delay: 0.154659172s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(65) {
-    transition-delay: 0.7288566825s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(66) {
-    transition-delay: 0.256421507s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(67) {
-    transition-delay: 0.3123102771s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(68) {
-    transition-delay: 0.1885851908s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(69) {
-    transition-delay: 0.097383549s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(70) {
-    transition-delay: 0.2384304219s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(71) {
-    transition-delay: 0.3695408882s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(72) {
-    transition-delay: 0.8786150483s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(73) {
-    transition-delay: 0.6072527438s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(74) {
-    transition-delay: 0.118235895s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(75) {
-    transition-delay: 0.2279089254s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(76) {
-    transition-delay: 0.3612773209s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(77) {
-    transition-delay: 0.2921404919s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(78) {
-    transition-delay: 0.337972393s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(79) {
-    transition-delay: 0.576509205s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(80) {
-    transition-delay: 0.2678918875s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(81) {
-    transition-delay: 0.9154184321s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(82) {
-    transition-delay: 0.0454434882s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(83) {
-    transition-delay: 0.6719299496s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(84) {
-    transition-delay: 0.306210227s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(85) {
-    transition-delay: 0.7531920643s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(86) {
-    transition-delay: 0.4791886825s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(87) {
-    transition-delay: 0.6683477855s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(88) {
-    transition-delay: 0.9628670675s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(89) {
-    transition-delay: 0.2583140583s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(90) {
-    transition-delay: 0.1526286407s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(91) {
-    transition-delay: 0.2281996836s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(92) {
-    transition-delay: 0.5263281157s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(93) {
-    transition-delay: 0.1565739862s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(94) {
-    transition-delay: 0.9400877991s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(95) {
-    transition-delay: 0.3406447351s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(96) {
-    transition-delay: 0.7504178447s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(97) {
-    transition-delay: 0.9755005837s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(98) {
-    transition-delay: 0.8401760284s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(99) {
-    transition-delay: 0.2657132427s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(100) {
-    transition-delay: 0.0504838506s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(101) {
-    transition-delay: 0.8431580143s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(102) {
-    transition-delay: 0.4876020937s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(103) {
-    transition-delay: 0.1598792435s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(104) {
-    transition-delay: 0.3973190738s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(105) {
-    transition-delay: 0.3355792564s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(106) {
-    transition-delay: 0.9461019344s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(107) {
-    transition-delay: 0.3158699873s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(108) {
-    transition-delay: 0.3245629001s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(109) {
-    transition-delay: 0.7443198593s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(110) {
-    transition-delay: 0.0218112851s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(111) {
-    transition-delay: 0.3925901507s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(112) {
-    transition-delay: 0.4990355033s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(113) {
-    transition-delay: 0.509290925s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(114) {
-    transition-delay: 0.0941392444s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(115) {
-    transition-delay: 0.2035471896s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(116) {
-    transition-delay: 0.5149980113s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(117) {
-    transition-delay: 0.6609667151s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(118) {
-    transition-delay: 0.7601209889s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(119) {
-    transition-delay: 0.6926236739s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(120) {
-    transition-delay: 0.4884551846s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(121) {
-    transition-delay: 0.1163880755s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(122) {
-    transition-delay: 0.8579167157s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(123) {
-    transition-delay: 0.2114316905s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(124) {
-    transition-delay: 0.6177655913s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(125) {
-    transition-delay: 0.7642008306s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(126) {
-    transition-delay: 0.2460724247s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(127) {
-    transition-delay: 0.8367199365s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(128) {
-    transition-delay: 0.5967465321s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(129) {
-    transition-delay: 0.728736989s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(130) {
-    transition-delay: 0.6953447751s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(131) {
-    transition-delay: 0.0924821135s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(132) {
-    transition-delay: 0.7275993332s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(133) {
-    transition-delay: 0.1715848034s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(134) {
-    transition-delay: 0.8295551659s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(135) {
-    transition-delay: 0.3311450958s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(136) {
-    transition-delay: 0.216582047s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(137) {
-    transition-delay: 0.2803585248s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(138) {
-    transition-delay: 0.3056411511s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(139) {
-    transition-delay: 0.4996410109s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(140) {
-    transition-delay: 0.2552718433s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(141) {
-    transition-delay: 0.2667633805s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(142) {
-    transition-delay: 0.7033998858s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(143) {
-    transition-delay: 0.7889821712s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(144) {
-    transition-delay: 0.2686629813s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(145) {
-    transition-delay: 0.7465724883s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(146) {
-    transition-delay: 0.5968157898s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(147) {
-    transition-delay: 0.6995038198s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(148) {
-    transition-delay: 0.7150565503s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(149) {
-    transition-delay: 0.1244954498s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(150) {
-    transition-delay: 0.7604175728s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(151) {
-    transition-delay: 0.9550524403s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(152) {
-    transition-delay: 0.0698381596s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(153) {
-    transition-delay: 0.477272831s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(154) {
-    transition-delay: 0.4168155382s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(155) {
-    transition-delay: 0.6889378186s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(156) {
-    transition-delay: 0.4998722883s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(157) {
-    transition-delay: 0.6754069318s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(158) {
-    transition-delay: 0.3008260547s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(159) {
-    transition-delay: 0.6122614914s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(160) {
-    transition-delay: 0.3845818855s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(161) {
-    transition-delay: 0.9871840998s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(162) {
-    transition-delay: 0.3015163406s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(163) {
-    transition-delay: 0.4773057584s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(164) {
-    transition-delay: 0.3368921923s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(165) {
-    transition-delay: 0.5604271045s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(166) {
-    transition-delay: 0.1505217287s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(167) {
-    transition-delay: 0.8538888411s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(168) {
-    transition-delay: 0.8814223767s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(169) {
-    transition-delay: 0.5376268753s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(170) {
-    transition-delay: 0.7598808273s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(171) {
-    transition-delay: 0.4888643676s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(172) {
-    transition-delay: 0.2921110154s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(173) {
-    transition-delay: 0.7057439324s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(174) {
-    transition-delay: 0.3154538233s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(175) {
-    transition-delay: 0.6261030475s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(176) {
-    transition-delay: 0.293605403s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(177) {
-    transition-delay: 0.1644812096s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(178) {
-    transition-delay: 0.5264601978s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(179) {
-    transition-delay: 0.8831925188s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(180) {
-    transition-delay: 0.2213742122s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(181) {
-    transition-delay: 0.9824752389s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(182) {
-    transition-delay: 0.3241338039s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(183) {
-    transition-delay: 0.0592920149s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(184) {
-    transition-delay: 0.5736465135s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(185) {
-    transition-delay: 0.9491077941s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(186) {
-    transition-delay: 0.7403896598s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(187) {
-    transition-delay: 0.0156022383s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(188) {
-    transition-delay: 0.8872762678s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(189) {
-    transition-delay: 0.2270716675s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(190) {
-    transition-delay: 0.7466739855s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(191) {
-    transition-delay: 0.2377909017s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(192) {
-    transition-delay: 0.5559184585s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(193) {
-    transition-delay: 0.2187238838s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(194) {
-    transition-delay: 0.3841870128s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(195) {
-    transition-delay: 0.3079359824s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(196) {
-    transition-delay: 0.7704758847s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(197) {
-    transition-delay: 0.5176936645s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(198) {
-    transition-delay: 0.2367887843s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(199) {
-    transition-delay: 0.0361256217s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(200) {
-    transition-delay: 0.3968332801s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(201) {
-    transition-delay: 0.3554536844s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(202) {
-    transition-delay: 0.1886894358s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(203) {
-    transition-delay: 0.2484039629s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(204) {
-    transition-delay: 0.7754631955s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(205) {
-    transition-delay: 0.3366844759s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(206) {
-    transition-delay: 0.3085617964s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(207) {
-    transition-delay: 0.4378231319s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(208) {
-    transition-delay: 0.6626107433s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(209) {
-    transition-delay: 0.7012557904s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(210) {
-    transition-delay: 0.2777192816s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(211) {
-    transition-delay: 0.365373887s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(212) {
-    transition-delay: 0.3074258329s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(213) {
-    transition-delay: 0.2392005731s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(214) {
-    transition-delay: 0.452408038s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(215) {
-    transition-delay: 0.6499389826s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(216) {
-    transition-delay: 0.9326467687s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(217) {
-    transition-delay: 0.9425665968s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(218) {
-    transition-delay: 0.8846724336s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(219) {
-    transition-delay: 0.2832421498s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(220) {
-    transition-delay: 0.4469178569s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(221) {
-    transition-delay: 0.3658609265s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(222) {
-    transition-delay: 0.5199649324s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(223) {
-    transition-delay: 0.4672378186s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(224) {
-    transition-delay: 0.7326227743s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(225) {
-    transition-delay: 0.7672583782s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(226) {
-    transition-delay: 0.7765330082s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(227) {
-    transition-delay: 0.7784679497s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(228) {
-    transition-delay: 0.2737166781s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(229) {
-    transition-delay: 0.4281264011s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(230) {
-    transition-delay: 0.8053696959s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(231) {
-    transition-delay: 0.2924756587s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(232) {
-    transition-delay: 0.5899974763s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(233) {
-    transition-delay: 0.8614656154s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(234) {
-    transition-delay: 0.5882987786s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(235) {
-    transition-delay: 0.7510410165s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(236) {
-    transition-delay: 0.3949958641s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(237) {
-    transition-delay: 0.4937287709s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(238) {
-    transition-delay: 0.3692439892s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(239) {
-    transition-delay: 0.3555091472s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(240) {
-    transition-delay: 0.0096345348s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(241) {
-    transition-delay: 0.0643077321s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(242) {
-    transition-delay: 0.0942643783s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(243) {
-    transition-delay: 0.91810326s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(244) {
-    transition-delay: 0.1146987711s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(245) {
-    transition-delay: 0.9631155422s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(246) {
-    transition-delay: 0.1646958703s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(247) {
-    transition-delay: 0.1461562313s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(248) {
-    transition-delay: 0.4615757998s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(249) {
-    transition-delay: 0.9959824351s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(250) {
-    transition-delay: 0.0022778716s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(251) {
-    transition-delay: 0.2024368373s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(252) {
-    transition-delay: 0.1547075361s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(253) {
-    transition-delay: 0.7190468173s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(254) {
-    transition-delay: 0.9087649545s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(255) {
-    transition-delay: 0.1389177836s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(256) {
-    transition-delay: 0.216776778s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(257) {
-    transition-delay: 0.8072342104s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(258) {
-    transition-delay: 0.2371218225s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(259) {
-    transition-delay: 0.2632968682s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(260) {
-    transition-delay: 0.9777232868s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(261) {
-    transition-delay: 0.2237034462s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(262) {
-    transition-delay: 0.9425194067s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(263) {
-    transition-delay: 0.6101802045s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(264) {
-    transition-delay: 0.3106072312s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(265) {
-    transition-delay: 0.530001283s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(266) {
-    transition-delay: 0.6637502799s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(267) {
-    transition-delay: 0.8330618842s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(268) {
-    transition-delay: 0.1564710044s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(269) {
-    transition-delay: 0.4388680663s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(270) {
-    transition-delay: 0.2944415966s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(271) {
-    transition-delay: 0.3410421963s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(272) {
-    transition-delay: 0.8323766844s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(273) {
-    transition-delay: 0.8920911622s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(274) {
-    transition-delay: 0.410984489s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(275) {
-    transition-delay: 0.4202475125s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(276) {
-    transition-delay: 0.0280729489s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(277) {
-    transition-delay: 0.1314887717s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(278) {
-    transition-delay: 0.2689810183s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(279) {
-    transition-delay: 0.0406488015s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(280) {
-    transition-delay: 0.9967518959s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(281) {
-    transition-delay: 0.1147756256s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(282) {
-    transition-delay: 0.5416639519s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(283) {
-    transition-delay: 0.9312992175s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(284) {
-    transition-delay: 0.0218931457s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(285) {
-    transition-delay: 0.2272813764s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(286) {
-    transition-delay: 0.8949158525s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(287) {
-    transition-delay: 0.8481160335s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(288) {
-    transition-delay: 0.0722547816s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(289) {
-    transition-delay: 0.3309923187s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(290) {
-    transition-delay: 0.4853803517s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(291) {
-    transition-delay: 0.8029917739s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(292) {
-    transition-delay: 0.0172858193s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(293) {
-    transition-delay: 0.4984882603s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(294) {
-    transition-delay: 0.3784381901s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(295) {
-    transition-delay: 0.8668182668s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(296) {
-    transition-delay: 0.6271077601s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(297) {
-    transition-delay: 0.9717588503s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(298) {
-    transition-delay: 0.5112960605s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(299) {
-    transition-delay: 0.7595623884s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(300) {
-    transition-delay: 0.4928396609s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(301) {
-    transition-delay: 0.5637109468s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(302) {
-    transition-delay: 0.7732253617s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(303) {
-    transition-delay: 0.4571417575s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(304) {
-    transition-delay: 0.5556208292s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(305) {
-    transition-delay: 0.8224009413s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(306) {
-    transition-delay: 0.9465847741s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(307) {
-    transition-delay: 0.9845552361s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(308) {
-    transition-delay: 0.2641434738s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(309) {
-    transition-delay: 0.6343816451s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(310) {
-    transition-delay: 0.9729854773s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(311) {
-    transition-delay: 0.8329851199s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(312) {
-    transition-delay: 0.11695418s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(313) {
-    transition-delay: 0.7772437562s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(314) {
-    transition-delay: 0.541342488s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(315) {
-    transition-delay: 0.495712182s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(316) {
-    transition-delay: 0.929920572s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(317) {
-    transition-delay: 0.5834752161s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(318) {
-    transition-delay: 0.6435590327s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(319) {
-    transition-delay: 0.1987229986s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(320) {
-    transition-delay: 0.0482836322s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(321) {
-    transition-delay: 0.4183634987s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(322) {
-    transition-delay: 0.8147375525s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(323) {
-    transition-delay: 0.5414725089s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(324) {
-    transition-delay: 0.7447642919s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(325) {
-    transition-delay: 0.8994086163s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(326) {
-    transition-delay: 0.6886842767s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(327) {
-    transition-delay: 0.6731541217s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(328) {
-    transition-delay: 0.9360140005s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(329) {
-    transition-delay: 0.4530981414s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(330) {
-    transition-delay: 0.8994938559s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(331) {
-    transition-delay: 0.1027638382s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(332) {
-    transition-delay: 0.5747055266s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(333) {
-    transition-delay: 0.1726524958s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(334) {
-    transition-delay: 0.3078237526s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(335) {
-    transition-delay: 0.8711138634s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(336) {
-    transition-delay: 0.0353690823s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(337) {
-    transition-delay: 0.8065645891s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(338) {
-    transition-delay: 0.0811215684s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(339) {
-    transition-delay: 0.4872136897s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(340) {
-    transition-delay: 0.6864574963s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(341) {
-    transition-delay: 0.4825299326s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(342) {
-    transition-delay: 0.1942513881s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(343) {
-    transition-delay: 0.8796028483s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(344) {
-    transition-delay: 0.0998329552s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(345) {
-    transition-delay: 0.9397284614s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(346) {
-    transition-delay: 0.6050103363s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(347) {
-    transition-delay: 0.3113735357s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(348) {
-    transition-delay: 0.6789629901s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(349) {
-    transition-delay: 0.4893080329s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(350) {
-    transition-delay: 0.1078375372s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(351) {
-    transition-delay: 0.1512811191s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(352) {
-    transition-delay: 0.2661608992s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(353) {
-    transition-delay: 0.5314107919s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(354) {
-    transition-delay: 0.8280188843s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(355) {
-    transition-delay: 0.3399891332s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(356) {
-    transition-delay: 0.7715547582s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(357) {
-    transition-delay: 0.2077376161s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(358) {
-    transition-delay: 0.9895395972s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(359) {
-    transition-delay: 0.3103058503s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(360) {
-    transition-delay: 0.8510803087s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(361) {
-    transition-delay: 0.0901479721s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(362) {
-    transition-delay: 0.685935551s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(363) {
-    transition-delay: 0.3120652703s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(364) {
-    transition-delay: 0.5669017634s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(365) {
-    transition-delay: 0.4919982572s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(366) {
-    transition-delay: 0.0789978076s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(367) {
-    transition-delay: 0.0621836499s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(368) {
-    transition-delay: 0.2914464129s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(369) {
-    transition-delay: 0.3329441917s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(370) {
-    transition-delay: 0.6773616934s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(371) {
-    transition-delay: 0.2616582026s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(372) {
-    transition-delay: 0.7849977401s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(373) {
-    transition-delay: 0.7457827379s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(374) {
-    transition-delay: 0.7071760227s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(375) {
-    transition-delay: 0.0252858515s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(376) {
-    transition-delay: 0.2934820008s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(377) {
-    transition-delay: 0.9003246839s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(378) {
-    transition-delay: 0.4046737828s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(379) {
-    transition-delay: 0.0478125076s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(380) {
-    transition-delay: 0.2751747161s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(381) {
-    transition-delay: 0.8039674464s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(382) {
-    transition-delay: 0.0732759945s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(383) {
-    transition-delay: 0.1940067677s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(384) {
-    transition-delay: 0.2208074463s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(385) {
-    transition-delay: 0.7235322852s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(386) {
-    transition-delay: 0.7692320076s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(387) {
-    transition-delay: 0.8929689638s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(388) {
-    transition-delay: 0.9037168331s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(389) {
-    transition-delay: 0.5169277855s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(390) {
-    transition-delay: 0.2976226011s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(391) {
-    transition-delay: 0.938401235s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(392) {
-    transition-delay: 0.0210313838s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(393) {
-    transition-delay: 0.5706524509s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(394) {
-    transition-delay: 0.9183353335s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(395) {
-    transition-delay: 0.7806308814s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(396) {
-    transition-delay: 0.6681132501s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(397) {
-    transition-delay: 0.6049814637s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(398) {
-    transition-delay: 0.1194409445s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(399) {
-    transition-delay: 0.5686480712s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(400) {
-    transition-delay: 0.2751857338s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(401) {
-    transition-delay: 0.5304314239s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(402) {
-    transition-delay: 0.0715556807s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(403) {
-    transition-delay: 0.7926329475s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(404) {
-    transition-delay: 0.779214417s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(405) {
-    transition-delay: 0.9723805276s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(406) {
-    transition-delay: 0.5131721516s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(407) {
-    transition-delay: 0.2504750355s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(408) {
-    transition-delay: 0.27690828s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(409) {
-    transition-delay: 0.728414717s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(410) {
-    transition-delay: 0.3149628646s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(411) {
-    transition-delay: 0.6476782868s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(412) {
-    transition-delay: 0.3263657868s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(413) {
-    transition-delay: 0.3966122924s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(414) {
-    transition-delay: 0.9051263845s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(415) {
-    transition-delay: 0.3535150974s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(416) {
-    transition-delay: 0.6724678648s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(417) {
-    transition-delay: 0.5548376101s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(418) {
-    transition-delay: 0.4289369064s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(419) {
-    transition-delay: 0.5744529828s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(420) {
-    transition-delay: 0.1168191723s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(421) {
-    transition-delay: 0.121966846s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(422) {
-    transition-delay: 0.8202925787s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(423) {
-    transition-delay: 0.5764133189s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(424) {
-    transition-delay: 0.9849193693s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(425) {
-    transition-delay: 0.9944995593s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(426) {
-    transition-delay: 0.2638851444s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(427) {
-    transition-delay: 0.6441358299s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(428) {
-    transition-delay: 0.7448381956s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(429) {
-    transition-delay: 0.4046940976s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(430) {
-    transition-delay: 0.9695360803s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(431) {
-    transition-delay: 0.7194647887s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(432) {
-    transition-delay: 0.7151392256s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(433) {
-    transition-delay: 0.6774195919s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(434) {
-    transition-delay: 0.4319687276s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(435) {
-    transition-delay: 0.455797913s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(436) {
-    transition-delay: 0.0824373656s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(437) {
-    transition-delay: 0.0465823676s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(438) {
-    transition-delay: 0.7199768623s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(439) {
-    transition-delay: 0.2565033012s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(440) {
-    transition-delay: 0.9389468105s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(441) {
-    transition-delay: 0.2380582153s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(442) {
-    transition-delay: 0.7079578441s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(443) {
-    transition-delay: 0.7817349174s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(444) {
-    transition-delay: 0.6446835959s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(445) {
-    transition-delay: 0.6511727436s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(446) {
-    transition-delay: 0.6522466483s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(447) {
-    transition-delay: 0.4183057973s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(448) {
-    transition-delay: 0.6116020965s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(449) {
-    transition-delay: 0.9635225364s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(450) {
-    transition-delay: 0.2715512528s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(451) {
-    transition-delay: 0.0178402459s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(452) {
-    transition-delay: 0.2525296959s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(453) {
-    transition-delay: 0.783663879s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(454) {
-    transition-delay: 0.4185083828s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(455) {
-    transition-delay: 0.7686338071s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(456) {
-    transition-delay: 0.8646808322s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(457) {
-    transition-delay: 0.5852496946s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(458) {
-    transition-delay: 0.1450077491s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(459) {
-    transition-delay: 0.4276033425s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(460) {
-    transition-delay: 0.214265245s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(461) {
-    transition-delay: 0.1332320057s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(462) {
-    transition-delay: 0.294358615s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(463) {
-    transition-delay: 0.2624135561s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(464) {
-    transition-delay: 0.1698783115s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(465) {
-    transition-delay: 0.5095020856s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(466) {
-    transition-delay: 0.0010527425s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(467) {
-    transition-delay: 0.5163647127s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(468) {
-    transition-delay: 0.117981317s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(469) {
-    transition-delay: 0.5453800634s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(470) {
-    transition-delay: 0.6326676598s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(471) {
-    transition-delay: 0.4045016131s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(472) {
-    transition-delay: 0.5384165479s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(473) {
-    transition-delay: 0.6844462614s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(474) {
-    transition-delay: 0.0080613068s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(475) {
-    transition-delay: 0.1930537948s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(476) {
-    transition-delay: 0.1327751334s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(477) {
-    transition-delay: 0.2235313899s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(478) {
-    transition-delay: 0.1399473726s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(479) {
-    transition-delay: 0.8980374472s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(480) {
-    transition-delay: 0.7035512724s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(481) {
-    transition-delay: 0.6960193288s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(482) {
-    transition-delay: 0.4213977501s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(483) {
-    transition-delay: 0.0888350416s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(484) {
-    transition-delay: 0.3809338599s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(485) {
-    transition-delay: 0.2324092044s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(486) {
-    transition-delay: 0.8742546557s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(487) {
-    transition-delay: 0.6203099527s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(488) {
-    transition-delay: 0.0770312467s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(489) {
-    transition-delay: 0.4065742433s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(490) {
-    transition-delay: 0.8374308093s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(491) {
-    transition-delay: 0.4587724669s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(492) {
-    transition-delay: 0.657227663s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(493) {
-    transition-delay: 0.0331041266s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(494) {
-    transition-delay: 0.8588706375s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(495) {
-    transition-delay: 0.2541945855s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(496) {
-    transition-delay: 0.3185075198s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(497) {
-    transition-delay: 0.3266071915s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(498) {
-    transition-delay: 0.0114751773s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(499) {
-    transition-delay: 0.0712027055s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(500) {
-    transition-delay: 0.4039634265s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(501) {
-    transition-delay: 0.5183734125s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(502) {
-    transition-delay: 0.0941978141s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(503) {
-    transition-delay: 0.8121184133s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(504) {
-    transition-delay: 0.8715707527s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(505) {
-    transition-delay: 0.2969084509s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(506) {
-    transition-delay: 0.3921325199s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(507) {
-    transition-delay: 0.5973629298s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(508) {
-    transition-delay: 0.4496504743s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(509) {
-    transition-delay: 0.694945487s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(510) {
-    transition-delay: 0.1124739985s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(511) {
-    transition-delay: 0.4286562992s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(512) {
-    transition-delay: 0.1234930807s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(513) {
-    transition-delay: 0.4117693466s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(514) {
-    transition-delay: 0.5874741035s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(515) {
-    transition-delay: 0.0315063189s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(516) {
-    transition-delay: 0.4851794402s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(517) {
-    transition-delay: 0.0607302058s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(518) {
-    transition-delay: 0.0605655279s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(519) {
-    transition-delay: 0.0332174488s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(520) {
-    transition-delay: 0.3919764245s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(521) {
-    transition-delay: 0.7219404525s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(522) {
-    transition-delay: 0.7589921027s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(523) {
-    transition-delay: 0.2262693275s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(524) {
-    transition-delay: 0.3708571097s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(525) {
-    transition-delay: 0.3152610442s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(526) {
-    transition-delay: 0.1602802126s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(527) {
-    transition-delay: 0.3025165336s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(528) {
-    transition-delay: 0.7345510246s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(529) {
-    transition-delay: 0.7314493043s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(530) {
-    transition-delay: 0.1704697556s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(531) {
-    transition-delay: 0.7673647504s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(532) {
-    transition-delay: 0.72205302s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(533) {
-    transition-delay: 0.5203102572s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(534) {
-    transition-delay: 0.7143379829s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(535) {
-    transition-delay: 0.46676423s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(536) {
-    transition-delay: 0.0407147453s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(537) {
-    transition-delay: 0.2000022542s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(538) {
-    transition-delay: 0.3863224525s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(539) {
-    transition-delay: 0.8812076755s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(540) {
-    transition-delay: 0.6737774714s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(541) {
-    transition-delay: 0.8803794559s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(542) {
-    transition-delay: 0.6882127221s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(543) {
-    transition-delay: 0.5269640989s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(544) {
-    transition-delay: 0.072931588s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(545) {
-    transition-delay: 0.9386906786s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(546) {
-    transition-delay: 0.8235510597s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(547) {
-    transition-delay: 0.7070740499s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(548) {
-    transition-delay: 0.3082798791s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(549) {
-    transition-delay: 0.1601110928s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(550) {
-    transition-delay: 0.1405098233s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(551) {
-    transition-delay: 0.8552038489s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(552) {
-    transition-delay: 0.2829560493s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(553) {
-    transition-delay: 0.135855108s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(554) {
-    transition-delay: 0.3822023651s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(555) {
-    transition-delay: 0.1286421138s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(556) {
-    transition-delay: 0.4681574177s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(557) {
-    transition-delay: 0.2463265785s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(558) {
-    transition-delay: 0.5326836785s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(559) {
-    transition-delay: 0.1114934218s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(560) {
-    transition-delay: 0.6440604202s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(561) {
-    transition-delay: 0.6993812542s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(562) {
-    transition-delay: 0.4568767584s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(563) {
-    transition-delay: 0.9481285559s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(564) {
-    transition-delay: 0.2491751415s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(565) {
-    transition-delay: 0.7377347361s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(566) {
-    transition-delay: 0.2118720245s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(567) {
-    transition-delay: 0.9935058824s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(568) {
-    transition-delay: 0.278308053s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(569) {
-    transition-delay: 0.0812803086s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(570) {
-    transition-delay: 0.8664245154s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(571) {
-    transition-delay: 0.4844611914s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(572) {
-    transition-delay: 0.8172252342s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(573) {
-    transition-delay: 0.8264115811s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(574) {
-    transition-delay: 0.2499349432s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(575) {
-    transition-delay: 0.6518674152s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(576) {
-    transition-delay: 0.3113248721s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(577) {
-    transition-delay: 0.0917289394s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(578) {
-    transition-delay: 0.8406047464s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(579) {
-    transition-delay: 0.2855527543s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(580) {
-    transition-delay: 0.5367998943s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(581) {
-    transition-delay: 0.9830868125s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(582) {
-    transition-delay: 0.6257528261s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(583) {
-    transition-delay: 0.5463800857s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(584) {
-    transition-delay: 0.2949175122s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(585) {
-    transition-delay: 0.9736242192s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(586) {
-    transition-delay: 0.8571650788s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(587) {
-    transition-delay: 0.6175022063s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(588) {
-    transition-delay: 0.3252012615s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(589) {
-    transition-delay: 0.9171687066s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(590) {
-    transition-delay: 0.2381859814s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(591) {
-    transition-delay: 0.0121325716s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(592) {
-    transition-delay: 0.0065692652s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(593) {
-    transition-delay: 0.2061788281s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(594) {
-    transition-delay: 0.736833161s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(595) {
-    transition-delay: 0.6393486978s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(596) {
-    transition-delay: 0.516766197s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(597) {
-    transition-delay: 0.346026685s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(598) {
-    transition-delay: 0.5434369632s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(599) {
-    transition-delay: 0.7721218302s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(600) {
-    transition-delay: 0.0966856536s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(601) {
-    transition-delay: 0.8979327675s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(602) {
-    transition-delay: 0.4907359171s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(603) {
-    transition-delay: 0.1436990913s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(604) {
-    transition-delay: 0.5960877751s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(605) {
-    transition-delay: 0.1510601775s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(606) {
-    transition-delay: 0.2617655993s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(607) {
-    transition-delay: 0.001681984s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(608) {
-    transition-delay: 0.6694364915s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(609) {
-    transition-delay: 0.6610773827s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(610) {
-    transition-delay: 0.5414728971s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(611) {
-    transition-delay: 0.8734514087s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(612) {
-    transition-delay: 0.1432316242s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(613) {
-    transition-delay: 0.8751051151s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(614) {
-    transition-delay: 0.4097997018s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(615) {
-    transition-delay: 0.4357864835s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(616) {
-    transition-delay: 0.664108889s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(617) {
-    transition-delay: 0.231055839s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(618) {
-    transition-delay: 0.9409970652s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(619) {
-    transition-delay: 0.160996029s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(620) {
-    transition-delay: 0.3485469965s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(621) {
-    transition-delay: 0.1349688026s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(622) {
-    transition-delay: 0.794768831s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(623) {
-    transition-delay: 0.6227796313s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(624) {
-    transition-delay: 0.099882787s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(625) {
-    transition-delay: 0.0116716582s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(626) {
-    transition-delay: 0.5905941178s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(627) {
-    transition-delay: 0.225485672s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(628) {
-    transition-delay: 0.3679065641s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(629) {
-    transition-delay: 0.1741744776s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(630) {
-    transition-delay: 0.2462501373s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(631) {
-    transition-delay: 0.1682943117s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(632) {
-    transition-delay: 0.4610147455s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(633) {
-    transition-delay: 0.8532026947s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(634) {
-    transition-delay: 0.9238606616s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(635) {
-    transition-delay: 0.4605860681s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(636) {
-    transition-delay: 0.4656084732s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(637) {
-    transition-delay: 0.3873336662s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(638) {
-    transition-delay: 0.9341794837s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(639) {
-    transition-delay: 0.296584642s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(640) {
-    transition-delay: 0.1388995564s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(641) {
-    transition-delay: 0.0238306929s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(642) {
-    transition-delay: 0.5282000627s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(643) {
-    transition-delay: 0.1886839441s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(644) {
-    transition-delay: 0.635043536s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(645) {
-    transition-delay: 0.5969405126s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(646) {
-    transition-delay: 0.7774011962s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(647) {
-    transition-delay: 0.2992498781s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(648) {
-    transition-delay: 0.8140730004s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(649) {
-    transition-delay: 0.7797862747s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(650) {
-    transition-delay: 0.2218697939s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(651) {
-    transition-delay: 0.2126766306s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(652) {
-    transition-delay: 0.5213439954s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(653) {
-    transition-delay: 0.7753963497s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(654) {
-    transition-delay: 0.5822821578s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(655) {
-    transition-delay: 0.5748045275s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(656) {
-    transition-delay: 0.0824982133s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(657) {
-    transition-delay: 0.2860972726s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(658) {
-    transition-delay: 0.8818910248s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(659) {
-    transition-delay: 0.806451993s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(660) {
-    transition-delay: 0.5602321978s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(661) {
-    transition-delay: 0.6926716095s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(662) {
-    transition-delay: 0.9973432311s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(663) {
-    transition-delay: 0.5748537423s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(664) {
-    transition-delay: 0.1471748059s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(665) {
-    transition-delay: 0.7512253887s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(666) {
-    transition-delay: 0.0903641593s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(667) {
-    transition-delay: 0.9900758171s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(668) {
-    transition-delay: 0.0399683766s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(669) {
-    transition-delay: 0.16185319s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(670) {
-    transition-delay: 0.5626738279s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(671) {
-    transition-delay: 0.5690899538s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(672) {
-    transition-delay: 0.4623984322s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(673) {
-    transition-delay: 0.823763115s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(674) {
-    transition-delay: 0.3725281215s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(675) {
-    transition-delay: 0.3871023521s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(676) {
-    transition-delay: 0.3506439015s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(677) {
-    transition-delay: 0.7064631076s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(678) {
-    transition-delay: 0.6273884631s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(679) {
-    transition-delay: 0.0219554347s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(680) {
-    transition-delay: 0.2458147567s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(681) {
-    transition-delay: 0.1227020937s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(682) {
-    transition-delay: 0.3294978919s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(683) {
-    transition-delay: 0.3457117088s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(684) {
-    transition-delay: 0.7115551652s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(685) {
-    transition-delay: 0.7439990866s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(686) {
-    transition-delay: 0.7260925455s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(687) {
-    transition-delay: 0.189612715s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(688) {
-    transition-delay: 0.8989308508s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(689) {
-    transition-delay: 0.4943791143s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(690) {
-    transition-delay: 0.4176380645s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(691) {
-    transition-delay: 0.6117093144s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(692) {
-    transition-delay: 0.8145286145s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(693) {
-    transition-delay: 0.8506932722s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(694) {
-    transition-delay: 0.7278988466s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(695) {
-    transition-delay: 0.6237046162s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(696) {
-    transition-delay: 0.3179047302s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(697) {
-    transition-delay: 0.2338333187s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(698) {
-    transition-delay: 0.1207259619s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(699) {
-    transition-delay: 0.9029195731s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(700) {
-    transition-delay: 0.2905551442s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(701) {
-    transition-delay: 0.6450992588s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(702) {
-    transition-delay: 0.522683237s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(703) {
-    transition-delay: 0.2582671753s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(704) {
-    transition-delay: 0.2830274839s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(705) {
-    transition-delay: 0.2746533659s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(706) {
-    transition-delay: 0.7052809985s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(707) {
-    transition-delay: 0.60963813s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(708) {
-    transition-delay: 0.8651170127s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(709) {
-    transition-delay: 0.3555580665s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(710) {
-    transition-delay: 0.6024564195s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(711) {
-    transition-delay: 0.4085374952s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(712) {
-    transition-delay: 0.0973608827s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(713) {
-    transition-delay: 0.9167896458s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(714) {
-    transition-delay: 0.3443718057s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(715) {
-    transition-delay: 0.0910995926s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(716) {
-    transition-delay: 0.1834504969s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(717) {
-    transition-delay: 0.4742143833s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(718) {
-    transition-delay: 0.9139385104s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(719) {
-    transition-delay: 0.3783076007s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(720) {
-    transition-delay: 0.3976940483s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(721) {
-    transition-delay: 0.0631458593s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(722) {
-    transition-delay: 0.9016870733s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(723) {
-    transition-delay: 0.3061483097s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(724) {
-    transition-delay: 0.7215848839s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(725) {
-    transition-delay: 0.4659572526s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(726) {
-    transition-delay: 0.1467055025s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(727) {
-    transition-delay: 0.6205158087s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(728) {
-    transition-delay: 0.8827805573s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(729) {
-    transition-delay: 0.6852563119s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(730) {
-    transition-delay: 0.8996046111s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(731) {
-    transition-delay: 0.428425785s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(732) {
-    transition-delay: 0.1350975949s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(733) {
-    transition-delay: 0.631289408s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(734) {
-    transition-delay: 0.1061353102s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(735) {
-    transition-delay: 0.3587520786s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(736) {
-    transition-delay: 0.7126180718s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(737) {
-    transition-delay: 0.4308452423s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(738) {
-    transition-delay: 0.4159098599s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(739) {
-    transition-delay: 0.2701127155s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(740) {
-    transition-delay: 0.6178557312s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(741) {
-    transition-delay: 0.666434599s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(742) {
-    transition-delay: 0.0857402618s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(743) {
-    transition-delay: 0.1680675248s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(744) {
-    transition-delay: 0.7834411405s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(745) {
-    transition-delay: 0.3645355921s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(746) {
-    transition-delay: 0.1652135375s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(747) {
-    transition-delay: 0.9540116236s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(748) {
-    transition-delay: 0.5492038041s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(749) {
-    transition-delay: 0.4776871399s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(750) {
-    transition-delay: 0.9667092545s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(751) {
-    transition-delay: 0.9865731488s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(752) {
-    transition-delay: 0.8333193307s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(753) {
-    transition-delay: 0.1725413393s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(754) {
-    transition-delay: 0.2947943293s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(755) {
-    transition-delay: 0.1490539348s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(756) {
-    transition-delay: 0.0796307152s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(757) {
-    transition-delay: 0.4310278823s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(758) {
-    transition-delay: 0.3488608598s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(759) {
-    transition-delay: 0.9436627104s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(760) {
-    transition-delay: 0.3573654942s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(761) {
-    transition-delay: 0.6686184874s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(762) {
-    transition-delay: 0.0431342326s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(763) {
-    transition-delay: 0.1205934445s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(764) {
-    transition-delay: 0.1617618835s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(765) {
-    transition-delay: 0.997948106s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(766) {
-    transition-delay: 0.3208383164s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(767) {
-    transition-delay: 0.4662174179s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(768) {
-    transition-delay: 0.7070752636s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(769) {
-    transition-delay: 0.3022501086s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(770) {
-    transition-delay: 0.8956266243s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(771) {
-    transition-delay: 0.568933019s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(772) {
-    transition-delay: 0.3008657545s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(773) {
-    transition-delay: 0.8982910708s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(774) {
-    transition-delay: 0.5868399731s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(775) {
-    transition-delay: 0.0122230437s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(776) {
-    transition-delay: 0.877938982s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(777) {
-    transition-delay: 0.7242957178s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(778) {
-    transition-delay: 0.1896435289s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(779) {
-    transition-delay: 0.6150830432s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(780) {
-    transition-delay: 0.707718643s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(781) {
-    transition-delay: 0.1699806403s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(782) {
-    transition-delay: 0.8057329683s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(783) {
-    transition-delay: 0.7362082532s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(784) {
-    transition-delay: 0.249981655s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(785) {
-    transition-delay: 0.0669651749s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(786) {
-    transition-delay: 0.151016544s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(787) {
-    transition-delay: 0.9315198601s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(788) {
-    transition-delay: 0.1380869511s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(789) {
-    transition-delay: 0.2149701733s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(790) {
-    transition-delay: 0.1738560872s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(791) {
-    transition-delay: 0.3897897855s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(792) {
-    transition-delay: 0.1082101387s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(793) {
-    transition-delay: 0.3560689343s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(794) {
-    transition-delay: 0.7005794548s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(795) {
-    transition-delay: 0.7664309904s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(796) {
-    transition-delay: 0.0951276764s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(797) {
-    transition-delay: 0.9876595547s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(798) {
-    transition-delay: 0.9727539493s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(799) {
-    transition-delay: 0.6567336217s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(800) {
-    transition-delay: 0.2603511761s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(801) {
-    transition-delay: 0.8936539746s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(802) {
-    transition-delay: 0.3556861543s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(803) {
-    transition-delay: 0.7675626958s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(804) {
-    transition-delay: 0.1545522337s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(805) {
-    transition-delay: 0.3522652576s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(806) {
-    transition-delay: 0.2277398925s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(807) {
-    transition-delay: 0.506273298s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(808) {
-    transition-delay: 0.0900754853s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(809) {
-    transition-delay: 0.2232205328s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(810) {
-    transition-delay: 0.3509011661s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(811) {
-    transition-delay: 0.9473696913s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(812) {
-    transition-delay: 0.7230072598s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(813) {
-    transition-delay: 0.0311874465s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(814) {
-    transition-delay: 0.0113655975s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(815) {
-    transition-delay: 0.9327913124s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(816) {
-    transition-delay: 0.6460115929s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(817) {
-    transition-delay: 0.3378354316s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(818) {
-    transition-delay: 0.6810066086s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(819) {
-    transition-delay: 0.768649664s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(820) {
-    transition-delay: 0.8977057138s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(821) {
-    transition-delay: 0.9145683215s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(822) {
-    transition-delay: 0.8169569015s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(823) {
-    transition-delay: 0.7957449833s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(824) {
-    transition-delay: 0.8073251064s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(825) {
-    transition-delay: 0.8233686139s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(826) {
-    transition-delay: 0.663693668s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(827) {
-    transition-delay: 0.833469368s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(828) {
-    transition-delay: 0.7564461687s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(829) {
-    transition-delay: 0.4423757736s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(830) {
-    transition-delay: 0.7975218983s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(831) {
-    transition-delay: 0.9353214368s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(832) {
-    transition-delay: 0.9492794347s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(833) {
-    transition-delay: 0.3542315813s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(834) {
-    transition-delay: 0.1309256196s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(835) {
-    transition-delay: 0.5035083575s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(836) {
-    transition-delay: 0.9797048819s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(837) {
-    transition-delay: 0.4873326853s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(838) {
-    transition-delay: 0.5031486171s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(839) {
-    transition-delay: 0.3669459118s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(840) {
-    transition-delay: 0.1298822325s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(841) {
-    transition-delay: 0.5347739174s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(842) {
-    transition-delay: 0.8647194259s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(843) {
-    transition-delay: 0.1537762785s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(844) {
-    transition-delay: 0.9094381002s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(845) {
-    transition-delay: 0.7442041117s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(846) {
-    transition-delay: 0.2662506247s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(847) {
-    transition-delay: 0.5405967728s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(848) {
-    transition-delay: 0.7092035538s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(849) {
-    transition-delay: 0.0971476504s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(850) {
-    transition-delay: 0.1179705731s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(851) {
-    transition-delay: 0.9929681712s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(852) {
-    transition-delay: 0.752185854s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(853) {
-    transition-delay: 0.4083052819s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(854) {
-    transition-delay: 0.7850773191s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(855) {
-    transition-delay: 0.25021353s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(856) {
-    transition-delay: 0.5931123314s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(857) {
-    transition-delay: 0.3137348258s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(858) {
-    transition-delay: 0.5765894731s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(859) {
-    transition-delay: 0.8230641818s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(860) {
-    transition-delay: 0.4078282434s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(861) {
-    transition-delay: 0.6578087364s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(862) {
-    transition-delay: 0.568445329s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(863) {
-    transition-delay: 0.7263021781s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(864) {
-    transition-delay: 0.2367333911s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(865) {
-    transition-delay: 0.5302626737s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(866) {
-    transition-delay: 0.4746812759s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(867) {
-    transition-delay: 0.7323512785s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(868) {
-    transition-delay: 0.3583277324s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(869) {
-    transition-delay: 0.0696086642s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(870) {
-    transition-delay: 0.4426631007s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(871) {
-    transition-delay: 0.1771390165s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(872) {
-    transition-delay: 0.1654504693s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(873) {
-    transition-delay: 0.739393338s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(874) {
-    transition-delay: 0.8708551757s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(875) {
-    transition-delay: 0.2743664843s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(876) {
-    transition-delay: 0.4222734286s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(877) {
-    transition-delay: 0.4703443087s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(878) {
-    transition-delay: 0.39308534s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(879) {
-    transition-delay: 0.4556656241s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(880) {
-    transition-delay: 0.0538525843s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(881) {
-    transition-delay: 0.9425484375s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(882) {
-    transition-delay: 0.3840482209s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(883) {
-    transition-delay: 0.3676446946s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(884) {
-    transition-delay: 0.6619497051s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(885) {
-    transition-delay: 0.8516063658s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(886) {
-    transition-delay: 0.2513949716s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(887) {
-    transition-delay: 0.5015972894s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(888) {
-    transition-delay: 0.9292145489s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(889) {
-    transition-delay: 0.8880089453s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(890) {
-    transition-delay: 0.8538596485s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(891) {
-    transition-delay: 0.3032456096s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(892) {
-    transition-delay: 0.9222114324s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(893) {
-    transition-delay: 0.7788715786s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(894) {
-    transition-delay: 0.6590938814s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(895) {
-    transition-delay: 0.1299048381s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(896) {
-    transition-delay: 0.9184759728s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(897) {
-    transition-delay: 0.9412997319s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(898) {
-    transition-delay: 0.9333889367s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(899) {
-    transition-delay: 0.1090310471s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(900) {
-    transition-delay: 0.7006789154s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(901) {
-    transition-delay: 0.1768440389s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(902) {
-    transition-delay: 0.2598439745s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(903) {
-    transition-delay: 0.793457388s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(904) {
-    transition-delay: 0.9047254009s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(905) {
-    transition-delay: 0.2661234666s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(906) {
-    transition-delay: 0.5534158922s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(907) {
-    transition-delay: 0.092445879s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(908) {
-    transition-delay: 0.1946024898s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(909) {
-    transition-delay: 0.5355660742s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(910) {
-    transition-delay: 0.0639820551s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(911) {
-    transition-delay: 0.7744779391s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(912) {
-    transition-delay: 0.5691635406s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(913) {
-    transition-delay: 0.124403726s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(914) {
-    transition-delay: 0.8992404783s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(915) {
-    transition-delay: 0.4968550098s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(916) {
-    transition-delay: 0.5508452026s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(917) {
-    transition-delay: 0.0877446544s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(918) {
-    transition-delay: 0.1477482738s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(919) {
-    transition-delay: 0.0016633903s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(920) {
-    transition-delay: 0.6769583788s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(921) {
-    transition-delay: 0.1781220235s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(922) {
-    transition-delay: 0.3153765037s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(923) {
-    transition-delay: 0.2763105185s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(924) {
-    transition-delay: 0.6741270433s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(925) {
-    transition-delay: 0.2789055914s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(926) {
-    transition-delay: 0.8565455383s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(927) {
-    transition-delay: 0.8008170181s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(928) {
-    transition-delay: 0.9930212537s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(929) {
-    transition-delay: 0.4703888799s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(930) {
-    transition-delay: 0.9923199121s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(931) {
-    transition-delay: 0.9761040984s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(932) {
-    transition-delay: 0.8537981366s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(933) {
-    transition-delay: 0.4621243808s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(934) {
-    transition-delay: 0.9547458992s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(935) {
-    transition-delay: 0.1305842464s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(936) {
-    transition-delay: 0.6147985526s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(937) {
-    transition-delay: 0.2458677083s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(938) {
-    transition-delay: 0.8024786077s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(939) {
-    transition-delay: 0.8606072723s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(940) {
-    transition-delay: 0.2332880691s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(941) {
-    transition-delay: 0.1552604596s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(942) {
-    transition-delay: 0.3023041945s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(943) {
-    transition-delay: 0.7331747225s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(944) {
-    transition-delay: 0.6014211561s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(945) {
-    transition-delay: 0.3101140753s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(946) {
-    transition-delay: 0.7390367853s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(947) {
-    transition-delay: 0.2277853004s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(948) {
-    transition-delay: 0.0037760393s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(949) {
-    transition-delay: 0.3917845039s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(950) {
-    transition-delay: 0.6858404556s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(951) {
-    transition-delay: 0.0564058901s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(952) {
-    transition-delay: 0.9645542029s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(953) {
-    transition-delay: 0.319019076s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(954) {
-    transition-delay: 0.7950532054s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(955) {
-    transition-delay: 0.0801189643s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(956) {
-    transition-delay: 0.395161274s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(957) {
-    transition-delay: 0.6354096749s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(958) {
-    transition-delay: 0.1042070054s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(959) {
-    transition-delay: 0.9050776924s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(960) {
-    transition-delay: 0.243967964s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(961) {
-    transition-delay: 0.8815976717s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(962) {
-    transition-delay: 0.3430903562s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(963) {
-    transition-delay: 0.4273217679s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(964) {
-    transition-delay: 0.3878906668s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(965) {
-    transition-delay: 0.6920684366s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(966) {
-    transition-delay: 0.4472869464s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(967) {
-    transition-delay: 0.3875669288s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(968) {
-    transition-delay: 0.7874146073s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(969) {
-    transition-delay: 0.1618408213s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(970) {
-    transition-delay: 0.3906808289s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(971) {
-    transition-delay: 0.9081011257s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(972) {
-    transition-delay: 0.9959384299s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(973) {
-    transition-delay: 0.0370522799s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(974) {
-    transition-delay: 0.4214480293s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(975) {
-    transition-delay: 0.389399094s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(976) {
-    transition-delay: 0.5497402482s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(977) {
-    transition-delay: 0.8062206399s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(978) {
-    transition-delay: 0.9331440421s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(979) {
-    transition-delay: 0.6288106906s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(980) {
-    transition-delay: 0.5544905346s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(981) {
-    transition-delay: 0.9321219529s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(982) {
-    transition-delay: 0.2930749263s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(983) {
-    transition-delay: 0.752800372s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(984) {
-    transition-delay: 0.7610711923s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(985) {
-    transition-delay: 0.3269626939s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(986) {
-    transition-delay: 0.772299377s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(987) {
-    transition-delay: 0.1249822677s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(988) {
-    transition-delay: 0.942147037s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(989) {
-    transition-delay: 0.5445153805s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(990) {
-    transition-delay: 0.9952469833s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(991) {
-    transition-delay: 0.434485447s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(992) {
-    transition-delay: 0.2450565359s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(993) {
-    transition-delay: 0.8631058507s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(994) {
-    transition-delay: 0.3376374214s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(995) {
-    transition-delay: 0.2429036681s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(996) {
-    transition-delay: 0.5391088489s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(997) {
-    transition-delay: 0.0707737229s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(998) {
-    transition-delay: 0.777775615s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(999) {
-    transition-delay: 0.5772623396s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box span:nth-of-type(1000) {
-    transition-delay: 0.3566550155s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box > div {
-    display: inline-block;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    position: relative;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box > div > div {
-    transition-delay: 1s !important;
-    transition: 2s;
-    position: absolute;
-    width: calc(100% + 0.5rem);
-    height: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 0;
-    border-left: 3px solid #ff3e00;
-    border-right: 3px solid #ff3e00;
-    border-radius: 2px;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box > div > span {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 3rem;
-    height: 2rem;
-    background-color: #0a0a0a;
-    transition: 1s;
-    box-shadow: 0 0 5px #ff3e00;
-    color: #fcfcfc;
-    font-size: 0.7rem;
-    font-weight: 400;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box > div > span:nth-child(1) {
-    background-color: #2e2e2e;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box > div > span:nth-child(1) {
-    background-color: #868686;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box > div > span:nth-child(1) {
-    background-color: #cccccc;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1 .an_box > div > span:nth-child(1) {
-    background-color: #0a0a0a;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1.activated_an > .an_box > div > div {
-    transition-delay: 0s !important;
-    transition: opacity 0.2s, height 1s;
-    opacity: 0;
-    height: 0%;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1.activated_an > .an_box > div > span {
-    transition: 0.5s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1.activated_an > .an_box > div:nth-child(1) > span:nth-child(1) {
-    transform: translateX(-45%) translateY(24%);
-    rotate: 10deg;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1.activated_an > .an_box > div:nth-child(1) > span:nth-child(2) {
-    transform: translateX(15%) translateY(-120%);
-    rotate: 50deg;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1.activated_an > .an_box > div:nth-child(1) > span:nth-child(3) {
-    transform: translateX(25%) translateY(-27%);
-    rotate: 90deg;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1.activated_an > .an_box > div:nth-child(1) > span:nth-child(4) {
-    transform: translateX(79%) translateY(-90%);
-    rotate: 30deg;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1.activated_an > .an_box > div:nth-last-child(1) > span:nth-child(1) {
-    transform: translateX(45%) translateY(24%);
-    rotate: 30deg;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1.activated_an > .an_box > div:nth-last-child(1) > span:nth-child(2) {
-    transform: translateX(-15%) translateY(120%);
-    rotate: 10deg;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1.activated_an > .an_box > div:nth-last-child(1) > span:nth-child(3) {
-    transform: translateX(-25%) translateY(27%);
-    rotate: 120deg;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_1.activated_an > .an_box > div:nth-last-child(1) > span:nth-child(4) {
-    transform: translateX(-79%) translateY(90%);
-    rotate: 80deg;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_2 {
-    position: relative;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_2 .an_box {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    width: 80px;
-    height: 80px;
-    transform: translate(-50%, -50%) rotate(45deg);
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_2 .an_box > span {
-    box-shadow: 3px 3px 3px #ff3e00;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_2 .an_box > span:nth-child(1) {
-    box-shadow: unset !important;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_2 .an_box > span:nth-child(1) {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 0;
-    border-width: 20px;
-    border-style: solid;
-    border-color: transparent #000 #202020 transparent;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_2 .an_box > span:nth-child(2) {
-    position: absolute;
-    top: 0;
-    left: 40px;
-    width: 0;
-    height: 0;
-    border-width: 20px;
-    border-style: solid;
-    border-color: #202020 #000 #202020 #8a8a8a;
-    animation: animateDiamond 2s linear infinite;
-    transition-delay: 0.2s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_2 .an_box > span:nth-child(3) {
-    position: absolute;
-    top: 40px;
-    left: 0;
-    width: 0;
-    height: 0;
-    border-width: 20px;
-    border-style: solid;
-    border-color: #202020 #000 #202020 #8a8a8a;
-    animation: animateDiamond 2s linear infinite;
-    transition-delay: 0.4s;
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_2 .an_box > span:nth-child(4) {
-    position: absolute;
-    top: 40px;
-    left: 40px;
-    width: 0;
-    height: 0;
-    border-width: 20px;
-    border-style: solid;
-    border-color: #202020 #000 #202020 #8a8a8a;
-    animation: animateDiamond 2s linear infinite;
-    transition-delay: 0.6s;
-  }
-  @keyframes animateDiamond {
     0% {
-      border-color: #202020 #000 #202020 #8a8a8a;
+      transform: translateX(0);
     }
     25% {
-      border-color: #8a8a8a #202020 #000 #202020;
-    }
-    50% {
-      border-color: #202020 #8a8a8a #202020 #000;
+      transform: translateX(0);
     }
     75% {
-      border-color: #000 #202020 #8a8a8a #202020;
+      transform: translateX(155%);
     }
     100% {
-      border-color: #202020 #000 #202020 #8a8a8a;
+      transform: translateX(155%);
+    }
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 > div > span:nth-child(2) {
+    animation: p2_c1_a2 3s linear infinite;
+  }
+  @keyframes p2_c1_a2 {
+    0% {
+      transform: translateY(0);
+    }
+    25% {
+      transform: translateY(0);
+    }
+    75% {
+      transform: translateY(155%);
+    }
+    100% {
+      transform: translateY(155%);
+    }
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 > div > span:nth-child(3) {
+    animation: p2_c1_a3 3s linear infinite;
+  }
+  @keyframes p2_c1_a3 {
+    0% {
+      transform: translateY(0);
+    }
+    25% {
+      transform: translateY(0);
+    }
+    75% {
+      transform: translateY(-155%);
+    }
+    100% {
+      transform: translateY(-155%);
+    }
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_1 > div > span:nth-child(4) {
+    animation: p2_c1_a4 3s linear infinite;
+  }
+  @keyframes p2_c1_a4 {
+    0% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(0);
+    }
+    75% {
+      transform: translateX(-155%);
+    }
+    100% {
+      transform: translateX(-155%);
+    }
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_2 > div > div {
+    width: 60%;
+    aspect-ratio: 1/1;
+    border: 3px solid #ff3e00;
+    border-radius: 2px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_2 > div > div > span {
+    display: inline-block;
+    width: 42%;
+    aspect-ratio: 1/1;
+    background-color: #0a0a0a;
+    box-shadow: 0 0 20px #0a0a0a;
+    border-radius: 5px;
+    z-index: 2;
+    position: absolute;
+    animation-delay: 1s !important;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_2 > div > div > span:nth-child(1) {
+    animation: p2_c2_a1 2s linear infinite;
+  }
+  @keyframes p2_c2_a1 {
+    0% {
+      top: -20%;
+      left: -20%;
+    }
+    100% {
+      top: -20%;
+      left: 80%;
+    }
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_2 > div > div > span:nth-child(2) {
+    animation: p2_c2_a2 2s linear infinite;
+  }
+  @keyframes p2_c2_a2 {
+    0% {
+      top: -20%;
+      right: -20%;
+    }
+    100% {
+      top: 80%;
+      right: -20%;
+    }
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_2 > div > div > span:nth-child(3) {
+    animation: p2_c2_a3 2s linear infinite;
+  }
+  @keyframes p2_c2_a3 {
+    0% {
+      bottom: -20%;
+      right: -20%;
+    }
+    100% {
+      bottom: -20%;
+      right: 80%;
+    }
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_2 > div > div > span:nth-child(4) {
+    animation: p2_c2_a4 2s linear infinite;
+  }
+  @keyframes p2_c2_a4 {
+    0% {
+      bottom: -20%;
+      left: -20%;
+    }
+    100% {
+      bottom: 80%;
+      left: -20%;
+    }
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_3 > div {
+    padding: 5%;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_3 > div > div {
+    width: 19%;
+    height: 3px;
+    background-color: #ff3e00;
+    position: absolute;
+    border-radius: 2px;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_3 > div > div:nth-child(1) {
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_3 > div > div:nth-child(2) {
+    bottom: 35%;
+    left: 50%;
+    transform: translateX(-150%);
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_3 > div > div:nth-child(3) {
+    bottom: 35%;
+    left: 50%;
+    transform: translateX(50%);
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_3 > div > div:nth-child(4) {
+    bottom: 65%;
+    left: 50%;
+    transform: translateX(-250%);
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_3 > div > div:nth-child(5) {
+    bottom: 65%;
+    left: 50%;
+    transform: translateX(150%);
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_3 > div > span {
+    display: inline-block;
+    position: absolute;
+    background-color: #0a0a0a;
+    box-shadow: 0 0 20px #0a0a0a;
+    width: 19%;
+    aspect-ratio: 1/1;
+    bottom: 8%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_3 > div > span:nth-last-child(2) {
+    animation: p2_c3_a2 3s linear infinite;
+  }
+  @keyframes p2_c3_a2 {
+    0% {
+      bottom: 8%;
+      left: 50%;
+      transform: translateX(-50%);
+      opacity: 0;
+    }
+    5% {
+      opacity: 1;
+    }
+    30% {
+      bottom: 38%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    45% {
+      bottom: 38%;
+      left: 50%;
+      transform: translateX(50%);
+    }
+    75% {
+      bottom: 68%;
+      left: 50%;
+      transform: translateX(50%);
+    }
+    90% {
+      bottom: 68%;
+      left: 50%;
+      transform: translateX(150%);
+      opacity: 1;
+    }
+    95% {
+      opacity: 0;
+    }
+    100% {
+      bottom: 68%;
+      left: 50%;
+      transform: translateX(150%);
+      opacity: 0;
+    }
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_3 > div > span:nth-last-child(1) {
+    animation: p2_c3_a1 3s linear infinite;
+  }
+  @keyframes p2_c3_a1 {
+    0% {
+      bottom: 8%;
+      left: 50%;
+      transform: translateX(-50%);
+      opacity: 0;
+    }
+    5% {
+      opacity: 1;
+    }
+    30% {
+      bottom: 38%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    45% {
+      bottom: 38%;
+      left: 50%;
+      transform: translateX(-150%);
+    }
+    75% {
+      bottom: 68%;
+      left: 50%;
+      transform: translateX(-150%);
+    }
+    90% {
+      bottom: 68%;
+      left: 50%;
+      transform: translateX(-250%);
+      opacity: 1;
+    }
+    95% {
+      opacity: 0;
+    }
+    100% {
+      bottom: 68%;
+      left: 50%;
+      transform: translateX(-250%);
+      opacity: 0;
+    }
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_4 > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_4 > div > span {
+    display: inline-block;
+    width: 22%;
+    border-radius: 4px;
+    aspect-ratio: 1/1;
+    background-color: #0a0a0a;
+    box-shadow: 0 0 15px #0a0a0a;
+    scale: 0.5;
+    opacity: 0;
+    border: 1px solid #2e2e2e;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_4 > div > span:nth-child(5) {
+    scale: 1;
+    opacity: 1;
+    box-shadow: 0 0 10px #ff3e00;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_4 > div > span:nth-child(2), main > .main_part#main_part_2 #part_2_content #part_2_c_4 > div > span:nth-child(4), main > .main_part#main_part_2 #part_2_content #part_2_c_4 > div > span:nth-child(6), main > .main_part#main_part_2 #part_2_content #part_2_c_4 > div > span:nth-child(8) {
+    animation: p2_c4_a2 4s linear infinite;
+  }
+  @keyframes p2_c4_a2 {
+    0% {
+      scale: 0;
+      opacity: 0;
+      box-shadow: 0 0 20px #0a0a0a;
+    }
+    20% {
+      scale: 0;
+      opacity: 0;
+    }
+    25% {
+      scale: 1;
+      opacity: 1;
+      box-shadow: 0 0 20px #0a0a0a;
+    }
+    95% {
+      scale: 1;
+      opacity: 1;
+      box-shadow: 0 0 10px #ff3e00;
+    }
+    100% {
+      scale: 1;
+      opacity: 0;
+    }
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_4 > div > span:nth-child(1), main > .main_part#main_part_2 #part_2_content #part_2_c_4 > div > span:nth-child(3), main > .main_part#main_part_2 #part_2_content #part_2_c_4 > div > span:nth-child(7), main > .main_part#main_part_2 #part_2_content #part_2_c_4 > div > span:nth-child(9) {
+    animation: p2_c4_a3 4s linear infinite;
+  }
+  @keyframes p2_c4_a3 {
+    0% {
+      scale: 0;
+      opacity: 0;
+      box-shadow: 0 0 20px #0a0a0a;
+    }
+    40% {
+      scale: 0;
+      opacity: 0;
+    }
+    45% {
+      scale: 1;
+      opacity: 1;
+      box-shadow: 0 0 20px #0a0a0a;
+    }
+    95% {
+      scale: 1;
+      opacity: 1;
+      box-shadow: 0 0 10px #ff3e00;
+    }
+    100% {
+      scale: 1;
+      opacity: 0;
     }
   }
   main > .main_part#main_part_3 {
