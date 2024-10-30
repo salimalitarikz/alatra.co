@@ -361,7 +361,7 @@ body{
                     gap: $gap;
 
                     >div{
-                        height: 40%;
+                        height: 37%;
                         width: calc(45.5%);
                         flex-direction: row;
                         align-items: center;
@@ -492,6 +492,60 @@ background-size: 40px 40px, 40px 40px, 20px 20px, 20px 20px;
                         }
                     }
 
+                    #part_2_c_1{
+
+                        >div{
+                            padding: 15%;
+                            display: flex;
+                            align-content: center;
+                            align-items: center;
+                            justify-content: center;
+                            flex-wrap: wrap;
+                            gap: 20%;
+
+                            >div{
+                                background-color: $orange;
+                                position: absolute;
+
+                                &:nth-child(1){
+                                    height: 80%;
+                                    width: 3px;
+                                    top: 50%;
+                                    left: 50%;
+                                    transform: translate(-50%, -50%);
+                                }
+                                &:nth-child(2){
+                                    width: 80%;
+                                    height: 3px;
+                                    top: 50%;
+                                    left: 50%;
+                                    transform: translateX(-50%) translateY(-50%);
+                                }
+                            }
+
+                            >span{
+                                display: inline-block;
+                                width: 35%;
+                                aspect-ratio: 1/1;
+                                background-color: $orange;
+                                box-shadow: 0 0 10px $orange;
+                                border-radius: 5px;
+
+                                &:nth-child(1){
+                                    animation: p2_c1_a1 2s linear infinite;
+
+                                    @keyframes p2_c1_a1 {
+                                        0%{}
+                                        100%{transform: translateX(100%);}
+                                    }
+                                }
+                            }
+
+                        }
+                    }
+
+
+
 
                     // part 2 inside div animations
 
@@ -554,16 +608,21 @@ background-size: 40px 40px, 40px 40px, 20px 20px, 20px 20px;
                                     display: inline-flex;
                                     align-items: center;
                                     justify-content: center;
-                                    border-radius: 2px;
+                                    // border-radius: 2px;
                                     width: 3rem;
                                     height: 2rem;
                                     background-color: $black;
                                     // opacity: .7;
                                     transition: 1s;
-                                    box-shadow: 0 0 20px $black;
+                                    box-shadow: 0 0 5px $orange;
                                     color:$lightgray;
                                     font-size: .7rem;
                                     font-weight: 400;
+
+                                    &:nth-child(1){background-color: $darkestgray;}
+                                    &:nth-child(1){background-color: $darkgray;}
+                                    &:nth-child(1){background-color: $gray;}
+                                    &:nth-child(1){background-color: $black;}
                                     
                                 }
                             }
@@ -718,167 +777,167 @@ background-size: 40px 40px, 40px 40px, 20px 20px, 20px 20px;
 
                     }
 
-                    #part_2_c_3{
+                    // #part_2_c_3{
 
-                        >div{
-                            // filter: drop-shadow(0px 0px 15px #ff3e00);
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            padding-bottom: 1rem;
-                            filter: drop-shadow(3px 3px 5px $orange);
+                    //     >div{
+                    //         // filter: drop-shadow(0px 0px 15px #ff3e00);
+                    //         display: flex;
+                    //         align-items: center;
+                    //         justify-content: center;
+                    //         padding-bottom: 1rem;
+                    //         filter: drop-shadow(3px 3px 5px $orange);
 
-                            >svg{
-                                width: 70%;
+                    //         >svg{
+                    //             width: 70%;
 
-                                    #bulb_lights{
-                                        path{
-                                            animation: bulb_animation 3s linear infinite;
+                    //                 #bulb_lights{
+                    //                     path{
+                    //                         animation: bulb_animation 3s linear infinite;
 
-                                            @keyframes bulb_animation {
-                                                0%{opacity: 0;}
-                                                20%{opacity: 1;}
-                                                98%{opacity: 1;}
-                                                100%{opacity: 0;}
-                                            }
+                    //                         @keyframes bulb_animation {
+                    //                             0%{opacity: 0;}
+                    //                             20%{opacity: 1;}
+                    //                             98%{opacity: 1;}
+                    //                             100%{opacity: 0;}
+                    //                         }
 
-                                            &:nth-child(1){animation-delay: .1s;}
-                                            &:nth-child(2){animation-delay: .2s;}
-                                            &:nth-child(3){animation-delay: .3s;}
-                                            &:nth-child(4){animation-delay: .4s;}
-                                            &:nth-child(5){animation-delay: .5s;}
-                                            &:nth-child(6){animation-delay: .6s;}
-                                            &:nth-child(7){animation-delay: .7s;}
-                                            &:nth-child(8){animation-delay: .8s;}
-                                            &:nth-child(9){animation-delay: .9s;}
-                                            &:nth-child(10){animation-delay: 1s;}
-                                            &:nth-child(11){animation-delay: 1.1s;}
-                                            &:nth-child(12){animation-delay: 1.2s;}
-                                            &:nth-child(13){animation-delay: 1.3s;}
-                                            &:nth-child(14){animation-delay: 1.4s;}
-                                            &:nth-child(15){animation-delay: 1.5s;}
-                                            &:nth-child(16){animation-delay: 1.6s;}
-                                            &:nth-child(17){animation-delay: 1.7s;}
-                                            &:nth-child(18){animation-delay: 1.8s;}
-                                            &:nth-child(19){animation-delay: 1.9s;}
-                                            &:nth-child(20){animation-delay: 2s;}
+                    //                         &:nth-child(1){animation-delay: .1s;}
+                    //                         &:nth-child(2){animation-delay: .2s;}
+                    //                         &:nth-child(3){animation-delay: .3s;}
+                    //                         &:nth-child(4){animation-delay: .4s;}
+                    //                         &:nth-child(5){animation-delay: .5s;}
+                    //                         &:nth-child(6){animation-delay: .6s;}
+                    //                         &:nth-child(7){animation-delay: .7s;}
+                    //                         &:nth-child(8){animation-delay: .8s;}
+                    //                         &:nth-child(9){animation-delay: .9s;}
+                    //                         &:nth-child(10){animation-delay: 1s;}
+                    //                         &:nth-child(11){animation-delay: 1.1s;}
+                    //                         &:nth-child(12){animation-delay: 1.2s;}
+                    //                         &:nth-child(13){animation-delay: 1.3s;}
+                    //                         &:nth-child(14){animation-delay: 1.4s;}
+                    //                         &:nth-child(15){animation-delay: 1.5s;}
+                    //                         &:nth-child(16){animation-delay: 1.6s;}
+                    //                         &:nth-child(17){animation-delay: 1.7s;}
+                    //                         &:nth-child(18){animation-delay: 1.8s;}
+                    //                         &:nth-child(19){animation-delay: 1.9s;}
+                    //                         &:nth-child(20){animation-delay: 2s;}
 
-                                        }
-                                    }
+                    //                     }
+                    //                 }
                                 
                                         
                                 
-                                $g_1:#181818;
-                                $g_2:#515151;
-                                $g_3:#929292;
-                                $g_4:#171717;
-                                $g_5:#444444;
-                                $g_6:#606060;
-                                $g_7:#161616;
-                                $g_8:#595959;
-                                $g_9:#151515;
-                                $g_10:#474747;
-                                $g_11:#979797;
+                    //             $g_1:#181818;
+                    //             $g_2:#515151;
+                    //             $g_3:#929292;
+                    //             $g_4:#171717;
+                    //             $g_5:#444444;
+                    //             $g_6:#606060;
+                    //             $g_7:#161616;
+                    //             $g_8:#595959;
+                    //             $g_9:#151515;
+                    //             $g_10:#474747;
+                    //             $g_11:#979797;
 
-                                $percent: 1%;
-                                    @for $i from 1 through 10000 {
-                                    polygon:nth-of-type(#{$i}) {
-                                        animation-delay: random() + s;
-                                    }
-                                    }    
+                    //             $percent: 1%;
+                    //                 @for $i from 1 through 10000 {
+                    //                 polygon:nth-of-type(#{$i}) {
+                    //                     animation-delay: random() + s;
+                    //                 }
+                    //                 }    
                                 
-                                .cls-1,
-                                .cls-2,
-                                .cls-3,
-                                .cls-4,
-                                .cls-5,
-                                .cls-6,
-                                .cls-7,
-                                .cls-8,
-                                .cls-9,
-                                .cls-10,
-                                .cls-11{
-                                    animation: bulb_head_an 10s linear infinite;
+                    //             .cls-1,
+                    //             .cls-2,
+                    //             .cls-3,
+                    //             .cls-4,
+                    //             .cls-5,
+                    //             .cls-6,
+                    //             .cls-7,
+                    //             .cls-8,
+                    //             .cls-9,
+                    //             .cls-10,
+                    //             .cls-11{
+                    //                 animation: bulb_head_an 10s linear infinite;
 
                                     
                                     
 
-                                    @keyframes bulb_head_an {
-                                        0%{fill: $g_1;}
-                                        10%{fill: $g_2;}
-                                        20%{fill: $g_3;}
-                                        30%{fill: $g_4;}
-                                        40%{fill: $g_5;}
-                                        50%{fill: $g_6;}
-                                        60%{fill: $g_7;}
-                                        70%{fill: $g_8;}
-                                        80%{fill: $g_9;}
-                                        90%{fill: $g_10;}
-                                        100%{fill: $g_11;}
-                                    }
-                                }
+                    //                 @keyframes bulb_head_an {
+                    //                     0%{fill: $g_1;}
+                    //                     10%{fill: $g_2;}
+                    //                     20%{fill: $g_3;}
+                    //                     30%{fill: $g_4;}
+                    //                     40%{fill: $g_5;}
+                    //                     50%{fill: $g_6;}
+                    //                     60%{fill: $g_7;}
+                    //                     70%{fill: $g_8;}
+                    //                     80%{fill: $g_9;}
+                    //                     90%{fill: $g_10;}
+                    //                     100%{fill: $g_11;}
+                    //                 }
+                    //             }
 
                                 
 
-                                .cls-1 {
-                                    fill: #2d2d2d;
-                                  }
+                    //             .cls-1 {
+                    //                 fill: #2d2d2d;
+                    //               }
                             
-                                  .cls-2 {
-                                    fill: #1e1e1e;
-                                  }
+                    //               .cls-2 {
+                    //                 fill: #1e1e1e;
+                    //               }
                             
-                                  .cls-3 {
-                                    fill: #424242;
-                                  }
+                    //               .cls-3 {
+                    //                 fill: #424242;
+                    //               }
                             
-                                  .cls-4 {
-                                    fill: #262626;
-                                  }
+                    //               .cls-4 {
+                    //                 fill: #262626;
+                    //               }
                             
-                                  .cls-5 {
-                                    fill: #4c4c4c;
-                                  }
+                    //               .cls-5 {
+                    //                 fill: #4c4c4c;
+                    //               }
                             
-                                  .cls-6 {
-                                    fill: #282828;
-                                  }
+                    //               .cls-6 {
+                    //                 fill: #282828;
+                    //               }
                             
-                                  .cls-7 {
-                                    fill: #3a3a3a;
-                                  }
+                    //               .cls-7 {
+                    //                 fill: #3a3a3a;
+                    //               }
                             
-                                  .cls-8 {
-                                    fill: #2b2b2b;
-                                  }
+                    //               .cls-8 {
+                    //                 fill: #2b2b2b;
+                    //               }
                             
-                                  .cls-9 {
-                                    fill: #333;
-                                  }
+                    //               .cls-9 {
+                    //                 fill: #333;
+                    //               }
                             
-                                  .cls-10 {
-                                    fill: #474747;
-                                  }
+                    //               .cls-10 {
+                    //                 fill: #474747;
+                    //               }
                             
-                                  .cls-11 {
-                                    fill: #3d3d3d;
-                                  }
+                    //               .cls-11 {
+                    //                 fill: #3d3d3d;
+                    //               }
                             
-                                  .cls-12 {
-                                    fill: #ff3000;
-                                  }
+                    //               .cls-12 {
+                    //                 fill: #ff3000;
+                    //               }
                             
-                                  .cls-13 {
-                                    fill: #ed481b;
-                                  }
+                    //               .cls-13 {
+                    //                 fill: #ed481b;
+                    //               }
 
-                            }
+                    //         }
 
                            
-                        }
+                    //     }
 
 
-                    }
+                    // }
 
                 }
 
