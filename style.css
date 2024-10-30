@@ -760,7 +760,6 @@ body {
     95% {
       scale: 1;
       opacity: 1;
-      box-shadow: 0 0 10px #ff3e00;
     }
     100% {
       scale: 1;
