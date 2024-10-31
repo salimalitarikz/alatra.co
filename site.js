@@ -71,7 +71,7 @@ scrollMain.addEventListener("scroll", (el) => {
     }
 
 
-    if (scrollVal > 700) {
+    if (scrollVal > 550) {
         qs("#main_part_2").style.opacity = "0";
     }else{
         qs("#main_part_2").style.opacity = "1";
@@ -177,6 +177,6 @@ function menuToggle() {
 
 // part 2 div inside animations
 
-setInterval(function () {
-    qs('#part_2_c_1').classList.toggle('activated_an');
-}, 3500);
+// setInterval(function () {
+//     qs('#part_2_c_1').classList.toggle('activated_an');
+// }, 3500);

@@ -329,6 +329,10 @@ body {
     transition: 1s;
     flex-grow: 1;
   }
+  main > .main_part#main_part_2 #part_2_content > div > div > span, main > .main_part#main_part_2 #part_2_content > div > div > div > span {
+    background-image: url(/ui/grain.png);
+    background-color: #2e2e2e !important;
+  }
   main > .main_part#main_part_2 #part_2_content > div > h2 {
     position: absolute;
     top: 1rem;
@@ -630,8 +634,14 @@ body {
     transform: translateX(-50%);
     border-radius: 5px;
   }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_3 > div > span:nth-last-child(2) {
-    animation: p2_c3_a2 3s linear infinite;
+  main > .main_part#main_part_2 #part_2_content #part_2_c_3 > div > span:nth-last-child(3), main > .main_part#main_part_2 #part_2_content #part_2_c_3 > div > span:nth-last-child(4) {
+    animation-delay: 2s !important;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_3 > div > span:nth-last-child(5), main > .main_part#main_part_2 #part_2_content #part_2_c_3 > div > span:nth-last-child(6) {
+    animation-delay: 4s !important;
+  }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_3 > div > span:nth-last-child(1), main > .main_part#main_part_2 #part_2_content #part_2_c_3 > div > span:nth-last-child(3), main > .main_part#main_part_2 #part_2_content #part_2_c_3 > div > span:nth-last-child(5) {
+    animation: p2_c3_a2 6s linear infinite;
   }
   @keyframes p2_c3_a2 {
     0% {
@@ -674,8 +684,8 @@ body {
       opacity: 0;
     }
   }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_3 > div > span:nth-last-child(1) {
-    animation: p2_c3_a1 3s linear infinite;
+  main > .main_part#main_part_2 #part_2_content #part_2_c_3 > div > span:nth-last-child(2), main > .main_part#main_part_2 #part_2_content #part_2_c_3 > div > span:nth-last-child(4), main > .main_part#main_part_2 #part_2_content #part_2_c_3 > div > span:nth-last-child(6) {
+    animation: p2_c3_a1 6s linear infinite;
   }
   @keyframes p2_c3_a1 {
     0% {
@@ -792,8 +802,7 @@ body {
     }
   }
   main > .main_part#main_part_3 {
-    margin-top: 30rem;
-    min-height: 100vh;
+    position: absolute;
   }
   .globe_wrapper {
     width: calc(100vw - 1rem);
