@@ -282,7 +282,7 @@ body {
   }
   main > .main_part#main_part_2 #part_2_banner_2 {
     margin-top: 20%;
-    height: 15%;
+    margin-bottom: 7%;
     position: relative;
     font-size: 1rem;
     font-weight: 500;
@@ -299,8 +299,8 @@ body {
     gap: 1rem;
   }
   main > .main_part#main_part_2 #part_2_content > div {
-    height: 37%;
-    width: 45.5%;
+    height: 35%;
+    width: 40.5%;
     flex-direction: row;
     align-items: center;
     justify-content: center;

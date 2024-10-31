@@ -341,7 +341,7 @@ body{
 
                 #part_2_banner_2{
                     margin-top: 20%;
-                    height: 15%;
+                    margin-bottom: 7%;
                     position: relative;
                     // margin-top: 4.5rem;
                     font-size: 1rem;
@@ -361,8 +361,8 @@ body{
                     gap: $gap;
 
                     >div{
-                        height: 37%;
-                        width: calc(45.5%);
+                        height: 35%;
+                        width: calc(40.5%);
                         flex-direction: row;
                         align-items: center;
                         justify-content: center;
