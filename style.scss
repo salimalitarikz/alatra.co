@@ -1290,7 +1290,7 @@ body{
 
             &#main_part_3{
                 margin-top: -67vh;
-                height: 100vh;
+                height: 40vh;
                 opacity: 0;
 
                 >div{
@@ -1306,7 +1306,7 @@ body{
                         font-weight: 600;
                     }
 
-                    >h2,h3{
+                    >h2,h3,h4{
                         color: $lightgray;
                         font-size: 1.4rem;
                         font-weight: 600;
@@ -1319,7 +1319,7 @@ body{
             }
 
             &#main_part_4{
-                height: 20vh;
+                height: 70vh;
             }
         }
 

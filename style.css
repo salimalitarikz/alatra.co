@@ -806,7 +806,7 @@ body {
   }
   main > .main_part#main_part_3 {
     margin-top: -67vh;
-    height: 100vh;
+    height: 40vh;
     opacity: 0;
   }
   main > .main_part#main_part_3 > div {
@@ -821,7 +821,7 @@ body {
     font-size: 7.7vw;
     font-weight: 600;
   }
-  main > .main_part#main_part_3 > div > h2, main > .main_part#main_part_3 > div h3 {
+  main > .main_part#main_part_3 > div > h2, main > .main_part#main_part_3 > div h3, main > .main_part#main_part_3 > div h4 {
     color: #fcfcfc;
     font-size: 1.4rem;
     font-weight: 600;
@@ -830,7 +830,7 @@ body {
     opacity: 1;
   }
   main > .main_part#main_part_4 {
-    height: 20vh;
+    height: 70vh;
   }
   .globe_wrapper {
     width: calc(100vw - 1rem);

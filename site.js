@@ -9,10 +9,10 @@ function sleep(ms) {
 
 let scrollMain = document.getElementById("main");
 
-let allElements = document.querySelectorAll("#main>section *");
+let allElements = document.querySelectorAll("#main>section>div *");
 
 
-const snapValues = [320,400]; // Birden fazla snap noktası
+const snapValues = [320,400,580]; // Birden fazla snap noktası
 const scrollPause = 500; // Duraklama süresi (ms)
 let isPaused = false; // Duraklama kontrolü
 let hasSnapped = Array(snapValues.length).fill(false); // Her snap için kontrol dizisi   
@@ -81,7 +81,10 @@ scrollMain.addEventListener("scroll", (el) => {
         qs("#part_3_banner_1>h2").classList.add("an1_activated");
         setTimeout(() => {
             qs("#part_3_banner_1>h3").classList.add("an1_activated");
-        }, 1500);
+        }, 1200);
+        setTimeout(() => {
+            qs("#part_3_banner_1>h4").classList.add("an1_activated");
+        }, 3000);
         
 
     }else{
@@ -89,6 +92,7 @@ scrollMain.addEventListener("scroll", (el) => {
         qs("#main_part_3").classList.remove("activated");
         qs("#part_3_banner_1>h2").classList.remove("an1_activated");
         qs("#part_3_banner_1>h3").classList.remove("an1_activated");
+        qs("#part_3_banner_1>h4").classList.remove("an1_activated");
     }
 
     // // part 2 animations
