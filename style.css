@@ -728,6 +728,9 @@ body {
       opacity: 0;
     }
   }
+  main > .main_part#main_part_2 #part_2_content #part_2_c_4 {
+    display: none;
+  }
   main > .main_part#main_part_2 #part_2_content #part_2_c_4 > div {
     display: flex;
     justify-content: center;
