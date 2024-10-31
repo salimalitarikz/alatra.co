@@ -331,7 +331,7 @@ body {
   }
   main > .main_part#main_part_2 #part_2_content > div > div > span, main > .main_part#main_part_2 #part_2_content > div > div > div > span {
     background-image: url(/ui/grain.png);
-    background-color: #2e2e2e !important;
+    background-color: #353535 !important;
   }
   main > .main_part#main_part_2 #part_2_content > div > h2 {
     position: absolute;
@@ -727,9 +727,6 @@ body {
       transform: translateX(-250%);
       opacity: 0;
     }
-  }
-  main > .main_part#main_part_2 #part_2_content #part_2_c_4 {
-    display: none;
   }
   main > .main_part#main_part_2 #part_2_content #part_2_c_4 > div {
     display: flex;
