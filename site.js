@@ -3,6 +3,10 @@ function qs(query) {
     
 }
 
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
 let scrollMain = document.getElementById("main");
 
 let allElements = document.querySelectorAll("#main>section *");
@@ -73,8 +77,18 @@ scrollMain.addEventListener("scroll", (el) => {
 
     if (scrollVal > 550) {
         qs("#main_part_2").style.opacity = "0";
+        qs("#main_part_3").classList.add("activated");
+        qs("#part_3_banner_1>h2").classList.add("an1_activated");
+        setTimeout(() => {
+            qs("#part_3_banner_1>h3").classList.add("an1_activated");
+        }, 1500);
+        
+
     }else{
         qs("#main_part_2").style.opacity = "1";
+        qs("#main_part_3").classList.remove("activated");
+        qs("#part_3_banner_1>h2").classList.remove("an1_activated");
+        qs("#part_3_banner_1>h3").classList.remove("an1_activated");
     }
 
     // // part 2 animations
