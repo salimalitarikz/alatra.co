@@ -806,23 +806,6 @@ body {
     height: 40vh;
     opacity: 0;
   }
-  main > .main_part#main_part_3 > div {
-    position: sticky;
-    top: 5rem;
-    color: #fcfcfc;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
-  main > .main_part#main_part_3 > div > h1 {
-    font-size: 7.7vw;
-    font-weight: 600;
-  }
-  main > .main_part#main_part_3 > div > h2, main > .main_part#main_part_3 > div h3, main > .main_part#main_part_3 > div h4 {
-    color: #fcfcfc;
-    font-size: 1.4rem;
-    font-weight: 600;
-  }
   main > .main_part#main_part_3.activated {
     opacity: 1;
   }
@@ -856,6 +839,9 @@ body {
     transition: 1s;
     width: 66rem;
     height: 66rem;
+  }
+  .globe_wrapper #globe.globe_passive {
+    background-color: transparent;
   }
   menu {
     padding: 0.5rem;

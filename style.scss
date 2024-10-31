@@ -360,6 +360,8 @@ body{
                     justify-content: center;
                     gap: $gap;
 
+
+
                     >div{
                         height: 35%;
                         width: calc(40.5%);
@@ -485,6 +487,40 @@ body{
                         }
                         
                     }
+
+
+                    // test
+
+                    // &.changed{
+                    //     // filter: url("#dilate_shape");
+                    //     gap: .1rem;
+                    //     >div{
+                    //         aspect-ratio: 1/1 !important;
+                    //         height: 40vw;
+                    //         width: 40vw;
+                    //         // border: 2px solid $black;
+                    //         >*{
+                    //             opacity: 0;
+                    //         }
+                    //     }
+
+                    //     div:nth-child(1){
+                    //         clip-path: polygon(100% 0%, 100% 100%, 0% 100%);
+                    //         border-bottom-right-radius: 15%;
+                    //       }
+                    //       div:nth-child(2){
+                    //         clip-path: polygon(0% 0%, 100% 100%, 0% 100%);
+                    //         border-bottom-left-radius: 15%;
+                    //       }
+                    //       div:nth-child(3){
+                    //         clip-path: polygon(100% 0%, 100% 100%, 0% 0%);
+                    //         border-top-right-radius: 15%;
+                    //       }
+                    //       div:nth-child(4){
+                    //         clip-path: polygon(100% 0%, 0% 100%, 0% 0%);
+                    //         border-top-left-radius: 15%;
+                    //       }
+                    // }
 
 
                     &.activated{
@@ -1293,26 +1329,7 @@ body{
                 height: 40vh;
                 opacity: 0;
 
-                >div{
-                    position: sticky;
-                    top: 5rem;
-                    color: $lightgray;
-                    display: flex;
-                    flex-direction: column;
-                    gap: 1rem;
-
-                    >h1{
-                        font-size: 7.7vw;
-                        font-weight: 600;
-                    }
-
-                    >h2,h3,h4{
-                        color: $lightgray;
-                        font-size: 1.4rem;
-                        font-weight: 600;
-                    }
-                }
-
+               
                 &.activated{
                     opacity: 1;
                 }
@@ -1354,6 +1371,10 @@ body{
             transition: 1s;
             width: 66rem;
             height: 66rem;
+           }
+
+           &.globe_passive{
+            background-color: transparent;
            }
 
             

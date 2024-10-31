@@ -74,25 +74,26 @@ scrollMain.addEventListener("scroll", (el) => {
         qs("nav").classList.remove("nav_black");
     }
 
+    if (scrollVal > 400) {
+        // qs("#part_2_content").classList.add("changed");
+    }else{
+        // qs("#part_2_content").classList.remove("changed");
+    }
+
 
     if (scrollVal > 550) {
         qs("#main_part_2").style.opacity = "0";
         qs("#main_part_3").classList.add("activated");
-        qs("#part_3_banner_1>h2").classList.add("an1_activated");
-        setTimeout(() => {
-            qs("#part_3_banner_1>h3").classList.add("an1_activated");
-        }, 1200);
-        setTimeout(() => {
-            qs("#part_3_banner_1>h4").classList.add("an1_activated");
-        }, 3000);
+        
+        qs("nav").classList.remove("nav_black");
+        qs("#globe").classList.add("globe_passive");
         
 
     }else{
         qs("#main_part_2").style.opacity = "1";
         qs("#main_part_3").classList.remove("activated");
-        qs("#part_3_banner_1>h2").classList.remove("an1_activated");
-        qs("#part_3_banner_1>h3").classList.remove("an1_activated");
-        qs("#part_3_banner_1>h4").classList.remove("an1_activated");
+        qs("#globe").classList.remove("globe_passive");
+        qs("nav").classList.add("nav_black");
     }
 
     // // part 2 animations
